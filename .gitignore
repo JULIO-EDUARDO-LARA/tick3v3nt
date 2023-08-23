@@ -1,0 +1,10 @@
+**/.DS_Store
+/node_modules
+/dist
+/build
+/reports
+package-lock.json
+coverage
+yarn.lock
+test-report.xml
+.DS_Store
