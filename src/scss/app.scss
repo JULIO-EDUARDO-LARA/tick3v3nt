@@ -1,4 +1,8 @@
-$color: red;
-body{
-background-color: $color;
-}
+@import 'base/normalize.scss';
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/globales.scss';
+@import 'base/botones.scss';
+
+
+@import 'layout/header-slider.scss';

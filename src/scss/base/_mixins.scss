@@ -1,0 +1,12 @@
+@mixin boton ($bg_color, $font_color, $display) {
+    padding: 2rem;
+    background-color: $bg_color;
+    color: $font_color;
+    display: $display;
+
+
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+}

@@ -1,0 +1,23 @@
+
+//LINKING GOOGLE-FONT
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
+//TIPOGRAFIA
+$fuente_principal:'Roboto Slab', serif;
+//COLORES
+$rojo:#B12D2D;
+$amarillo:#E9E13A;
+$bordes:#B39C12;
+$primario:#212121;
+$secundario:#101414;
+$negro: #000000;
+$blanco:#FFFFFF;
+$azul_gris: #A4A9C8;
+$azul_claro: #0667AB;
+$azul_oscuro: #000E7E;
+
+//MEDIA QUERIES (mq)
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
