@@ -1,3 +1,25 @@
+@mixin mqTelefono {
+    @media (min-width: $telefono){
+        @content;
+    }
+}
+@mixin mqTablet {
+    @media (min-width: $tablet){
+        @content;
+    }
+}
+@mixin mqDesktop {
+    @media (min-width: $desktop){
+        @content;
+    }
+}
+@mixin mqDesktopXL {
+    @media (min-width: $desktopXL){
+        @content;
+    }
+}
+
+
 @mixin boton ($bg_color, $font_color, $display) {
     padding: 2rem;
     background-color: $bg_color;
@@ -8,5 +30,5 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    
+    border-radius: 1rem;
 }
