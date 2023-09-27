@@ -20,8 +20,8 @@
 }
 
 
-@mixin boton ($bg_color, $font_color, $display) {
-    padding: 2rem;
+@mixin boton ($bg_color, $font_color, $display, $alto: 2rem, $largo: 2rem) {
+    padding: $alto $largo;
     background-color: $bg_color;
     color: $font_color;
     display: $display;
