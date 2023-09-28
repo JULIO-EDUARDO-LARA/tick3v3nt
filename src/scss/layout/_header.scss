@@ -25,26 +25,10 @@
 }
 
 .logo {
-    width: 20rem;
+    width: 12rem;
     margin: auto;
-}
-
-.navegacion-principal {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: .5rem;
     @include mqTablet {
-        display: inline;
-    }
-
-    .enlace-menu-princip {
-        color: rgba($amarillo, $alpha: 0.7);
-        font-size: 2rem;
-        font-weight: bold;
-        padding: .5rem;
-
-        &:hover {
-            color: $amarillo;}
+        width: 20rem;
     }
 }
+

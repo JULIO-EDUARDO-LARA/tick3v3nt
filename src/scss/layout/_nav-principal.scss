@@ -1,0 +1,54 @@
+
+.menu-vertical {
+    height: 0;
+    transition: height .7s;
+    overflow: hidden;
+    @include mqTablet{
+        display: flex;
+        justify-content: center;
+        overflow: none;
+        height: auto;
+    }
+
+    .item-vert{
+        display: flex;
+        .enlace-menu-princip {
+            color: rgba($amarillo, $alpha: 0.7);
+            font-size: 2rem;
+            font-weight: bold;
+            padding: .5rem;
+            text-align: center;
+            margin: 0 auto;
+        
+            &:hover {
+                color: $amarillo;
+            }
+        }
+    }
+}
+.item-hori{
+        &:hover{
+            .menu-vertical{
+                height: 9.9rem;
+                transition: height .7s;
+                overflow: none;
+                @include mqTablet{
+                    height: auto;
+                }
+            }
+
+        }
+    .container-burger-menu {
+        @include mqTablet{
+            display: none;
+        }
+        .icon-burger-menu{
+            width: 5rem;
+            margin: 0 auto;
+        }
+    }  
+}
+
+ 
+
+
