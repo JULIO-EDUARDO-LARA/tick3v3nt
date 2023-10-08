@@ -14,13 +14,13 @@
     <title>tickevent</title>
 </head>
 <body>
-    <!-- SECCION 1. SILIDER -->
-    <section class="header-slider">
+    <!-- SECCION 1. SLIDER -->
+    <section class="headerPrincipal">
         <!-- SECCION 1.1 HEADER -->
-        <header class="header">
-            <div class="contenedor contenido-header">
-                <div class="logo">
-                    <img src="build/img/logotipo/logo_1.png" alt="">
+        <header class="headerPrincipal__header">
+            <div class="headerPrincipal__container contenedor">
+                <div class="headerPrincipal__logo">
+                    <a href=""><img src="build/img/logotipo/logo_1.png" alt=""></a>
                 </div>
                 <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
                 <nav class="navegacion-principal">
@@ -45,7 +45,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="btn btn-amarillo-block" href="#">
+                <a class="headerPrincipal__btn btnHeader" href="#">
                     ingresar 
                 </a>
             </div>
@@ -76,25 +76,22 @@
 
     </section>
 
-
     <!-- SECCION 2. SEARCH BAR -->
     <section class="barra-busqueda">
         <div class="contenedor contenido-barra-busqueda">
 
             <form class="form-busqueda">
-                <p><input class="campo-busqueda" type="search" name="Buscar Evento" placeholder="  Buscar Evento.."></p>
-                  <!-- <input type="submit" value="Buscar"> -->
-                <p><input class="campo-busqueda" type="search" name="Buscar Ciudad" placeholder="  Buscar Ciudad.."></p>
-                  <!-- <input type="submit" value="Buscar"> -->  
+                <input class="campo-busqueda" type="search" name="Buscar Evento" placeholder="  Buscar Evento..">
+                <input class="campo-busqueda" type="search" name="Buscar Ciudad" placeholder="  Buscar Ciudad..">
             </form>
-            <a class="btn-icon btn-icon-proveedores" href="">
-                <picture class="icon-proveedores" > <img src="build/img/buttons/btn-suppliers.png" alt=""> </picture>
-                <p class="texto-btn-icon">proveedores</p>
-                <p class="texto-btn-icon">productos y servicios</p>
-            </a>
-
+                <a class="btn-icon btn-icon-proveedores" href="">
+                    <p id="circle" class="texto-btn-icon">proveedor productos&servicios</p>
+                    <picture class="icon-proveedores" > <img src="build/img/buttons/btn-suppliers.png" alt=""> </picture>
+                </a>
         </div> 
     </section>
+
+    
     <!-- SECCION 3. LISTADO EVENTOS -->
     <section class="listado-eventos">
         <section class="contenedor contenido-listado-eventos">
@@ -105,11 +102,7 @@
                     <img class="pic-img" src="images/poster_1.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a> 
-                    </div>
+
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -118,6 +111,9 @@
                         <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
                     </table>
                 </div>
+                <a class="btn btn-amarillo-block" href="">
+                    <p>detalle del evento</p>
+                </a> 
             </div>
 
             <!--SECCION 3.2 CARD #2 -->
@@ -126,12 +122,6 @@
                     <img class="pic-img" src="images/poster_2.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a> 
-                    </div>
-
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -141,6 +131,10 @@
                     </table>
 
                 </div>
+                    <a class="btn btn-amarillo-block" href="">
+                        <p>detalle del evento</p>
+                    </a>                        
+                
             </div>
 
             <!--SECCION 3.3 CARD #3 -->
@@ -149,13 +143,9 @@
                     <img class="pic-img" src="images/poster_3.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a> 
-                    </div>
+
                     <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
+                        <tr> <th colspan="2" class="">PROM MONTESSO33333333333333333333333RI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
                         <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
                         <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
@@ -163,7 +153,11 @@
                     </table>
 
                 </div>
-            
+                
+                    <a class="btn btn-amarillo-block" href="">
+                        <p>detalle del evento</p>
+                    </a>                        
+                
             </div>
             
             <!--SECCION 3.4 CARD #4 --> 
@@ -172,11 +166,7 @@
                     <img class="pic-img" src="images/poster_4.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a>                        
-                    </div>
+
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -185,7 +175,12 @@
                         <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
                     </table>
 
-                </div>             
+                </div>  
+                <div class="container-btn-detalle-evento">
+                    <a class="btn btn-amarillo" href="">
+                        <p>detalle del evento</p>
+                    </a>                        
+                </div>           
             </div>           
 
 
@@ -195,11 +190,7 @@
                     <img class="pic-img" src="images/poster_5.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a>                        
-                    </div>
+
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -208,7 +199,12 @@
                         <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
                     </table>
 
-                </div>               
+                </div> 
+        
+                <a class="btn btn-amarillo-block" href="">
+                    <p>detalle del evento</p>
+                </a>
+             
             </div>
 
             <!--SECCION 3.6 CARD #6 -->
@@ -217,11 +213,7 @@
                     <img class="pic-img" src="images/poster_6.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a>                        
-                    </div>
+
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -230,7 +222,10 @@
                         <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
                     </table>
 
-                </div>           
+                </div>   
+                <a class="btn btn-amarillo-block" href="">
+                    <p>detalle del evento</p>
+                </a>       
             </div>
             
             <!--SECCION 3.7 CARD #7 -->
@@ -239,11 +234,7 @@
                     <img class="pic-img" src="images/poster_7.jpg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a>                        
-                    </div>
+
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -252,7 +243,10 @@
                         <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
                     </table>
 
-                </div>          
+                </div>
+                <a class="btn btn-amarillo-block" href="">
+                    <p>detalle del evento</p>
+                </a>     
             </div>          
 
 
@@ -262,11 +256,6 @@
                     <img class="pic-img" src="images/poster_8.jpeg" alt="">
                 </figure>
                 <div class="info-evento">
-                    <div class="container-btn-detalle-evento">
-                        <a class="btn btn-detalle-evento" href="">
-                            <p>detalle del evento</p>
-                        </a>                        
-                    </div>
                     <table>
                         <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
                         <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
@@ -275,7 +264,10 @@
                         <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
                     </table>
 
-                </div>              
+                </div>
+                <a class="btn btn-amarillo-block" href="">
+                    <p>detalle del evento</p>
+                </a>            
             </div>
         </section>
 
@@ -326,11 +318,11 @@
                         <h2 class="titulo-targeta-footer">siguenos</h2>
                         <ul>
                             <li>
-                                <figure class="icono-redes icono-redes-fb"><img src="images/icon/icon_facebook.png" alt=""></figure>
+                                <figure class="icono-redes icono-redes-fb"><img src="build/img/icon/facebook.png" alt=""></figure>
                                 <a href="">Facebook</a>
                             </li>
                             <li>
-                                <figure class="icono-redes icono-redes-i"><img src="images/icon/icon_instagram.png" alt=""></figure>
+                                <figure class="icono-redes icono-redes-i"><img src="build/img/icon/instagram.png" alt=""></figure>
                                 <a href="">Instagram</a>
                             </li>
                         </ul>
@@ -347,46 +339,50 @@
 
         </div>
     </footer>
+
     <!-- SECCION 5. LOGIN -->
-    <section class="modal modal-login">
-        <div class="contenedor contenido-login-modal">
-            <picture class="images-pet-corp">
-                <img class="img-pet" id="ticketcito" src="images/pet-corp/1.png" alt="">
-            </picture>
-            
-            <form class="formulario formulario-login">
-                <div class="contenido-formulario">
-                    <div class="form-info form-login-info">
-                        <label>recordar credenciales</label>
-                        <input class="chekbox" type="checkbox">                      
-                    </div>                   
-                    <div class="form-info form-login-info">
-                        <label>Usuario</label>
-                        <input class="login-campo-texto" type="text"id="input-usuario"placeholder="chickendeveloper@gmail.com" autocomplete="off">                      
-                    </div>
+    <section class="login">
+        <div class="login__contenido">
+            <a class="login__cierre" href="">cerrar [X]</a>
 
-                    <div class="form-info form-login-info">
-                        <label >Contraseña </label>
-                        <input class="login-campo-texto" type="password"id="input-clave"placeholder="********"autocomplete="off">
-                    </div>
-                    <div class="botones-login">
-                        <button class="btn btn-login" type="submit">login</button>        
-                        <a  class="btn btn-registro" href=""><p>registrate</p></a>
-                        <a class="btn btn-cerrar-modal-login" href=""><p>salir</p></a>
-                    </div>
-
-                </div>
-
+            <h2 class="login__heading">Iniciar Sesión 
+                <span>¡ Bienvenido !</span> 
+            </h2>
+            <form class="login__formulario">
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> Porfavor ingresa tus credenciales</legend>
+                    <label for="correo">E-mail</label>
+                    <input type="email" name="correo">
+                    <label for="correo">Contraseña</label>
+                    <input type="password" name="correo">
+                     <button class="login___btnIngresar" type="submit">Iniciar sesion</button>
+                </fieldset>
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> o Inicia sesión con:</legend>
+                    <a class="login__btnGoogle" href="">
+                        <div class="login__img--GoogleContainer">
+                            <img src="build/img/icon/google-search.png" alt="">
+                        </div>
+                        <p>Google</p>
+                    </a>
+                </fieldset>
+                <p class="login__paragraph">No tienes una cuenta? <a href="">Registrate</a> </p>  
             </form>
+            
         </div>
-    </section>
+        <div class="login__contenido">
+
+            <div class="login__petContainer">
+                <img src="build/img/pet-corp/tapar_ojos/1.png" alt="">
+            </div>
+        </div>
+
+    </section> 
 
     <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
-    <!-- <script src="script/main.js"></script>
-    <script src="script/animacion/pet-corp.js"></script> -->
+    <script src="script/main.js"></script>
+    <script src="script/animacion/pet-corp.js"></script>
     <script src="build/js/bundle.min.js"></script>
-    <aside>
 
-    </aside>
 </body>
 </html>

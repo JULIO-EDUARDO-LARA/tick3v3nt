@@ -1,0 +1,16 @@
+h1, h2, h3 {
+    margin: 0 0 5rem 0;}
+h1 {
+    font-size: 4rem;}
+h2 {
+    font-size: 3.6rem;
+    span{
+        font-family: $fuente_especial;
+        color: $azul_claro;
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+h3 {
+    font-size: 3.2rem;}

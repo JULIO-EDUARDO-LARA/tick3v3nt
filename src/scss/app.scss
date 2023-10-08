@@ -2,11 +2,21 @@
 @import 'base/variables.scss';
 @import 'base/mixins.scss';
 @import 'base/globales.scss';
+@import 'base/tipografia.scss';
 @import 'base/botones.scss';
+
+
+@import 'index/header.scss';
+@import 'index/slider.scss';
+@import 'index/nav-principal.scss';
+@import 'index/search-bar.scss';
+@import 'index/lista-eventos.scss';
+@import 'index/formulario.scss';
+@import 'index/login.scss';
+@import 'index/footer.scss';
+
+
+@import 'form-registro/registro.scss';
+
 @import 'base/utilidades.scss';
 
-
-@import 'layout/header.scss';
-@import 'layout/slider.scss';
-@import 'layout/nav-principal.scss';
-@import 'layout/search-bar.scss';

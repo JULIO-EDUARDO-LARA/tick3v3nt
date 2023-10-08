@@ -1,0 +1,67 @@
+.listado-eventos {
+    padding: 5rem 2rem;
+    @include mqDesktopXL {
+        padding: 5rem 0; 
+    }
+    background-color: $primario;
+}
+
+.contenido-listado-eventos{
+    @include grid-col(1, 5rem);
+
+    @include mqTablet {
+        @include grid-col(2, 5rem); 
+    }
+    @include mqDesktop {
+        @include grid-col(3, 5rem); 
+    }
+    @include mqDesktopXL {
+        @include grid-col(4, 5rem);  
+    }
+}
+.tarjeta-evento {
+    
+    border: $bordes solid 0.2rem;
+    border-radius: 2rem;
+    background-color: $secundario;
+    overflow: hidden;
+   
+    .img-evento{
+        height: 17.3rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .pic-img {
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        height: 100%;
+    }
+}
+
+.info-evento{
+    padding: 0 2rem 2rem 2rem;   
+    table{
+        th{
+            text-align: left;
+        }
+        th, td {
+            color: $amarillo;
+        }
+    }
+}
+
+.container-btn-detalle-evento{
+    margin: 1rem 0 1rem 0;
+    
+}
+// .btn-detalle-evento{
+    
+//     @include mix.botones(100%, 3rem, 1.5rem);
+    
+    
+//     @include mix.mqDesktop {
+//         @include mix.botones(100%, 3rem, 1.5rem);
+//         color: rgba(var.$colorBackgroundBotones,0.2);
+//     }
+// }

@@ -1,11 +1,153 @@
-//($ancho, $alto, $bg_color, $font_color, $display) {
-.btn-amarillo-block {
+//( $bg_color, $font_color, $display, $alto, $ancho) {
+.headerPrincipal__btn{
     @include boton ($amarillo, $rojo, inline-block, 0.5rem, 1rem);
 
     @include mqTablet {
-        @include boton ($amarillo, $rojo, inline-block, 1rem, 4rem);
-    }
+        @include boton ($amarillo, $rojo, inline-block, 1rem, 4rem);}
+
     @include mqDesktop {
-        @include boton ($amarillo, $rojo, inline-block);
+        @include boton ($amarillo, $rojo, inline-block);}
+}
+
+//BOTON INICIAR SESION
+.login___btnIngresar,
+.registro__btn{
+    @include boton (rgba($azul_oscuro,.8), $amarillo, block, 1rem);
+    // margin-top: 1.2rem;
+    border: 0px;
+    box-shadow: inset 3px 3px 3px rgba( $negro,.7),
+    inset -2px -2px 3px rgba($azul_oscuro,.1);
+    
+
+}
+//BOTON GOOGLE SEARCH LOG IN
+.login__btnGoogle,
+.registro__btn--Google{
+    
+    @include boton ($blanco, $rojo, inline-block, 0.5rem, 1rem);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .login__img--GoogleContainer,
+    .registro__img--GoogleContainer{
+        width: 2.5rem;
+    }
+    box-shadow: inset 3px 3px 3px rgba( $azul_oscuro,.7),
+                inset -2px -2px 3px rgba($azul_oscuro,.1);
+}
+
+//BOTON-DETALLE EVENTO
+
+
+
+
+//BOTON-ICONO PROVEEDORES - PROMOTOR
+
+.btn-icon-proveedores{
+    position: relative;
+    display: block;
+    width: 11rem;
+    height: 11rem;
+    @include mqTablet{
+        width: 9rem;
+        height: 9rem;
+        margin: 0 auto;      
     }
 }
+
+
+.texto-btn-icon {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    .span{
+        left: 46%;
+        // background-color: blueviolet;
+        font-size: 60%;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block;
+        position: absolute;
+        color: $rojo;
+        width: 0.9rem;
+        height: 50%;
+
+        transform-origin: bottom center;
+        &:nth-child(1){
+            transform: rotate(280deg);}
+        &:nth-child(2){
+            transform: rotate(292deg);}
+        &:nth-child(3){
+            transform: rotate(304deg);}
+        &:nth-child(4){
+            transform: rotate(315deg);}
+        &:nth-child(5){
+            transform: rotate(327deg);}
+        &:nth-child(6){
+            transform: rotate(339deg);}
+        &:nth-child(7){
+            transform: rotate(351deg);}
+        &:nth-child(8){
+            transform: rotate(3deg);}
+        &:nth-child(9){
+            transform: rotate(15deg);}
+        &:nth-child(10){
+            transform: rotate(27deg);}
+        &:nth-child(11){
+            transform: rotate(39deg);}
+        &:nth-child(12){
+            transform: rotate(51deg);}
+        &:nth-child(13){
+            transform: rotate(63deg);}
+        &:nth-child(14){
+            transform: rotate(75deg);}
+        &:nth-child(15){
+            transform: rotate(87deg);}
+        &:nth-child(16){
+            transform: rotate(99deg);}
+        &:nth-child(17){
+            transform: rotate(111deg);}
+        &:nth-child(18){
+            transform: rotate(123deg);}
+        &:nth-child(19){
+            transform: rotate(135deg);}
+        &:nth-child(20){
+            transform: rotate(147deg);
+            color: $azul_claro;}
+        &:nth-child(21){
+            transform: rotate(159deg);} 
+        &:nth-child(22){
+            transform: rotate(171deg);} 
+        &:nth-child(23){
+            transform: rotate(183deg);} 
+        &:nth-child(24){
+            transform: rotate(195deg);} 
+        &:nth-child(25){
+            transform: rotate(207deg);} 
+        &:nth-child(26){
+            transform: rotate(219deg);} 
+        &:nth-child(27){
+            transform: rotate(231deg);} 
+        &:nth-child(28){
+            transform: rotate(243deg);} 
+        &:nth-child(29){
+            transform: rotate(255deg);} 
+        &:nth-child(30){
+            transform: rotate(267deg);} 
+        &:nth-child(31){
+            transform: rotate(279deg);} 
+
+    }
+ }
+ .icon-proveedores{
+    position: absolute;
+    display: block;
+    width: 50%;
+    margin: 25%;
+}
+

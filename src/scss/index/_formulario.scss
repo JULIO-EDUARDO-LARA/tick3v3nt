@@ -1,0 +1,13 @@
+legend {
+    font-family: $fuente_especial;
+    color: rgba($negro, 0.4);
+}
+
+fieldset {
+    border-color: rgba($crimson, 0.7);
+    border-radius: 1rem;
+}
+label,
+input {
+    display: block;
+}

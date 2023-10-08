@@ -1,0 +1,84 @@
+.footer {
+    background-color: $secundario;
+    margin-top: 5rem;
+    padding: 5rem 0 2rem 0;
+    
+    h2, p{
+        color: $blanco;
+        font-size: 2.3rem;
+        margin: 0;
+    }
+    h2{
+        text-transform: uppercase;
+    }
+    a{
+        color: $azul_gris;   
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    ul{
+        padding: 0;
+        margin: 1.6rem 0 0 0;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+    .derechos-autor{
+        margin: 0 auto;
+        padding-top: 7rem;
+        p{
+            margin: 0;
+            text-align: center
+        }
+    }
+}
+.footer-info {
+    @include grid-col(1, 5rem);
+
+    @include mqTablet {
+        @include grid-col (2, 5rem);
+    }
+    @include mqDesktop {
+        @include grid-col (4, 5rem);
+    }
+}
+.tarjeta-footer {
+    display: flex;
+    align-items: center;
+
+    &:nth-child(4){
+        li{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+    }
+}
+
+.capsula-tarjeta-footer{
+    display: inline-block;
+    margin: 0 auto auto 30%;
+
+    @include mqTablet {
+        display: inline-block;
+        margin: 0 auto auto 30%;
+    }
+
+    .icono-redes {
+        margin: 0;
+    }
+
+    .icono-redes-fb{
+        width: 2.8rem;
+    }
+    .icono-redes-i{
+        width: 3rem;
+    }
+
+}
+
+
+
+

@@ -1,19 +1,20 @@
-.header-slider {
+.headerPrincipal {
     position: relative;
     width: 100%;
 }
 
-.header {
+.headerPrincipal__header {
     position: absolute;
     z-index: 20;
     width: 100%;
     background-color: rgba($negro, $alpha: 0.5);
-    .contenido-header {
+    
+    .headerPrincipal__container {
         gap: 2rem;
         display: flex;
         flex-direction: column;
         padding: 2rem;
-        .btn {
+        .headerPrincipal__btn {
             max-width: 20rem;
             margin: 0 auto;
         }
@@ -24,7 +25,7 @@
     }
 }
 
-.logo {
+.headerPrincipal__logo {
     width: 12rem;
     margin: auto;
     @include mqTablet {

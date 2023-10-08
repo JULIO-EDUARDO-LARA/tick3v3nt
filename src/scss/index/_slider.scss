@@ -4,14 +4,14 @@
     overflow: hidden;
 
     max-height: 55rem;
-    min-height: 50rem;
+    min-height: 40rem;
 
     .transparencia {
         position: absolute;
         height: 100%;
         width: 100%;
         z-index: 15;
-        background: rgb(211,8,34);
+        background: $crimson;
         background: linear-gradient(270deg, rgba(211,8,34,0.5) 0%, rgba(255,0,213,0.35) 100%);       
     }
     

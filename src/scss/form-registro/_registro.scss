@@ -1,0 +1,97 @@
+.registroMain {
+    border-radius: 1rem;
+    margin: 0.4rem;
+    background-color: rgba($azul_claro,0.1);
+}
+
+.registro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro__contenido {
+    //por el display , justify y align es necesario colocarle height especifico
+    height: 105rem;
+    width: 50%;
+    max-width: 50rem;
+    //CAJA1 DEL FORMULARIO REGISTRO
+    &:nth-child(1){
+        padding: 5rem 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center ;
+        gap: 5rem;
+    }
+    //CAJA2 DEL BANNER
+    &:nth-child(2){
+        .registro__img--bannerContainer{
+        height: 105rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.registro__contenido--banner{
+    display: none;
+    @include mqDesktop {
+        display: block;
+    }
+}
+
+//FORMULARIO
+.registro__formulario{
+    // width: 80%;
+    background-color: $blanco;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    .registro__fieldset{
+        display: grid;
+        gap: 1rem;
+        input:not([type="submit"]){
+            height: 3.5rem;
+            border-radius: 0.5rem;
+            border-color: rgba($azul_claro,0.5);
+        }
+    }
+    .registro__logoContainer{
+        width: 10rem;
+        padding-bottom: 2rem;
+    }
+    @include mqTablet{
+        width: 100%;
+        min-width: 50rem;
+        width: 100%;
+        max-width: 90rem;
+    }
+    @include mqDesktop {
+        width: auto;
+        min-width: auto;
+    }
+}
+
+.registro__paragraph--politicas, 
+.registro__paragraph--captchaGoogle{
+    text-align: center;
+    padding: 0.5rem 0;
+    user-select: none;
+    font-family: $fuente_secundaria;
+    font-size: 1.5rem;
+    a{
+        color: $azul_claro;
+    }
+    span {
+        font-weight: 600;
+    }
+
+}
+
+
