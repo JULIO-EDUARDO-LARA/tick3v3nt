@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--icono de flecha para pasar slider https://boxicons.com/-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!--LINKING FAVICON-->
     <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
@@ -12,9 +14,9 @@
     <!--LINKING STYLESHEETS-->
     <link rel="stylesheet" href="../build/css/app.css">
 
-    <title>account</title>
+    <title>account-business</title>
 </head>
-<body onload="myFunction()">
+<body on load="myFunction()">
     <!-- SECCION 1. SLIDER -->
     <section class="headerPrincipal">
         <!-- SECCION 1.1 HEADER -->
@@ -24,42 +26,108 @@
                     <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
                 </div>
                 <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
-                <nav class="navegacion-principal navegacion-principal--account">
-                    <ul class="menu-horizontal">
-                        <li class="item-hori">
-                            <div class="container-burger-menu">
-                                <img class="icon-burger-menu" class src="../build/img/icon/burger-menu.png" alt="">
-                                <!-- <p>Desplegar</p> -->
+                <nav class="navegacion">
+                    <ul class="lista">
+                        <li class="lista__item">
+                            <div class="lista__btn">
+                                <img class="lista__btnBurger" src="../build/img/icon/burger-menu.png" alt="">
+                                <div class="icon_arrowBurger"><i class='bx bxs-chevrons-right'></i></div>
                             </div>
-                            <ul class="menu-vertical menu-vertical--hover">
-                                <li class="item-vert">
-                                    <a class="enlace-menu-princip" href="nosotros">Nosotros</a>
-                                </li>
-                                <li class="item-vert">
-                                    <a class="enlace-menu-princip" href="servicios">Servicios</a>
-                                </li>
-                                <li class="item-vert">
-                                    <a class="enlace-menu-princip" href="comunidad">Comunidad</a>
+                            <ul class="lista__mostrar">
+
+                                <li class="lista__item">
+                                    <div class="lista__btn">
+                                        <a href="">Mis eventos</a>
+                                    </div>
                                 </li>
 
+                                <li class="lista__item">
+                                    <div class="lista__btn">
+                                        <a href="">Administrar</a>
+                                        <div class=""><i class='bx bx-chevron-right'></i></div>                                
+                                    </div>
+                                    <ul class="lista__mostrar">
+                                        <li class="list__inside"><a href="">Perfil</a></li>
+                                        <li class="list__inside"><a href="">Informes</a></li>
+                                        <li class="list__inside"><a href="">Recursos Creados</a></li>
+                                    </ul>
+                                </li>
+                                <li class="lista__item">
+                                    <div class="lista__btn">
+                                        <a href="">Crear</a>
+                                        <div class=""><i class='bx bx-chevron-right'></i></div>                                
+                                    </div>
+                                    <ul class="lista__mostrar">
+                                        <li class="list__inside"><a href="">Evento</a></li>
+                                        <li class="list__inside"><a href="">Servicio</a></li>
+                                        <li class="list__inside"><a href="">Recursos Creados</a></li>
+                                    </ul>
+                                </li>
+                                
                             </ul>
                         </li>
                     </ul>
                 </nav>
+
+
+
+
+
+
+
+                <!-- <nav class="navegacion-principal">
+                    <div class="container__burgerMenu lista__item">
+                        <img class="burguerMenu" class src="../build/img/icon/burger-menu.png" alt="">
+                        <div class="icon__arrow icon__arrowBurguer"><i class='bx bxs-chevrons-right'></i></div>
+                    </div>
+                    <ul class="lista__container">
+          
+                        <li class="lista__subContainer">
+                            <div class="lista__item">
+                                <a class="lista__itemLink" href="">mis eventos</a>
+                            </div>
+                        </li>
+     
+                        <li class="lista__subContainer">
+                            <div class="lista__item">
+                                <a class="lista__itemLink lista__itemLink--click">Administrar</a>
+                                <div class="icon__arrow"><i class='bx bx-chevron-right'></i></div>                                
+                            </div>
+                            <ul class="sublista__container">
+                                <li class="sublista__item"><a class="sublista__itemLink" href="">Perfil</a></li>
+                                <li class="sublista__item"><a class="sublista__itemLink" href="">Informes</a></li>
+                                <li class="sublista__item"><a class="sublista__itemLink" href="">Crear Recursos</a></li>
+                                <li class="sublista__item"><a class="sublista__itemLink" href="">Recursos Creados</a></li>
+                            </ul>
+                        </li>
+
+                      
+                        <li class="lista__subContainer">
+                            <div class="lista__item">
+                                <a class="lista__itemLink lista__itemLink--click">Crear</a>
+                                <div class="icon__arrow"><i class='bx bx-chevron-right'></i></div>
+                            </div>
+                            <ul class="sublista__container">
+                                <li class="sublista__item"><a class="sublista__itemLink" href="">Evento</a></li>
+                                <li class="sublista__item"><a class="sublista__itemLink" href="">Servicio</a></li>
+                            </ul>
+                        </li>      
+                    </ul>
+                </nav> -->
                 <!-- <a class="headerPrincipal__btn btnHeader" href="#">
                     ingresar 
                 </a> -->
                 <!-- SECCION 1.1.2 SECCION DE PERFILES -->
                 <section class="fichaPerfiles">
                     <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR -->
-                    <!-- <div class="fichaPerfil__container utl-display-none">
+                    <div class="fichaPerfil__container fichaPerfil__container--promotor">
                         <figure class="fichaPerfil__imgContainer">
-                            <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                            <img src="../build/img/default/foto_bg_empresa.png" alt="">
                         </figure>
                         <div class="fichaPerfil__nombreCtaRegular">
-                            <h3>Cristian Benitez</h3>
+                            <h3>Andamios y tarimas S.A.S</h3>
                         </div>
-                    </div>                     -->
+                    </div>                   
                     <!-- SECCION 1.1.2.2 FICHA DE PERFIL REGULAR -->
                     <div class="fichaPerfil__container">
                         <figure class="fichaPerfil__imgContainer">
@@ -70,8 +138,10 @@
                         </div>
                     </div>
 
-                </section>  
-            </div>        
+                </section>                
+               
+            </div>
+
         </header> 
 
     </section>

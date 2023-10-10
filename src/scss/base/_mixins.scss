@@ -24,6 +24,11 @@
     grid-template-columns: repeat($numCol, 2fr);
     gap: $gap;
 }
+@mixin grid-row ($numrow, $gap) {
+    display: grid;
+    grid-template-rows: repeat($numrow, 2fr);
+    gap: $gap;
+}
 
 
 @mixin boton ($bg_color, $font_color, $display, $alto: 2rem, $largo: 2rem) {

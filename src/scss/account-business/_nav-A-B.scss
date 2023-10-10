@@ -1,0 +1,26 @@
+
+
+
+//CONTENEDOR DE MENU HAMBURGUESA
+.lista__btn {
+    a{
+        font-weight: bold;
+        color: rgb(197, 120, 120);
+    }
+   
+    margin: auto;
+    @include grid-col(3, 0rem);
+    justify-content: center;
+
+    //MENU HAMBURGUESA
+    .lista__btnBurger{
+        margin: auto;
+        grid-column: 2/3;
+        width: 5rem;
+    }
+    .icon_arrowBurger {
+        width: 1.6rem;
+        height: 1.6rem;
+        // margin: auto auto auto 0;
+    } 
+}

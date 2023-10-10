@@ -1,3 +1,5 @@
+
+//ARCHIVOS DE SASS - BASE
 @import 'base/normalize.scss';
 @import 'base/variables.scss';
 @import 'base/mixins.scss';
@@ -5,7 +7,7 @@
 @import 'base/tipografia.scss';
 @import 'base/botones.scss';
 
-
+//ARCHIVOS DE SASS - INDEX
 @import 'index/header.scss';
 @import 'index/slider.scss';
 @import 'index/nav-principal.scss';
@@ -14,6 +16,16 @@
 @import 'index/formulario.scss';
 @import 'index/login.scss';
 @import 'index/footer.scss';
+
+//ARCHIVOS DE SASS - ACCOUNT
+@import 'account/header.scss';
+@import 'account/ficha-account.scss';
+@import 'account/nav-account.scss';
+
+//ARCHIVOS DE SASS - ACCOUNT BUSINESS
+@import 'account-business/header-A-B.scss';
+@import 'account-business/nav-A-B.scss';
+@import 'account-business/ficha-account-A-B.scss';
 
 
 @import 'form-registro/registro.scss';

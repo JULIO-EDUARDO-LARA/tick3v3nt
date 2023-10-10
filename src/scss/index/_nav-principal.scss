@@ -1,3 +1,7 @@
+// .navegacion-principal{
+//     margin: 0 auto;
+// }
+
 
 .menu-vertical {
     height: 0;
@@ -36,10 +40,9 @@
                     height: auto;
                 }
             }
-
         }
-    .container-burger-menu {
-        @include mqTablet{
+        .container-burger-menu {
+            @include mqTablet{
             display: none;
         }
         .icon-burger-menu{

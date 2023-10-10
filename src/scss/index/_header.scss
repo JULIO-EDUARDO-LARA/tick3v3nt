@@ -28,8 +28,11 @@
 .headerPrincipal__logo {
     width: 12rem;
     margin: auto;
+    display: flex;
+
     @include mqTablet {
-        width: 20rem;
+        min-width: 20rem;
+        height: 10.978rem;
     }
 }
 
