@@ -1,3 +1,5 @@
+//BOTON HEADER PRINCIPAL
+
 //( $bg_color, $font_color, $display, $alto, $ancho) {
 .headerPrincipal__btn{
     @include boton ($amarillo, $rojo, inline-block, 0.5rem, 1rem);
@@ -20,6 +22,17 @@
     
 
 }
+//BOTON DE CODIGO QR
+.btn__qr{
+    @include boton (rgba($verde, 0.5), $blanco, block, 0.5rem, 1rem);
+
+}
+.btn__qr--verde{
+    @include boton (rgba($azul_oscuro, 0.5), $blanco, block, 0.5rem, 1rem);
+
+}
+
+
 //BOTON GOOGLE SEARCH LOG IN
 .login__btnGoogle,
 .registro__btn--Google{

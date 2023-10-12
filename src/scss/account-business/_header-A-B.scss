@@ -1,0 +1,40 @@
+.headerPrincipal__header--userAccount {
+    padding: 1rem 0;
+}
+.headerPrincipal__logo--promotor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 10rem;
+     @include mqTablet{
+        img{
+            width: 15rem;
+
+        }
+    }
+} 
+
+.header__userAccount{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+
+    @include mqTablet{
+        flex-direction: row;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.seccion__navUser{
+    @include mqTablet {
+        width: 50%;
+    }
+    .nav__user{
+        @include mqTablet {
+            margin: 0 0 0 auto;
+        }       
+    }
+}
+

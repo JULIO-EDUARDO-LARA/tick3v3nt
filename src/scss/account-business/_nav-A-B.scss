@@ -1,26 +1,203 @@
 
+.nav__user{
+    margin: 0 auto;
+    width: 27rem;
+}
+
+.lista__item--2{
+    //ASOCIADO CON CLASE .lista__mostrar
+    width: 100%;
+    overflow: hidden;
+}
+.lista__item--1{
+    //ASOCIADO CON CLASE .lista__mostrar
+    width: 100%;
+    overflow: hidden;
+}
+.lista__item{
+    //ASOCIADO CON CLASE .lista__mostrar
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.lista__item--click{
+    cursor: pointer;
+}
 
 
-//CONTENEDOR DE MENU HAMBURGUESA
-.lista__btn {
-    a{
-        font-weight: bold;
-        color: rgb(197, 120, 120);
-    }
-   
+
+
+// ESTILOS PARA LOS ENLACES
+.lista__link--3{
+    height: 100%;
+    color: rgba($blanco, 0.7);
+    font-weight: bold;
+    font-size: 1.1rem;
+
+
+}
+.lista__link--2{
+    color: rgba($negro, 0.7);
+    font-weight: bold;
+}
+.lista__link {
+
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+
+//ESTILOS PARA BOTONES
+.lista__btn--3 {
+    height: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    overflow-wrap:break-word;
+    // text-overflow: ellipsis;
+    background-color: rgba($azul_claro, $alpha: 0.2);
+
+}
+.lista__btn--2 {
+    height: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba($blanco, $alpha: 0.5);
+
+}
+
+.lista__btn--1 {
+    position: relative;
     margin: auto;
     @include grid-col(3, 0rem);
     justify-content: center;
+    width: 70%;
+    padding: 0.3rem 0;
 
-    //MENU HAMBURGUESA
-    .lista__btnBurger{
+    @include mqDesktop {
+        height: 12rem;
+    }
+    .fichaPerfiles{
         margin: auto;
         grid-column: 2/3;
         width: 5rem;
     }
-    .icon_arrowBurger {
-        width: 1.6rem;
-        height: 1.6rem;
-        // margin: auto auto auto 0;
-    } 
+    //DISABLE CLICK EVENT FOR FICHA PERFILES
+    & > * {
+        pointer-events: none;
+      }
+}
+// ESTILOS DINAMICO CON JAVASCRIPT
+.icon__container--rotate{
+    .icon__container{
+        transform: rotate(90deg);
+    }
+}
+// ESTILOS PARA FLECHAS
+.icon__arrow,
+.icon__container{
+    pointer-events: none;
+
+}
+.icon__container {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+
+    .icon__arrow--2{
+        margin: auto;
+        width: .7rem;
+        height: .7rem;
+    }
+}
+
+.icon__container--1{
+    position: absolute;
+    margin: auto auto auto 0;
+    height: 100%; 
+    grid-column: 3/4;
+
+
+    .icon__arrow--1{
+        height: 1.2rem;
+
+    }
+
+}
+
+
+.lista__mostrar--2promotor{
+    // margin: 0 auto;
+    transition: height 0.4s;
+    height: 0;
+
+}
+//ESTILOS PARA CONTENEDOR DE LISTAS 
+.lista__mostrar--1promotor{
+    //ASOCIADO CON CLASE .lista__item
+    transition: height 0.4s;
+    height: 0;
+}
+.lista__mostrar--2regular{
+    //ASOCIADO CON CLASE .lista__item
+    transition: height 0.4s;
+    height: 0;
+
+}
+.lista__mostrar--1regular{
+    //ASOCIADO CON CLASE .lista__item
+    transition: height 0.4s;
+    height: 0;
+}
+
+.lista__mostrar--1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.lista__link--click{
+    pointer-events: none;
+}
+
+//ESTILOS HOVER -------------------------------------------
+
+//ESTILOS HOVER BACKGROUND
+.lista__btn--1{
+    &:hover{
+        background-color: rgba($blanco, $alpha: 0.5);
+        transition: bacbackground-color, 0.5s;
+    }
+}
+
+.lista__btn--2{
+    &:hover{
+        background-color: rgba($crimson, $alpha: 0.2);
+    }
+}
+
+.lista__btn--3{
+    &:hover{
+        background-color: rgba($azul_oscuro, $alpha: 1);
+    }
+}
+//ESTILOS HOVER FUENTE
+.lista__link--3{
+    &:hover{
+        color: rgba($blanco, $alpha: 1);
+    }
 }

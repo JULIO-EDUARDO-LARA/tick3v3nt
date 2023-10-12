@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--icono de flecha para pasar slider https://boxicons.com/-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!--LINKING FAVICON-->
     <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
@@ -20,58 +17,136 @@
     <!-- SECCION 1. SLIDER -->
     <section class="headerPrincipal">
         <!-- SECCION 1.1 HEADER -->
-        <header class="headerPrincipal__header utl-position-relative">
-            <div class="headerPrincipal__container contenedor">
-                <div class="headerPrincipal__logo">
+        <header class="headerPrincipal__header headerPrincipal__header--userAccount utl-position-relative">
+            <div class="header__userAccount contenedor">
+                <div class="headerPrincipal__logo--promotor">
                     <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
                 </div>
-                <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
-                <nav class="navegacion">
-                    <ul class="lista">
-                        <li class="lista__item">
-                            <div class="lista__btn">
-                                <img class="lista__btnBurger" src="../build/img/icon/burger-menu.png" alt="">
-                                <div class="icon_arrowBurger"><i class='bx bxs-chevrons-right'></i></div>
-                            </div>
-                            <ul class="lista__mostrar">
-
-                                <li class="lista__item">
-                                    <div class="lista__btn">
-                                        <a href="">Mis eventos</a>
+                <!-- SECCION 1.1.1 HEADER NAVEGACION PROMOTOR----------------------------------------------------------------------- -->
+                <section class="seccion__navUser seccion__navUser--promotor">
+                   
+                    <nav class="nav__user nav__user--promotor">
+                        <ul class="lista">
+                            <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
+                                <div class="lista__btn lista__btn--1 lista__btn--1click">
+                                    <section class="fichaPerfiles">
+                                        <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR -->
+                                        <div class="fichaPerfil__container fichaPerfil__container--promotor">
+                                            <figure class="fichaPerfil__imgContainer">
+                                                <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                                            </figure>
+                                            <div class="fichaPerfil__nombreCtaRegular">
+                                                <h3>Andamios y tarimas S.A.S</h3>
+                                            </div>
+                                        </div> 
+                                    </section>
+                                    <div class="icon__container icon__container--1">
+                                        <img class="icon_arrow icon_arrow--1" src="../build/img/buttons/flecha1.png" alt="">
                                     </div>
-                                </li>
+                                </div>
+                                <!-- LISTA CONTENEDORA PRINCIPAL DE LOS ITEMS -->
+                                <ul class="lista__mostrar lista__mostrar--1 lista__mostrar--1promotor">
 
-                                <li class="lista__item">
-                                    <div class="lista__btn">
-                                        <a href="">Administrar</a>
-                                        <div class=""><i class='bx bx-chevron-right'></i></div>                                
+                                    <li class="lista__item lista__item--click lista__item--2">
+                                        <div class="lista__btn lista__btn--2">
+                                            <a class="lista__link lista__link--2" href="">Panel Administrador</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="lista__item lista__item--click lista__item--click2 lista__item--2">
+                                        <div class="lista__btn lista__btn--2 lista__btn--2promotor lista__btn--2click">
+                                            <a class="lista__link lista__link--click lista__link--2" href="">Crear</a>
+                                            <div class="icon__container icon__container--2">
+                                                <img class="icon__arrow icon__arrow--2" src="../build/img/buttons/flecha2.png" alt="">
+                                            </div>                                
+                                        </div>
+                                        <ul class="lista__mostrar lista__mostrar--2 lista__mostrar--2promotor">
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Evento</a>
+                                                </div>
+
+                                            </li>
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Servicio</a>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav> 
+                </section>
+                <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR ------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+                <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR----------------------------------------------------------------------- -->
+                <section class="seccion__navUser seccion__navUser--regular">
+                    <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
+                    <nav class="nav__user nav__user--regular">
+                        <ul class="lista">
+                            <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
+
+                                <div class="lista__btn lista__btn--1 lista__btn--1regular lista__btn--1click">
+                                    <section class="fichaPerfiles">
+                                        <!-- SECCION 1.1.2.1 FICHA DE PERFIL REGULAR -->
+                                        <div class="fichaPerfil__container">
+                                            <figure class="fichaPerfil__imgContainer">
+                                                <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                                            </figure>
+                                            <div class="fichaPerfil__nombreCtaRegular">
+                                                <h3>Cristian Benitez</h3>
+                                            </div>
+                                        </div>
+                                    </section>  
+                                    <div class="icon__container icon__container--1">
+                                        <img class="icon__arrow icon__arrow--1" src="../build/img/buttons/flecha1.png" alt="">
                                     </div>
-                                    <ul class="lista__mostrar">
-                                        <li class="list__inside"><a href="">Perfil</a></li>
-                                        <li class="list__inside"><a href="">Informes</a></li>
-                                        <li class="list__inside"><a href="">Recursos Creados</a></li>
-                                    </ul>
-                                </li>
-                                <li class="lista__item">
-                                    <div class="lista__btn">
-                                        <a href="">Crear</a>
-                                        <div class=""><i class='bx bx-chevron-right'></i></div>                                
-                                    </div>
-                                    <ul class="lista__mostrar">
-                                        <li class="list__inside"><a href="">Evento</a></li>
-                                        <li class="list__inside"><a href="">Servicio</a></li>
-                                        <li class="list__inside"><a href="">Recursos Creados</a></li>
-                                    </ul>
-                                </li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+                                </div>
+                                <!-- LISTA CONTENEDORA PRINCIPAL DE LOS ITEMS -->
+                                <ul class="lista__mostrar lista__mostrar--1 lista__mostrar--1regular">
+                                    <li class="lista__item lista__item--click lista__item--2">
+                                        <div class="lista__btn lista__btn--2">
+                                            <a class="lista__link lista__link--2" href="">Mis eventos</a>
+                                        </div>
+                                    </li>
 
+                                    <li class="lista__item">
+                                        <div class="lista__btn lista__btn--2 lista__btn--2regular lista__btn--2click">
+                                            <a class="lista__link lista__link--click lista__link--2" href="">Administrar</a>
+                                            <div class="icon__container icon__container--2">
+                                                <img class="icon__arrow icon__arrow--2" src="../build/img/buttons/flecha2.png" alt="">
+                                            </div>                                
+                                        </div>
+                                        <ul class="lista__mostrar lista__mostrar--2 lista__mostrar--2regular">
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Cristian </a>
+                                                </div>
+                                            </li>
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Andamiosssssssssss y tarimas S.A.S</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-
-
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
 
 
 
@@ -118,8 +193,7 @@
                     ingresar 
                 </a> -->
                 <!-- SECCION 1.1.2 SECCION DE PERFILES -->
-                <section class="fichaPerfiles">
-                    <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR -->
+                <!-- <section class="fichaPerfiles">
                     <div class="fichaPerfil__container fichaPerfil__container--promotor">
                         <figure class="fichaPerfil__imgContainer">
                             <img src="../build/img/default/foto_bg_empresa.png" alt="">
@@ -128,7 +202,6 @@
                             <h3>Andamios y tarimas S.A.S</h3>
                         </div>
                     </div>                   
-                    <!-- SECCION 1.1.2.2 FICHA DE PERFIL REGULAR -->
                     <div class="fichaPerfil__container">
                         <figure class="fichaPerfil__imgContainer">
                             <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
@@ -138,7 +211,7 @@
                         </div>
                     </div>
 
-                </section>                
+                </section>                 -->
                
             </div>
 

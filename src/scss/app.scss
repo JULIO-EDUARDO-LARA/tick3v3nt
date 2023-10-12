@@ -17,18 +17,29 @@
 @import 'index/login.scss';
 @import 'index/footer.scss';
 
-//ARCHIVOS DE SASS - ACCOUNT
-@import 'account/header.scss';
-@import 'account/ficha-account.scss';
-@import 'account/nav-account.scss';
+
 
 //ARCHIVOS DE SASS - ACCOUNT BUSINESS
 @import 'account-business/header-A-B.scss';
 @import 'account-business/nav-A-B.scss';
 @import 'account-business/ficha-account-A-B.scss';
 
+//ARCHIVOS DE SASS - ACCOUNT
+@import 'account/header.scss';
+@import 'account/ficha-account.scss';
+@import 'account/nav-account.scss';
 
+//ARCHIVOS DE SASS - FORMULARIO DE REGISTRO
 @import 'form-registro/registro.scss';
+
+//ARCHIVOS DE SASS - FORMULARIO DE CONFIRMACION DE E-MAIL PARA REGISTRO
+@import 'form-registro-confirm/contenido-confirm.scss';
+
+
+//ARCHIVOS DE SASS - IMPRESION DE QR
+@import 'accounts-qr/qrMain.scss';
+
+
 
 @import 'base/utilidades.scss';
 
