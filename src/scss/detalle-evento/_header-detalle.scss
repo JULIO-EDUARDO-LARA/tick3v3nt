@@ -1,0 +1,51 @@
+//ESTILOS DEL INDEX DE SLIDE.SCSS
+
+.headerPrincipal--detalle {
+    background: rgba(185,179,235,1);
+    background: -moz-linear-gradient(left, rgba(185,179,235,1) 0%, rgba(133,65,114,1) 50%, rgba(69,106,199,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(185,179,235,1)), color-stop(50%, rgba(133,65,114,1)), color-stop(100%, rgba(69,106,199,1)));
+    background: -webkit-linear-gradient(left, rgb(33, 30, 55) 0%, rgba(133,65,114,1) 50%, rgba(69,106,199,1) 100%);
+    background: -o-linear-gradient(left, rgba(185,179,235,1) 0%, rgba(133,65,114,1) 50%, rgba(69,106,199,1) 100%);
+    background: -ms-linear-gradient(left, rgba(185,179,235,1) 0%, rgba(133,65,114,1) 50%, rgba(69,106,199,1) 100%);
+    background: linear-gradient(to right, rgb(137, 91, 86) 0.5%, rgba(133,65,114,1) 50%, rgba(69,106,199,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9b3eb', endColorstr='#456ac7', GradientType=1 );
+
+    padding: 3rem 0;
+    // position: relative;
+    // width: 100%;
+}
+
+.headerPrincipal__header {
+    top: 0;
+    // position: absolute;
+    // z-index: 20;
+    // width: 100%;
+    background-color: rgba($negro, $alpha: 0.2);
+    
+    // .headerPrincipal__container {
+    //     gap: 2rem;
+    //     display: flex;
+    //     flex-direction: column;
+    //     padding: 2rem;
+    //     .headerPrincipal__btn {
+    //         max-width: 20rem;
+    //         margin: 0 auto;
+    //     }
+    //     @include mqDesktop {
+    //         flex-direction: row;
+    //         align-items: center;
+    //     }
+    // }
+}
+
+// .headerPrincipal__logo {
+//     width: 12rem;
+//     margin: auto;
+//     display: flex;
+
+//     @include mqTablet {
+//         min-width: 20rem;
+//         height: 10.978rem;
+//     }
+// }
+

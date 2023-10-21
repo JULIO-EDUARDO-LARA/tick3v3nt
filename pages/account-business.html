@@ -13,15 +13,16 @@
 
     <title>account-business</title>
 </head>
-<body on load="myFunction()">
-    <!-- SECCION 1. SLIDER -->
+<body onload="myFunction()">
+    <!-- SECCION 1. HEADER PRINCIPAL -->
     <section class="headerPrincipal">
         <!-- SECCION 1.1 HEADER -->
         <header class="headerPrincipal__header headerPrincipal__header--userAccount utl-position-relative">
-            <div class="header__userAccount contenedor">
-                <div class="headerPrincipal__logo--promotor">
-                    <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
-                </div>
+            <div class="headerPrincipal__logo--users">
+                <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
+            </div>
+            <div class="header__usersAccount contenedor">
+
                 <!-- SECCION 1.1.1 HEADER NAVEGACION PROMOTOR----------------------------------------------------------------------- -->
                 <section class="seccion__navUser seccion__navUser--promotor">
                    
@@ -29,17 +30,11 @@
                         <ul class="lista">
                             <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
                                 <div class="lista__btn lista__btn--1 lista__btn--1click">
-                                    <section class="fichaPerfiles">
-                                        <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR -->
-                                        <div class="fichaPerfil__container fichaPerfil__container--promotor">
-                                            <figure class="fichaPerfil__imgContainer">
-                                                <img src="../build/img/default/foto_bg_empresa.png" alt="">
-                                            </figure>
-                                            <div class="fichaPerfil__nombreCtaRegular">
-                                                <h3>Andamios y tarimas S.A.S</h3>
-                                            </div>
-                                        </div> 
-                                    </section>
+                                    <!-- SECCION 1.1.2.1 CONTENEDOR DE IMAGEN DE PERFIL PROMOTOR -->
+                                    <figure class="lista__imgUsers">
+                                        <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                                    </figure>
+                                    <a class="lista__link lista__link--1 lista__btnTextValue">Opciones</a>
                                     <div class="icon__container icon__container--1">
                                         <img class="icon_arrow icon_arrow--1" src="../build/img/buttons/flecha1.png" alt="">
                                     </div>
@@ -80,13 +75,15 @@
                         </ul>
                     </nav> 
                 </section>
-                <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR ------------------------------------------------------------------------->
-
-
-
-
-
-
+                <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR ----------------------------------------->
+                <div class="fichaPerfil__container fichaPerfil__container--promotor">
+                    <figure class="fichaPerfil__imgContainer">
+                        <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                    </figure>
+                    <div class="fichaPerfil__nombreCtaRegular">
+                        <h3>Andamios y tarimas S.A.S sos lo mejor de este </h3>
+                    </div>
+                </div> 
 
 
                 <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR----------------------------------------------------------------------- -->
@@ -95,19 +92,12 @@
                     <nav class="nav__user nav__user--regular">
                         <ul class="lista">
                             <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
-
                                 <div class="lista__btn lista__btn--1 lista__btn--1regular lista__btn--1click">
-                                    <section class="fichaPerfiles">
-                                        <!-- SECCION 1.1.2.1 FICHA DE PERFIL REGULAR -->
-                                        <div class="fichaPerfil__container">
-                                            <figure class="fichaPerfil__imgContainer">
-                                                <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
-                                            </figure>
-                                            <div class="fichaPerfil__nombreCtaRegular">
-                                                <h3>Cristian Benitez</h3>
-                                            </div>
-                                        </div>
-                                    </section>  
+                                    <!-- SECCION 1.1.2.1 CONTENEDOR DE IMAGEN DE PERFIL REGULAR -->
+                                    <figure class="lista__imgUsers">
+                                        <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                                    </figure>
+                                    <a class="lista__link lista__link--1 lista__btnTextValue">Opciones</a>
                                     <div class="icon__container icon__container--1">
                                         <img class="icon__arrow icon__arrow--1" src="../build/img/buttons/flecha1.png" alt="">
                                     </div>
@@ -140,78 +130,21 @@
                                             </li>
                                         </ul>
                                     </li>
-
-                                    
                                 </ul>
                             </li>
                         </ul>
                     </nav>
                 </section>
-
-
-
-                <!-- <nav class="navegacion-principal">
-                    <div class="container__burgerMenu lista__item">
-                        <img class="burguerMenu" class src="../build/img/icon/burger-menu.png" alt="">
-                        <div class="icon__arrow icon__arrowBurguer"><i class='bx bxs-chevrons-right'></i></div>
+                
+                <!-- SECCION 1.1.2.1 FICHA DE PERFIL REGULAR ----------------------------------------->
+                <div class="fichaPerfil__container">
+                    <figure class="fichaPerfil__imgContainer">
+                        <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                    </figure>
+                    <div class="fichaPerfil__nombreCtaRegular">
+                        <h3>Cristian Benitez</h3>
                     </div>
-                    <ul class="lista__container">
-          
-                        <li class="lista__subContainer">
-                            <div class="lista__item">
-                                <a class="lista__itemLink" href="">mis eventos</a>
-                            </div>
-                        </li>
-     
-                        <li class="lista__subContainer">
-                            <div class="lista__item">
-                                <a class="lista__itemLink lista__itemLink--click">Administrar</a>
-                                <div class="icon__arrow"><i class='bx bx-chevron-right'></i></div>                                
-                            </div>
-                            <ul class="sublista__container">
-                                <li class="sublista__item"><a class="sublista__itemLink" href="">Perfil</a></li>
-                                <li class="sublista__item"><a class="sublista__itemLink" href="">Informes</a></li>
-                                <li class="sublista__item"><a class="sublista__itemLink" href="">Crear Recursos</a></li>
-                                <li class="sublista__item"><a class="sublista__itemLink" href="">Recursos Creados</a></li>
-                            </ul>
-                        </li>
-
-                      
-                        <li class="lista__subContainer">
-                            <div class="lista__item">
-                                <a class="lista__itemLink lista__itemLink--click">Crear</a>
-                                <div class="icon__arrow"><i class='bx bx-chevron-right'></i></div>
-                            </div>
-                            <ul class="sublista__container">
-                                <li class="sublista__item"><a class="sublista__itemLink" href="">Evento</a></li>
-                                <li class="sublista__item"><a class="sublista__itemLink" href="">Servicio</a></li>
-                            </ul>
-                        </li>      
-                    </ul>
-                </nav> -->
-                <!-- <a class="headerPrincipal__btn btnHeader" href="#">
-                    ingresar 
-                </a> -->
-                <!-- SECCION 1.1.2 SECCION DE PERFILES -->
-                <!-- <section class="fichaPerfiles">
-                    <div class="fichaPerfil__container fichaPerfil__container--promotor">
-                        <figure class="fichaPerfil__imgContainer">
-                            <img src="../build/img/default/foto_bg_empresa.png" alt="">
-                        </figure>
-                        <div class="fichaPerfil__nombreCtaRegular">
-                            <h3>Andamios y tarimas S.A.S</h3>
-                        </div>
-                    </div>                   
-                    <div class="fichaPerfil__container">
-                        <figure class="fichaPerfil__imgContainer">
-                            <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
-                        </figure>
-                        <div class="fichaPerfil__nombreCtaRegular">
-                            <h3>Cristian Benitez</h3>
-                        </div>
-                    </div>
-
-                </section>                 -->
+                </div>
                
             </div>
 
@@ -235,10 +168,329 @@
     </section>
 
     
-    <!-- SECCION 3. LISTADO EVENTOS -->
-    <main class="listado-eventos">
+<!-- SECCION 2. MIS PORTAFOLIO -->
+<main class="portafolio">
+    <h1 class="heading-contenido-portafolio">mis eventos</h1>
+    <div class="contenedor contenido-portafolio1 contenido-listado-eventos">
+        
+        <!-- TARJETA EVENTO # 1 -->
+        <div class="tarjeta-evento">
+            <div class="img-evento">
+                <img src="../images/poster_1.jpg" alt="">
+            </div>
+            <div class="info-evento">
+                <table class="metadatos-evento">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-eventos">INFORMACION DE TU EVENTO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-eventos">Estado: </td>
+                        <td class="td-metadata-eventos">Por Realizar</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-eventos">Inicia en: </td>
+                        <td class="td-metadata-eventos">1 dia, 4 horas, 2 min</td>
+                    </tr>
+                    <tr> <td class="td-metadata-eventos">Publicado: </td>
+                        <td class="td-metadata-eventos">03 feb 2023</td></tr> 
+                </table>
+                <table class="tabla-datos-evento">
+                    <tr> <th colspan="2" class="">PROM MONTESORI 2004</th></tr>
+                    <tr> <td>Fecha: </td><td>Mayo 13 2022</td></tr>
+                    <tr> <td>Hora: </td><td>8:00 pm</td></tr>
+                    <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td></tr> 
+                    <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
+                </table>
+            </div>
+        </div>
+        <!-- TARJETA EVENTO # 2 -->
+        <div class="tarjeta-evento">
+            <div class="img-evento">
+                <img src="../images/poster_2.jpg" alt="">
+            </div>
+            <div class="info-evento">
+                <table class="metadatos-evento">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-eventos">INFORMACION DE TU EVENTO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-eventos">Estado: </td>
+                        <td class="td-metadata-eventos">Por Realizar</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-eventos">Inicia en: </td>
+                        <td class="td-metadata-eventos">1 dia, 4 horas, 2 min</td>
+                    </tr>
+                    <tr> <td class="td-metadata-eventos">Publicado: </td>
+                        <td class="td-metadata-eventos">03 feb 2023</td></tr> 
+                </table>
+                <table class="tabla-datos-evento">
+                    <tr> <th colspan="2" class="">PROM MONTESORI 2004</th></tr>
+                    <tr> <td>Fecha: </td><td>Mayo 13 2022</td></tr>
+                    <tr> <td>Hora: </td><td>8:00 pm</td></tr>
+                    <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td></tr> 
+                    <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
+                </table>
+            </div>
+        </div>
+        <!-- TARJETA EVENTO # 3 -->
+        <div class="tarjeta-evento">
+            <div class="img-evento">
+                <img src="../images/poster_3.jpg" alt="">
+            </div>
+            <div class="info-evento">
+                <table class="metadatos-evento">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-eventos">INFORMACION DE TU EVENTO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-eventos">Estado: </td>
+                        <td class="td-metadata-eventos">Por Realizar</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-eventos">Inicia en: </td>
+                        <td class="td-metadata-eventos">1 dia, 4 horas, 2 min</td>
+                    </tr>
+                    <tr> <td class="td-metadata-eventos">Publicado: </td>
+                        <td class="td-metadata-eventos">03 feb 2023</td></tr> 
+                </table>
+                <table class="tabla-datos-evento">
+                    <tr> <th colspan="2" class="">PROM MONTESORI 2004</th></tr>
+                    <tr> <td>Fecha: </td><td>Mayo 13 2022</td></tr>
+                    <tr> <td>Hora: </td><td>8:00 pm</td></tr>
+                    <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td></tr> 
+                    <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
+                </table>
+            </div>
+        </div>
+        <!-- TARJETA EVENTO # 4 -->
+        <div class="tarjeta-evento">
+            <div class="img-evento">
+                <img src="../images/poster_4.jpg" alt="">
+            </div>
+            <div class="info-evento">
+                <table class="metadatos-evento">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-eventos">INFORMACION DE TU EVENTO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-eventos">Estado: </td>
+                        <td class="td-metadata-eventos">Por Publicar</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-eventos">Inicia en: </td>
+                        <td class="td-metadata-eventos">1 dia, 4 horas, 2 min</td>
+                    </tr>
+                    <tr> <td class="td-metadata-eventos">Publicado: </td>
+                        <td class="td-metadata-eventos">03 feb 2023</td></tr> 
+                </table>
+                <table class="tabla-datos-evento">
+                    <tr> <th colspan="2" class="">PROM MONTESORI 2004</th></tr>
+                    <tr> <td>Fecha: </td><td>Mayo 13 2022</td></tr>
+                    <tr> <td>Hora: </td><td>8:00 pm</td></tr>
+                    <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td></tr> 
+                    <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<!-- SECCION 3. MIS SERVICIOS -->
 
-    </main>
+    <!-- contenido-listado-eventos es una clae del index -->
+    <h1 class="heading-contenido-portafolio">mis servicios</h1>
+    <section class="contenedor contenido-portafolio2 contenido-listado-eventos">
+        
+
+        <!-- TARGETA SERVICIO # 1 -->
+        <div class="tarjeta-evento targeta-evento--servicio">
+            <div class="img-evento">
+                <img src="../images/posters-servicios/img_1.jpg" alt="">
+            </div>
+            <div class="info-evento">
+
+                <table class="metadatos-servicio">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-servicio">INFORMACION DE TU SERVICIO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-servicio">Estado: </td>
+                        <td class="td-metadata-servicio">Por Publicar</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">No Solicitudes: </td>
+                        <td class="td-metadata-servicio">0</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">Fecha Public: </td>
+                        <td class="td-metadata-servicio">Pendiente</td>
+                    </tr> 
+                    <tr> 
+                        <td class="td-metadata-servicio">Plazo Public: </td>
+                        <td class="td-metadata-servicio">Pendiente</td>
+                    </tr> 
+                </table>
+                <table class="tabla-datos-servicio">
+                    <tr>
+                        <th colspan="2" class="th-datos-servicio">BANQUETES</th>
+                    </tr>
+                    <tr>
+                        <td class="td-datos-servicio">Descripcion: </td>
+                        <td class="td-datos-servicio">Brindamos montaje, comida, carpas, ambientación, locaciones amplias, mobiliario....</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="td-datos-servicio"> <a href="">ver detalle</a></td>
+                        <a href=""></a>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- TARGETA SERVICIO # 2 -->
+        <div class="tarjeta-evento targeta-evento--servicio">
+            <div class="img-evento">
+                <img src="../images/posters-servicios/img_2.jpg" alt="">
+            </div>
+            <div class="info-evento">
+
+                <table class="metadatos-servicio">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-servicio">INFORMACION DE TU SERVICIO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-servicio">Estado: </td>
+                        <td class="td-metadata-servicio">Publicado</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">No Solicitudes: </td>
+                        <td class="td-metadata-servicio">13</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">Fecha Public: </td>
+                        <td class="td-metadata-servicio">02 feb 2023</td>
+                    </tr> 
+                    <tr> 
+                        <td class="td-metadata-servicio">Plazo Public: </td>
+                        <td class="td-metadata-servicio">9 dias</td>
+                    </tr> 
+                </table>
+                <table class="tabla-datos-servicio">
+                    <tr>
+                        <th colspan="2" class="th-datos-servicio">CONSULTORIAS</th>
+                    </tr>
+                    <tr>
+                        <td class="td-datos-servicio">Descripcion: </td>
+                        <td class="td-datos-servicio">Brindamos montaje, comida, carpas, ambientación, locaciones amplias, mobiliario....</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="td-datos-servicio"> <a href="">ver detalle</a></td>
+                        <a href=""></a>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- TARGETA SERVICIO # 3 -->
+        <div class="tarjeta-evento targeta-evento--servicio">
+            <div class="img-evento">
+                <img src="../images/posters-servicios/img_3.jpg" alt="">
+            </div>
+            <div class="info-evento">
+
+                <table class="metadatos-servicio">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-servicio">INFORMACION DE TU SERVICIO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-servicio">Estado: </td>
+                        <td class="td-metadata-servicio">Publicado</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">No Solicitudes: </td>
+                        <td class="td-metadata-servicio">13</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">Fecha Public: </td>
+                        <td class="td-metadata-servicio">02 feb 2023</td>
+                    </tr> 
+                    <tr> 
+                        <td class="td-metadata-servicio">Plazo Public: </td>
+                        <td class="td-metadata-servicio">9 dias</td>
+                    </tr> 
+                </table>
+                <table class="tabla-datos-servicio">
+                    <tr>
+                        <th colspan="2" class="th-datos-servicio">PLANIFICACION DE EVENTOS</th>
+                    </tr>
+                    <tr>
+                        <td class="td-datos-servicio">Descripcion: </td>
+                        <td class="td-datos-servicio">Brindamos montaje, comida, carpas, ambientación, locaciones amplias, mobiliario....</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="td-datos-servicio"> <a href="">ver detalle</a></td>
+                        <a href=""></a>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- TARGETA SERVICIO # 4 -->
+        <div class="tarjeta-evento targeta-evento--servicio">
+            <div class="img-evento">
+                <img src="../images/posters-servicios/img_4.jpg" alt="">
+            </div>
+            <div class="info-evento">
+
+                <table class="metadatos-servicio">
+                    <tr> 
+                        <th colspan="2" class="th-metadata-servicio">INFORMACION DE TU SERVICIO</th>
+                        
+                    </tr>    
+                    <tr> 
+                        <td class="td-metadata-servicio">Estado: </td>
+                        <td class="td-metadata-servicio">Publicado</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">No Solicitudes: </td>
+                        <td class="td-metadata-servicio">13</td>
+                    </tr>
+                    <tr> 
+                        <td class="td-metadata-servicio">Fecha Public: </td>
+                        <td class="td-metadata-servicio">02 feb 2023</td>
+                    </tr> 
+                    <tr> 
+                        <td class="td-metadata-servicio">Plazo Public: </td>
+                        <td class="td-metadata-servicio">9 dias</td>
+                    </tr> 
+                </table>
+                <table class="tabla-datos-servicio">
+                    <tr>
+                        <th colspan="2" class="th-datos-servicio">PUBLICIDAD Y MATERIALES</th>
+                    </tr>
+                    <tr>
+                        <td class="td-datos-servicio">Descripcion: </td>
+                        <td class="td-datos-servicio">Brindamos montaje, comida, carpas, ambientación, locaciones amplias, mobiliario....</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="td-datos-servicio"> <a href="">ver detalle</a></td>
+                        <a href=""></a>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
 
     <!-- SECCION 4. FOOTER -->
     <footer class="footer">

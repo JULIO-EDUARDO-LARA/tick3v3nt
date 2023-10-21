@@ -13,15 +13,16 @@
 
     <title>qr</title>
 </head>
-<body on load="myFunction()">
-    <!-- SECCION 1. SLIDER -->
+<body onload="myFunction()">
+    <!-- SECCION 1. HEADER PRINCIPAL -->
     <section class="headerPrincipal">
         <!-- SECCION 1.1 HEADER -->
         <header class="headerPrincipal__header headerPrincipal__header--userAccount utl-position-relative">
-            <div class="header__userAccount contenedor">
-                <div class="headerPrincipal__logo--promotor">
-                    <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
-                </div>
+            <div class="headerPrincipal__logo--users">
+                <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
+            </div>
+            <div class="header__usersAccount contenedor">
+
                 <!-- SECCION 1.1.1 HEADER NAVEGACION PROMOTOR----------------------------------------------------------------------- -->
                 <section class="seccion__navUser seccion__navUser--promotor">
                    
@@ -29,17 +30,11 @@
                         <ul class="lista">
                             <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
                                 <div class="lista__btn lista__btn--1 lista__btn--1click">
-                                    <section class="fichaPerfiles">
-                                        <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR -->
-                                        <div class="fichaPerfil__container fichaPerfil__container--promotor">
-                                            <figure class="fichaPerfil__imgContainer">
-                                                <img src="../build/img/default/foto_bg_empresa.png" alt="">
-                                            </figure>
-                                            <div class="fichaPerfil__nombreCtaRegular">
-                                                <h3>Andamios y tarimas S.A.S</h3>
-                                            </div>
-                                        </div> 
-                                    </section>
+                                    <!-- SECCION 1.1.2.1 CONTENEDOR DE IMAGEN DE PERFIL PROMOTOR -->
+                                    <figure class="lista__imgUsers">
+                                        <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                                    </figure>
+                                    <a class="lista__link lista__link--1 lista__btnTextValue">Opciones</a>
                                     <div class="icon__container icon__container--1">
                                         <img class="icon_arrow icon_arrow--1" src="../build/img/buttons/flecha1.png" alt="">
                                     </div>
@@ -80,13 +75,15 @@
                         </ul>
                     </nav> 
                 </section>
-                <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR ------------------------------------------------------------------------->
-
-
-
-
-
-
+                <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR ----------------------------------------->
+                <div class="fichaPerfil__container fichaPerfil__container--promotor">
+                    <figure class="fichaPerfil__imgContainer">
+                        <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                    </figure>
+                    <div class="fichaPerfil__nombreCtaRegular">
+                        <h3>Andamios y tarimas S.A.S sos lo mejor de este </h3>
+                    </div>
+                </div> 
 
 
                 <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR----------------------------------------------------------------------- -->
@@ -95,19 +92,12 @@
                     <nav class="nav__user nav__user--regular">
                         <ul class="lista">
                             <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
-
                                 <div class="lista__btn lista__btn--1 lista__btn--1regular lista__btn--1click">
-                                    <section class="fichaPerfiles">
-                                        <!-- SECCION 1.1.2.1 FICHA DE PERFIL REGULAR -->
-                                        <div class="fichaPerfil__container">
-                                            <figure class="fichaPerfil__imgContainer">
-                                                <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
-                                            </figure>
-                                            <div class="fichaPerfil__nombreCtaRegular">
-                                                <h3>Cristian Benitez</h3>
-                                            </div>
-                                        </div>
-                                    </section>  
+                                    <!-- SECCION 1.1.2.1 CONTENEDOR DE IMAGEN DE PERFIL REGULAR -->
+                                    <figure class="lista__imgUsers">
+                                        <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                                    </figure>
+                                    <a class="lista__link lista__link--1 lista__btnTextValue">Opciones</a>
                                     <div class="icon__container icon__container--1">
                                         <img class="icon__arrow icon__arrow--1" src="../build/img/buttons/flecha1.png" alt="">
                                     </div>
@@ -140,13 +130,21 @@
                                             </li>
                                         </ul>
                                     </li>
-
-                                    
                                 </ul>
                             </li>
                         </ul>
                     </nav>
                 </section>
+                
+                <!-- SECCION 1.1.2.1 FICHA DE PERFIL REGULAR ----------------------------------------->
+                <div class="fichaPerfil__container">
+                    <figure class="fichaPerfil__imgContainer">
+                        <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                    </figure>
+                    <div class="fichaPerfil__nombreCtaRegular">
+                        <h3>Cristian Benitez</h3>
+                    </div>
+                </div>
                
             </div>
 
@@ -155,27 +153,68 @@
     </section>
 
     
-    <!-- SECCION 3. LISTADO EVENTOS -->
+    <!-- SECCION 3. CONTENIDO PRINCIPAL  -->
     <main class="qrMain">
+       
         <section class="qrMain__container contenedor">
-            <div class="qrMain__titulo">
-                <h2 class="qrMain__h2"></h2>
-            </div>
+
             <div class="qrTicket">
                 <figure class="qrTicket__imgContainer">
                     <img src="../build/img/qr/qr.png" alt="">
                 </figure>
                 <div class="qrTicket__btnContainer">
-                    <a class="qrTicket__btnContainer btn__qr">Descargar</a>
-                    <a class="qrTicket__btnContainer btn__qr--verde">Imprimir</a>
+                    <figure class="qrTicket__btnIcon">
+                        <img src="../build/img/buttons/descargar.png" alt="">
+                    </figure>
+                    <a class="qrTicket__btn btn__qr">
+                        Descargar
+                    </a>
+                    <figure class="qrTicket__btnIcon">
+                        <img src="../build/img/buttons/imprimir.png" alt="">
+                    </figure>
+                    <a class="qrTicket__btn btn__qr--verde">
+                        Imprimir
+                    </a>
                 </div>
 
             </div>
             <div class="qrTicket qrTicket--resumen">
+                <div class="qrMain__tituloContainer">
+                    <h2 class="qrMain__titulo">Primavera Sound Bogotá 2023 <span>detalle de tú entrada</span> </h2>
+                </div>
+                <section class="detalleQr">
+                    <div  class="detalleQr_container">
+                        <table class="detalleQr_datos">
+                            <tr class="detalleQr_dato">
+                                <td class="detalleQr_item"><p>identificacion: </p></td>
+                                <td class="detalleQr_valor"><p>40596788</p></td>
+                            </tr>
+                            <tr class="detalleQr_dato">
+                                <td class="detalleQr_item"><p>Nombre: </p></td>
+                                <td class="detalleQr_valor"><p>Andres</p></td>
+                            </tr>
+                            <tr class="detalleQr_dato">
+                                <td class="detalleQr_item"><p>Apellidos: </p></td>
+                                <td class="detalleQr_valor"><p>Ceron</p></td>
+                            </tr>
+                            <tr class="detalleQr_dato">
+                                <td class="detalleQr_item"><p>Costo: </p></td>
+                                <td class="detalleQr_valor"><p>$ 0</p></td>
+                            </tr>
+                            <tr class="detalleQr_dato">
+                                <td class="detalleQr_item"><p>Direccion: </p></td>
+                                <td class="detalleQr_valor"><p>Calle 10 # 5-51</p></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </section>
 
             </div>
 
-        </section>
+        </section>            
+  
+
     </main>
 
     <!-- SECCION 4. FOOTER -->
@@ -209,8 +248,8 @@
                     <div class="capsula-tarjeta-footer">
                         <h2 class="titulo-targeta-footer">ciudades</h2>
                         <ul>
-                            <li><a href="">Que hacer en bogota</a></li>
-                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">   </a></li>
+                            <li><a href="">   </a></li>
                             <li><a href="">Que hacer en Medellin</a></li>
                             <li><a href="">Conciertos en Santa Marta</a></li>
                             <li><a href="">Conciertos en Cartagena</a></li>

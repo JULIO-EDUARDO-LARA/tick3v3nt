@@ -17,12 +17,22 @@
 @import 'index/login.scss';
 @import 'index/footer.scss';
 
+//ARCHIVOS DE SASS - DETALLE EVENTO
+@import 'detalle-evento/header-detalle.scss';
+@import 'detalle-evento/slide-detalle.scss';
+@import 'detalle-evento/informativos.scss';
+@import 'detalle-evento/detalle-evento.scss';
 
+//ARCHIVOS DE SASS - COMPRA DE ENTRADA EVENTO
+@import 'comprar-ticket/info-para-compra.scss';
 
 //ARCHIVOS DE SASS - ACCOUNT BUSINESS
+@import 'account-business/ficha-account-A-B.scss';
 @import 'account-business/header-A-B.scss';
 @import 'account-business/nav-A-B.scss';
-@import 'account-business/ficha-account-A-B.scss';
+
+//ARCHIVOS DE SASS - GESTIONAR CONTENIDOS DE PROMOTOR
+@import 'gestionar/gestionar.scss';
 
 //ARCHIVOS DE SASS - ACCOUNT
 @import 'account/header.scss';
@@ -36,10 +46,18 @@
 @import 'form-registro-confirm/contenido-confirm.scss';
 
 
+//ARCHIVOS DE SASS - CONTROLAR INGRESO
+@import 'control-ingreso/control-ingreso.scss';
+
 //ARCHIVOS DE SASS - IMPRESION DE QR
 @import 'accounts-qr/qrMain.scss';
 
+//ARCHIVOS DE SASS - PAGINA CREAR-EVENTO
+@import 'form-crear-evento/form-crear-evento.scss';
+@import 'form-crear-evento/form-btn-desplegable.scss';
+@import 'form-crear-evento/form-btn-enviar.scss';
 
-
+//ARCHIVOS DE SASS - UTILIDADES
 @import 'base/utilidades.scss';
+
 

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono de flecha para pasar slider https://boxicons.com/-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--LINKING FAVICON-->
+    <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
+    <!--LINKING STYLESHEETS-->
+    <link rel="stylesheet" href="../build/css/app.css">
+
+    <!-- PARA MAPAS DE GOOGLE--INICIO -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel='stylesheet' href='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css'>
+
+     <!-- Script Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+    <script src='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js'></script>
+    <!-- PARA MAPAS DE GOOGLE--CIERRE -->
+
+
+
+    <title>tickevent detalle</title>
+</head>
+<body>
+    <!-- SECCION 1. SLIDER -->
+    <section class="headerPrincipal headerPrincipal--detalle">
+        <!-- SECCION 1.1 HEADER -->
+        <header class="headerPrincipal__header">
+            <div class="headerPrincipal__container contenedor">
+                <div class="headerPrincipal__logo">
+                    <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
+                </div>
+                <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
+                <nav class="navegacion-principal">
+                    <ul class="menu-horizontal">
+                        <li class="item-hori">
+                            <div class="container-burger-menu">
+                                <img class="icon-burger-menu" class src="../build/img/icon/burger-menu.png" alt="">
+                                <!-- <p>Desplegar</p> -->
+                            </div>
+                            <ul class="menu-vertical menu-vertical--hover">
+
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="nosotros">Nosotros</a>
+                                </li>
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="servicios">Servicios</a>
+                                </li>
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="comunidad">Comunidad</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="headerPrincipal__btn btnHeader" href="#">
+                    ingresar 
+                </a>
+            </div>
+         
+        </header>
+        <div class="container-slider container__slider--detalle">
+            <div class="btn-left"><i class='bx bxs-chevrons-left'></i></div>
+            <div class="btn-right"><i class='bx bxs-chevrons-right'></i></div>
+            <div class="transparencia transparencia--detalle">
+    
+            </div>
+        
+            <figure class="slider" id="slider">
+                <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_5.jpg" alt="">
+                </section>
+                <!-- <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_2.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_3.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_4.jpg" alt="">
+                </section> -->
+            </figure>
+        </div>  
+
+    </section>
+
+    <!-- SECCION . INFORMATIVOS PARA DETALLE DE EVENTO -->
+    <section class="informativosDetalle">
+        <div class="informativosDetalle__container contenedor">
+            <div class="informativosDetalle__textContainer">
+                <h1 class="informativosDetalle__text">CONFERENCIA MEEETUP 2023</h1>
+            </div>
+            <figure class="informativosDetalle__imgContainer">
+                <h2 class="informativosDetalle__imgText">No imprimas tu boleta, tu celular es suficiente <span>cuida el medio ambiente</span> </h2>
+                <img class="informativosDetalle__img" src="../build/img/informativo/infirmativo_1-removebg-preview.png" alt="" >
+            </figure>
+        </div>
+        
+    </section>
+
+    
+    <!-- SECCION . DETALLE DEL EVENTO -->
+    <main class="detalleEvento">
+        <section class="detalleEvento__container contenedor">
+
+            <!-- SECCION . BANNER PUBLICITARIO DEL EVENTO -->
+            <div class="bannerEvento">
+                <!-- SECCION . CONTENEDOR DE IMAGEN DEL EVENTO -->
+                <figure class="bannerEvento__imgContainer">
+                    <img class="bannerEvento__img" src="../build/img/banner/banner_5.jpg" alt="" >
+                </figure>
+            </div>
+
+            <!-- SECCION . FICHA DE INFORMACION DETALLADA DEL EVENTO -->
+            <div class="bannerEvento bannerEvento--informacion">
+                <!-- SECCION . TABLA DE INFORMACION DETALLADA DEL EVENTO -->
+                <table class="bannerEvento_datos">
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">Estado: </p>
+                        </td>
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/candado_abierto.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">Disponible</p>
+                        </td>
+                    </tr>
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">Plazas: </p>
+                        </td>
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/plazas_disponibles.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">45</p>
+                        </td>
+                    </tr>
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">fecha: </p>
+                        </td>
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/fecha.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">Sábado, 14 de Octubre de 2023</p>
+                        </td>
+                    </tr>
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">Hora: </p>
+                        </td>
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/hora.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">11:00PM</p>
+                        </td>
+                    </tr>
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">Lugar: </p>
+                        </td>                       
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/lugar.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">Centro de convenciones </p>
+                        </td>
+                    </tr>
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">Ciudad: </p>
+                        </td>                       
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/ciudad.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">Bogota</p>
+                        </td>
+                    </tr>
+                    <tr class="bannerEvento_seccion">
+                        <td class="bannerEvento_item">
+                            <p class="bannerEvento_textItem">Precio: </p>
+                        </td>                       
+                        <td class="bannerEvento_icon">
+                            <img src="../src/img/icon/valor.png" alt="">
+                        </td>
+                        <td class="bannerEvento_value">
+                            <p class="bannerEvento_textValue">$ 55.000 COP</p>
+                        </td>
+                    </tr>
+                </table>
+                <div class="bannerEvento_mapaContainer">
+                    <div class="bannerEvento_mapa" id="map" style="height: 300px;"></div>                    
+                </div>
+                <div class="bannerEvento_btnContainer">
+                    <a class="btn_azulOscuro--inlineBlockEstatic" href="">comprar entrada</a>
+                </div>
+            
+            </div>
+            <!-- SECCION . INFORMACION EXTENDIDA DEL EVENTO -->
+            <div class="bannerEvento bannerEvento--infoAdicional">
+                <!-- SECCION . CONTENEDOR DE IMAGEN DEL EVENTO -->
+                <div class="infoAdicional">
+                    <div class="infoAdicional__h2Container">
+                        <h2 class="infoAdicional__h2">informacion detallada del evento</h2>
+                    </div>
+                    <p class="infoAdicional__paragraph" >
+                        Proporcionaré un curso básico de budismo fácil de entender. Si desea unirse a estas conferencias, ¿se uniría a este grupo de WhatsApp y al grupo de Skype?, también llenen por favor el formulario debajo, gracias!!!https://chat.whatsapp.com/FstwesGxrfEGZbo9c6ecSR https://join.skype.com/XXXIW6bjqAs3https://bit.ly/3h9MWaG Puedes aprender los conceptos básicos del propósito de la vida que se enseña en el budismo.
+                    </p>
+                    <p class="infoAdicional__paragraph" >
+                       Haga clic aquí para ver el primer tema (1) Sobre el budismo, la iluminación y la verdadera felicidad que se enseñan en el budismo.Aquellos que quieran seguir aprendiendo pueden aprender los siguientes contenidos.(2) Visión budista del universo.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- SECCION . SCRIPT PARA MAPGOOGLE -->
+    <script>
+
+        // Nominatim does not map some actual addresses
+        'use strict';
+
+        // Map
+        const map = L.map('map', {
+        center: [4.716713772370445, -74.06662448808277],
+        zoom: 10,               
+        });
+
+        // Open Street Map 
+        const osm = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&#169; <a href="//www.openstreetmap.org/">OpenStreetMap</a>'
+        }).addTo(map);
+
+        // container for address search results
+        const addressSearchResults = new L.LayerGroup().addTo(map);
+
+        /*** Geocoder ***/
+        // OSM Geocoder
+        const osmGeocoder = new L.Control.geocoder({
+            collapsed: false,
+            position: 'topright',
+            text: 'Address Search',
+            placeholder: 'Enter street address',
+        defaultMarkGeocode: false
+        }).addTo(map);    
+
+        // handle geocoding result event
+        osmGeocoder.on('markgeocode', e => {
+        // to review result object
+        console.log(e);
+        // coordinates for result
+        const coords = [e.geocode.center.lat, e.geocode.center.lng];
+        // center map on result
+        map.setView(coords, 16);
+        // popup for location
+        // todo: use custom icon
+        const resultMarker = L.marker(coords).addTo(map);
+        // add popup to marker with result text
+        resultMarker.bindPopup(e.geocode.name).openPopup();
+        });
+
+        const marker = L.marker([4.650476116279529, -74.08714900414853]).addTo(map)
+            .bindPopup('<b>Posicionemos Tu Evento</b><br />Establece la ubicacion de tu evento.').openPopup();
+/*
+        const popup = L.popup()
+            .setLatLng([4.716713772370445, -74.06662448808277])
+            .setContent('Tickevent siempre contigo')
+            .openOn(map);
+*/
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                .openOn(map);
+        }
+
+
+        map.on('click', function (e) {
+        marker.setLatLng(e.latlng);
+        updateLatLng(marker.getLatLng().lat, marker.getLatLng().lng);
+        });
+        function updateLatLng(lat,lng,reverse) {
+        if(reverse) {
+        marker.setLatLng([lat,lng]);
+        map.panTo([lat,lng]);
+        } else {
+        document.getElementById('latitude').value = marker.getLatLng().lat;
+        document.getElementById('longitude').value = marker.getLatLng().lng;
+        map.panTo([lat,lng]);
+        }
+        }
+    </script>
+
+    <!-- SECCION 4. FOOTER -->
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <section class="footer-info">
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">tickevent</h2>
+                        <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Funcionamiento</a></li>
+                            <li><a href="">Porque elegirnos</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">mis tickets</h2>
+                        <ul>
+                            <li><a href="">Reenviar tickets</a></li>
+                            <li><a href="">cancelar tickets</a></li>
+                            <li><a href="">soporte tecnico</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">ciudades</h2>
+                        <ul>
+                            <li><a href="">Que hacer en bogota</a></li>
+                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">Que hacer en Medellin</a></li>
+                            <li><a href="">Conciertos en Santa Marta</a></li>
+                            <li><a href="">Conciertos en Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">siguenos</h2>
+                        <ul>
+                            <li>
+                                <figure class="icono-redes icono-redes-fb"><img src="../build/img/icon/facebook.png" alt=""></figure>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <figure class="icono-redes icono-redes-i"><img src="../build/img/icon/instagram.png" alt=""></figure>
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="derechos-autor">
+                <p>2023 © Tickevent. Todos los Derechos Reservados.</p>
+                <p>Política de privacidad    |    términos y condiciones</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SECCION 5. LOGIN -->
+    <section class="login">
+        <div class="login__contenido">
+            <a class="login__cierre" href="">cerrar [X]</a>
+
+            <h2 class="login__heading">Iniciar Sesión 
+                <span>¡ Bienvenido !</span> 
+            </h2>
+            <form class="login__formulario">
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> Porfavor ingresa tus credenciales</legend>
+                    <label for="correo">E-mail</label>
+                    <input type="email" name="correo">
+                    <label for="correo">Contraseña</label>
+                    <input type="password" name="correo">
+                     <button class="login___btnIngresar" type="submit">Iniciar sesion</button>
+                </fieldset>
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> o Inicia sesión con:</legend>
+                    <a class="login__btnGoogle" href="">
+                        <div class="login__img--GoogleContainer">
+                            <img src="../build/img/icon/google-search.png" alt="">
+                        </div>
+                        <p>Google</p>
+                    </a>
+                </fieldset>
+                <p class="login__paragraph">No tienes una cuenta? <a href="">Registrate</a> </p>  
+            </form>
+            
+        </div>
+        <div class="login__contenido">
+
+            <div class="login__petContainer">
+                <img src="../build/img/pet-corp/tapar_ojos/1.png" alt="">
+            </div>
+        </div>
+
+    </section> 
+
+    <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
+
+    <script src="../build/js/bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono de flecha para pasar slider https://boxicons.com/-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--LINKING FAVICON-->
+    <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
+    <!--LINKING STYLESHEETS-->
+    <link rel="stylesheet" href="../build/css/app.css">
+
+    <!-- PARA MAPAS DE GOOGLE--INICIO -->
+
+    <!-- PARA MAPAS DE GOOGLE--CIERRE -->
+
+
+
+    <title>tickevent detalle</title>
+</head>
+<body>
+    <!-- SECCION 1. SLIDER -->
+    <section class="headerPrincipal headerPrincipal--detalle">
+        <!-- SECCION 1.1 HEADER -->
+        <header class="headerPrincipal__header utl-position-relative">
+            <!-- <div class="headerPrincipal__container contenedor"> -->
+                <div class="headerPrincipal__logo">
+                    <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
+                </div>
+                <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
+                <nav class="navegacion-principal">
+                    <ul class="menu-horizontal">
+                        <li class="item-hori">
+                            <div class="container-burger-menu">
+                                <img class="icon-burger-menu" class src="../build/img/icon/burger-menu.png" alt="">
+                            </div>
+                            <ul class="menu-vertical menu-vertical--hover">
+
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="nosotros">Nosotros</a>
+                                </li>
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="servicios">Servicios</a>
+                                </li>
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="comunidad">Comunidad</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <a class="headerPrincipal__btn btnHeader" href="#">
+                    ingresar 
+                </a> -->
+            </div>
+         
+        </header>
+        <!-- <div class="container-slider container__slider--detalle">
+            <div class="btn-left"><i class='bx bxs-chevrons-left'></i></div>
+            <div class="btn-right"><i class='bx bxs-chevrons-right'></i></div>
+            <div class="transparencia transparencia--detalle">
+    
+            </div>
+        
+            <figure class="slider" id="slider">
+                <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_5.jpg" alt="">
+                </section> -->
+                <!-- <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_2.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_3.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img class="img" src="../build/img/eventos/poster_4.jpg" alt="">
+                </section> -->
+            <!-- </figure> -->
+        <!-- </div>   -->
+
+    </section>
+
+    
+    <!-- SECCION . COMPRA TICKET -->
+    <main class="mainComprarTicket">
+        <div class="mainComprarTicket__container contenedor">
+
+            <!-- SECCION . SECCION PRINCIPAL DE RESUMEN -->
+            <aside class="fichaResumen">
+                <figure class="fichaResumen__imgContainer">
+                    <img class="fichaResumen__imgContainer" src="../build/img/banner/banner_5.jpg" alt="">
+                </figure>
+                <div class="fichaResumen__h2Container">
+                    <h2 class="fichaResumen__h2">RESUMEN DE COMPRA</h2>
+                </div>
+
+                <div class="numTickets__selectContainer">
+                   
+                    <div class="numTickets__selectSeccion" >
+                        <div class="numTickets__borde">
+
+                            <div>
+                                <p>entradas</p>
+                            </div>
+                            <div class="numTicketsBox__Container">
+                                <a class="btn__down">-</a>
+        
+                                <p class="numTickets__container">
+                                    <a class="numTickets">1</a>
+                                </p>
+                                <a class="btn__up">+</a>
+                            </div>
+        
+                            <div class="numTickets__textContainer">
+                                <p class="numTickets__text">valor</p>
+                            </div>
+                            <div class="numTickets__textContainer">
+                                <p class="numTickets__text">$ 110.000</p>
+                            </div>
+                            <a class="numTickets__btn btn__rojo--inlineBlockEstatic">Reservar</a>
+    
+                        </div>                            
+                    </div>
+                    <div class="tablaContainer">
+                        <!-- SECCION . TABLA DE RESUMEN DE COMPRA -->
+                        <table class="tabla__resumenCompra">
+                            <!--  .BODY TABLA -->
+                            <tbody class="tbody">
+                                <!--  .SUB-ENCABEZADO TABLA -->
+                                <tr class="trth__seccionItem">
+                                    <th class="th__container" colspan="2">
+                                        <a class="th__text">
+                                            Producto
+                                        </a>
+                                    </th>                                
+                                </tr>
+                                <tr class="trtd__seccionItem">
+                                    <td class="td__text td__text--item">
+                                        <a class="">nombre: </a>
+                                    </td>
+                                    <td class="td__text td__text--value">
+                                        <a class="">Conferencia MeetUp 2023</a>
+                                    </td>
+                                </tr>
+                                <!--  .SUB-ENCABEZADO TABLA -->
+                                <tr class="trth__seccionItem">         
+                                    <th class="th__container" colspan="2">
+                                        <a class="th__text th__text--item">
+                                            Tipo de Entrada
+                                        </a>
+                                    </th>                                
+                                </tr>
+                                <tr class="trtd__seccionItem">
+                                    <td class="td__container">
+                                        <a class="td__text">ticket general x</a>
+                                        <a class="td__text" id="numTickets">2</a>
+                                        <a class="td__text">und</a>
+                                    </td>
+                                    <td class="td__container">
+                                        <a class="td__text td__text--value">$ 110.000</a>
+                                    </td>
+                                </tr>
+                                <!--  .SUB-ENCABEZADO TABLA -->
+                                <tr class="trth__seccionItem">
+                                    <th colspan="2">
+                                        <a class="th__text">
+                                            Modo de entrega
+                                        </a>
+                                    </th>                                
+                                </tr>
+                                <tr class="trtd__seccionItem">
+                                    <td class="td__container">
+                                        <a class="td__text">correo electronico</a>
+                                    </td>
+                                    <td class="td__container">
+                                        <a class="td__text td__text--value">julioelara@gmail.com</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+    
+    
+                        </table>
+                    </div> 
+
+                </div>
+            </aside>
+
+            <section class="fichaResumen fichaResumen--formCompra">
+                <!-- SECCION 1.1.1 FORMULARIO REGISTRO -->
+
+                <div class="fichaResumen__container fichaResumen__container--formCompra">
+                    <div class="fichaResumen__h2Container">
+                        <h2 class="fichaResumen__h2">DATOS DEL COMPRADOR</h2>
+                    </div>
+                    <form class="formCompra">
+    
+                        <fieldset class="formCompra__fieldsetBorde">
+                             <legend class="formCompra__legend">informacion de contacto</legend>
+    
+                            <label for="nombres">Nombres: </label>
+                            <input type="text" name="nombres" placeholder="Ej: Juan Alberto">
+    
+                            <label for="apellidos">Apellidos: </label>
+                            <input type="text" name="apellidos" placeholder="Ej: Perez Molina">
+    
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" placeholder="Ej: micorreo@gmail.com">
+    
+                            <label for="pass">contrasenia</label>
+                            <input type="password" name="pass">
+                            <div class="formCompra__btnContainer">
+                                <a class="btn__gris--inlineBlockEstatic" >Continuar</a>
+                            </div>
+            
+                        </fieldset>    
+                        
+                        <fieldset class="formCompra__fieldsetBorde">
+                            <legend class="formCompra__legend">informacion adicional</legend>
+   
+                           <label for="celular">Numero de celular: </label>
+                           <input type="tel" name="celular" pattern="(999) 999-9999 maxlength="10"">
+   
+
+                           <div class="formCompra__btnContainer">
+                                <a class="btn__gris--inlineBlockEstatic" >verificar numero</a>
+                            </div>
+           
+                       </fieldset> 
+                       <fieldset class="formCompra__fieldsetBorde">
+                        <legend class="formCompra__legend">finalizar compra</legend>
+
+
+
+                       <div class="formCompra__btnContainer">
+                            <button class="btn__rojo--inlineBlockEstatic" type="submit">COMPRAR</button>
+                        </div>
+       
+                   </fieldset> 
+                    </form>  
+
+                    
+                </div>
+
+              
+
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- SECCION 4. FOOTER -->
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <section class="footer-info">
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">tickevent</h2>
+                        <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Funcionamiento</a></li>
+                            <li><a href="">Porque elegirnos</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">mis tickets</h2>
+                        <ul>
+                            <li><a href="">Reenviar tickets</a></li>
+                            <li><a href="">cancelar tickets</a></li>
+                            <li><a href="">soporte tecnico</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">ciudades</h2>
+                        <ul>
+                            <li><a href="">Que hacer en bogota</a></li>
+                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">Que hacer en Medellin</a></li>
+                            <li><a href="">Conciertos en Santa Marta</a></li>
+                            <li><a href="">Conciertos en Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">siguenos</h2>
+                        <ul>
+                            <li>
+                                <figure class="icono-redes icono-redes-fb"><img src="../build/img/icon/facebook.png" alt=""></figure>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <figure class="icono-redes icono-redes-i"><img src="../build/img/icon/instagram.png" alt=""></figure>
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="derechos-autor">
+                <p>2023 © Tickevent. Todos los Derechos Reservados.</p>
+                <p>Política de privacidad    |    términos y condiciones</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SECCION 5. LOGIN
+    <section class="login">
+        <div class="login__contenido">
+            <a class="login__cierre" href="">cerrar [X]</a>
+
+            <h2 class="login__heading">Iniciar Sesión 
+                <span>¡ Bienvenido !</span> 
+            </h2>
+            <form class="login__formulario">
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> Porfavor ingresa tus credenciales</legend>
+                    <label for="correo">E-mail</label>
+                    <input type="email" name="correo">
+                    <label for="correo">Contraseña</label>
+                    <input type="password" name="correo">
+                     <button class="login___btnIngresar" type="submit">Iniciar sesion</button>
+                </fieldset>
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> o Inicia sesión con:</legend>
+                    <a class="login__btnGoogle" href="">
+                        <div class="login__img--GoogleContainer">
+                            <img src="../build/img/icon/google-search.png" alt="">
+                        </div>
+                        <p>Google</p>
+                    </a>
+                </fieldset>
+                <p class="login__paragraph">No tienes una cuenta? <a href="">Registrate</a> </p>  
+            </form>
+            
+        </div>
+        <div class="login__contenido">
+
+            <div class="login__petContainer">
+                <img src="../build/img/pet-corp/tapar_ojos/1.png" alt="">
+            </div>
+        </div>
+
+    </section>  -->
+
+    <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
+
+    <script src="../build/js/bundle.min.js"></script>
+
+</body>
+</html>

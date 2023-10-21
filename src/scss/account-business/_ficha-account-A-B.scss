@@ -1,74 +1,63 @@
-.fichaPerfil__container--promotor {
-    background-color: #cfedffee;
-}
-.fichaPerfiles {
-    display: flex; 
-    gap: 1rem;
-    justify-content: center;
-    @include mqTablet {
-        gap: 2rem;}
-    @include mqDesktop {
-        gap: 3rem;
-        margin-right: 4rem;
-    }
-}
 
 .fichaPerfil__container{
+
+    margin: 0 0 0.5rem 0;
+
     display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: rgba(#cbb32d44, 1);
-    border-radius: 1.4rem;
+    width: 6rem;
+    height: 10rem;
+    @include grid-row (2, 3rem);
+    @include mqDesktop{
+        margin: 0 0 3rem 0;
 
-    @include mqTablet {
-        width: 4rem;
-        height: 4rem;      
     }
 
-    @include mqDesktop {
-        @include grid-row (2, .5rem);
-        @include grid-col (1, .0rem);
-        margin: 0 auto;
-        width: 6rem;
-        height: 6rem;
-    }
+
     
     .fichaPerfil__nombreCtaRegular{
-        display: none;
-        width: 6rem;
+        position: relative;
+        width: 100%;
         color: $blanco;
-        margin: 0;
-        @include mqDesktop{
-            margin-top: 1rem;
-            display: flex;
-        }
+        margin-top:1rem;
+
         h3{
-            width: 18.9rem;
             position: absolute;
-            left: 0;
+            width: 8rem;
+
             margin: auto auto;
-            font-size: 1.2rem;
+            font-size: 1rem;
             text-align:center;
-            white-space: nowrap;
+            white-space: wrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            @include mqTablet {
+                width: 8rem;
+                left: -1rem;
+
+            }
+            @include mqDesktop {
+                width: 9rem;
+                left: -1rem;
+                top: -1.5rem;
+            }
         }      
     }
 }
 .fichaPerfil__imgContainer{
+    border-radius: 1.4rem;
+    background-color: rgba(#cbb32d44, 1);
+
     display: block;
     margin: auto auto;
     padding: 0.3rem;
-    width: 2.5rem;
-    @include mqTelefono {
-        width: 4rem;   
-    }
+    width: 4rem;  
+    height: 4rem;
     @include mqDesktop{
-        width: 6rem;      
+        width: 6.5rem;  
+        height: 6.5rem; 
     }   
     img{
         margin: auto auto;
-
         width: 100%;
-    }
+    }    
 }

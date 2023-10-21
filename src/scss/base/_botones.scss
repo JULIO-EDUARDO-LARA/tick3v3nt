@@ -1,5 +1,11 @@
-//BOTON HEADER PRINCIPAL
+//CLASE BOX SHADOW PARA BOTONES-------------------------------------------------------
 
+%box-shadow{
+    box-shadow: inset 10px 0px 15px 5px rgba(163, 212, 247, 0.6);
+    box-shadow: inset 10px 0px 15px 5px rgba(157, 229, 245, 0.6);
+    box-shadow: inset 10px 0px 15px 5px rgba(134, 174, 243, 0.6);
+}
+//BOTON HEADER PRINCIPAL---------------------------------------------------------------
 //( $bg_color, $font_color, $display, $alto, $ancho) {
 .headerPrincipal__btn{
     @include boton ($amarillo, $rojo, inline-block, 0.5rem, 1rem);
@@ -9,9 +15,58 @@
 
     @include mqDesktop {
         @include boton ($amarillo, $rojo, inline-block);}
+    
+        box-shadow: inset 10px 0px 15px 5px rgba(107, 111, 47, 0.6);
+        box-shadow: inset 10px 0px 15px 5px rgba(107, 111, 47, 0.6);
+        box-shadow: inset 10px 0px 15px 5px rgba(107, 111, 47, 0.6);
+}
+//BOTON BTN UP Y BTN DOWN ---------------------------------------------------------------
+.btn__up,
+.btn__down{
+        @extend %box-shadow;
+        @include boton ($azul_gris, $blanco, block,1rem, 1.5rem);
+}
+//BOTON AZUL OSCURO INLINE BLOCK ESTATICO ---------------------------------------------------------------
+.btn_azulOscuro--inlineBlockEstatic{
+        @extend %box-shadow;
+        @include boton ($azul_oscuro, $blanco, inline-block, 4%, 4%);
+}
+//BOTON ROJO INLINE BLOCK ESTATICO ---------------------------------------------------------------
+.btn__rojo--inlineBlockEstatic{
+        @extend %box-shadow;
+        @include boton ($rojo, $blanco, inline-block, 1rem, );
+}
+//BOTON GRIS ---------------------------------------------------------------
+//inline block estatico 
+.btn__gris--inlineBlockEstatic{
+        @extend %box-shadow;
+        @include boton ($azul_gris, $blanco, inline-block, 1rem, );
+}
+//inline estatico 
+.btn__gris--inlineEstatic{
+    @extend %box-shadow;
+    @include boton ($azul_gris, $blanco, inline, 1rem, );
+}
+//BOTON AZUL CLARO ---------------------------------------------------------------
+//inline block estatico 
+.btn__azulClaro--inlineBlockEstatic{
+        @extend %box-shadow;
+        @include boton ($azul_claro, $blanco, inline-block, 1rem, );
+}
+//inline estatico 
+.btn__azulClaro--inlineEstatic{
+    @extend %box-shadow;
+    @include boton ($azul_claro, $blanco, inline, 1rem, );
 }
 
-//BOTON INICIAR SESION
+//BOTON AMARILLO INLINE BLOCK ESTATICO ---------------------------------------------------------------
+.btn__amarillo--inlineBlockEstatic{
+        @extend %box-shadow;
+        @include boton ($amarillo, $rojo, inline-block, 1rem, );
+}
+
+
+//BOTON INICIAR SESION---------------------------------------------------------------
 .login___btnIngresar,
 .registro__btn{
     @include boton (rgba($azul_oscuro,.8), $amarillo, block, 1rem);
@@ -19,12 +74,20 @@
     border: 0px;
     box-shadow: inset 3px 3px 3px rgba( $negro,.7),
     inset -2px -2px 3px rgba($azul_oscuro,.1);
+
+    text-shadow: 2px 0px 4px rgba(0,0,0,0.78);
+
+    //Lineas de spinner al guardar registro
+    position: relative;
+    outline: none;
+    cursor: pointer;
     
 
 }
-//BOTON DE CODIGO QR
+//BOTON DE CODIGO QR---------------------------------------------------------------
 .btn__qr{
     @include boton (rgba($verde, 0.5), $blanco, block, 0.5rem, 1rem);
+    
 
 }
 .btn__qr--verde{
@@ -33,7 +96,7 @@
 }
 
 
-//BOTON GOOGLE SEARCH LOG IN
+//BOTON GOOGLE SEARCH LOG IN---------------------------------------------------------------
 .login__btnGoogle,
 .registro__btn--Google{
     
@@ -52,12 +115,16 @@
                 inset -2px -2px 3px rgba($azul_oscuro,.1);
 }
 
-//BOTON-DETALLE EVENTO
+//BOTON-DETALLE EVENTO---------------------------------------------------------------
+//ESTILOS PARA BOTON-DESPLEGABLE---------------------------------------------------------------
+.btn__desplegable{
+    @include boton (rgba($azul_oscuro, 0.5), $blanco, block, 0rem, 1rem);
+    height: 3rem;
+}
 
 
 
-
-//BOTON-ICONO PROVEEDORES - PROMOTOR
+//BOTON-ICONO PROVEEDORES - PROMOTOR---------------------------------------------------------------
 
 .btn-icon-proveedores{
     position: relative;

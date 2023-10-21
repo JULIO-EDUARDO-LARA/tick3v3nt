@@ -1,0 +1,193 @@
+.mainControIngr{
+    figure{
+        display: block;
+    }
+}
+
+.mainControIngr__container{
+    @include mqTablet{
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        gap: 2rem;
+    }
+    // BLOQUE PRINCIPAL 1 ESTADO EVENTO-----------------------------
+    .estadoEvento{
+        min-width: 30rem;
+        padding: 1rem;
+            @include mqTablet{
+                width: 30%;
+                // height: 90rem;
+            }       
+        .estadoEvento__imgContainer{
+            display: block;
+            padding: 2% 5%;
+            background-color: rgba($azul_gris, 0.5);
+        }
+        .estadoEvento__h2Container{
+            h2{margin: 2rem 0;}
+            .estadoEvento__h2{
+                font-size: 1.75rem;
+                text-align: center;
+            }
+        }
+        .tablaEstadoContainer{
+            padding: 1rem;
+            background-color: rgba($rojo, 0.4);
+        }
+        .tablaEstado{
+            width: 100%;
+            margin: 0 auto;
+            background-color: rgba($azul_oscuro, 0.4);
+            border-collapse: separate;
+            border-spacing: 0px 0px;
+            td{
+                vertical-align:text-top;
+                padding: 1rem 0;
+                border-color: solid 1px red;
+                border-bottom: 1px solid rgba($blanco, 0.2);
+                a{
+                    color: rgba($blanco, 0.7);
+                    display: block;
+                    margin: 0 0 auto 0;
+                }
+            }
+
+
+        }
+    }
+    // BLOQUE PRINCIPAL 2 CAJA DE VALIDACION-----------------------------
+    .estadoEvento--validador{
+        //DIMENSIONANDO LOS BLOQUES HIJO
+        @include mqTablet{
+            width: 40%;
+        }
+        //FORMULARIO DE VALIDACION
+        .validador__form{
+            background-color: rgba($azul_gris, 0.5);
+            @include mqTablet{
+                height: 60rem;  
+            }
+            @include mqDesktop{
+                height: 80rem; 
+            }
+            height: 70rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            padding: 5%;
+            gap: 1rem;
+
+            &>*{
+                background-color: rgba($azul_gris, 0.6);
+            }
+            // &{font-family: $fuente_secundaria;}
+
+
+            //1. ESTILOS TITULO
+            .validador__textoContainer:nth-child(1),
+            .validador__textoContainer:nth-child(3){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            //2. ESTILOS A VALIDADOR
+            .validador__codigo{
+                padding: 1rem ;
+                display: grid;
+                gap: 1rem;
+                label{
+                    font-weight: bold;
+                    font-size: 2rem;
+                }
+                input{
+                    border-color: $azul_gris;
+                    border-radius: 0.5rem;
+                    height: 4rem;
+                }
+                .validadorForm__btnContainer{
+                    margin: 0 auto;
+                }
+            }
+            .validador__accionContainer{
+                display: flex;
+                .validador__accion{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    margin-left: 1rem;
+                    gap: 1rem;
+                    .radio__container{
+                        
+                        display: flex;
+                        gap: 1rem;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .validador__textoContainer{
+                h1, h3{margin: 0;}
+                .validador__h1{
+                    padding: 1rem 0;
+                }
+
+            }
+
+            .validador__textoContainer:nth-child(1){
+                display: grid;
+                grid-column:  1 / 4;
+            }
+            .validador__codigo{
+                display: grid;
+                gap: 2rem;
+                grid-column:  1 / 4;
+            }
+            .validador__textoContainer:nth-child(3){
+                min-height: 6rem;
+                max-height: 8rem;
+                display: grid;
+                grid-column:  1 / 2;
+            }
+            .validador__accionContainer{
+                min-height: 6rem;
+                max-height: 8rem;
+                display: grid;
+                grid-column:  2 / 4;
+            }
+            .resultadoValidacion{
+                display: grid;
+                grid-column:  1 / 4;
+            }
+        }
+        .validador__h1Container{
+            .validador__h1{
+                font-size: 2rem;
+
+            }
+        }
+        .validador__h3Container{
+            .validador__h3{
+                font-size: 1.5rem;
+
+            }
+        }
+
+
+        .resultadoValidacion{
+            background-color: rgba($rojo, 0.6);
+
+            .resultadoValidacion__ImgContainer{
+                display: block;
+                padding: 1rem;
+                .resultadoValidacion__Img{
+                    border-radius: 1rem;
+                    margin: 0 auto;
+                    width: 70%;
+                    // height: 30rem;
+                }
+            }
+        }
+    }
+}

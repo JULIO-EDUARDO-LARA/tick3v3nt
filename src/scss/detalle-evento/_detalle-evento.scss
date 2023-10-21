@@ -1,0 +1,117 @@
+.detalleEvento__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include mqDesktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        flex-direction: row;
+        .bannerEvento__img{
+            object-fit: cover;
+        }
+    }
+}
+//BANNER PUBLICITARIO DEL EVENTO
+.bannerEvento{
+    min-width: 43rem;
+    margin: 1px red solid;
+    .bannerEvento__imgContainer{
+        display: block;
+        @include mqDesktop{
+            height: 100%;
+
+        }
+        .bannerEvento__img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+//INFORMACION PRINCIPAL DEL EVENTO
+.bannerEvento--informacion{
+    padding: 1rem;
+    background-color: rgba($azul_gris, 0.5);
+
+
+    .bannerEvento_textItem,
+    .bannerEvento_textValue{
+        font-family: $fuente_secundaria;
+        font-weight: bold;
+        text-align: start;
+        margin: 0 10%;
+        width: 80%;
+    }
+    .bannerEvento_textValue{
+        color: rgba($negro, 0.6);
+    }
+
+    .bannerEvento_datos{
+        width: 100%;
+        
+    }
+    .bannerEvento_seccion{
+        td{
+            border-bottom: 2.5px solid $azul_gris;       
+        }
+    
+    }
+
+    .bannerEvento_textItem{
+        padding: 1rem 0;
+    }
+    .bannerEvento_icon{
+        img{
+            margin-left: 2rem;
+            width: 2.5rem;
+        }
+    }
+    //ESTILOS PARA MAPA DE UBICACION
+    .bannerEvento_mapaContainer{
+        width: 100%;
+    }
+    //ESTILOS PARA MAPA DE UBICACION
+    .bannerEvento_btnContainer{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+    
+
+    }
+}
+//INFORMACION ADICIONAL O EXTENDIDA
+.bannerEvento--infoAdicional{
+        @include mqDesktop{
+            display: grid;
+            grid-column: 1/3;
+            grid-row: 2/3;
+            
+
+        }
+
+        .infoAdicional{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 5rem;
+            h2{margin: 0;}
+
+            .infoAdicional__h2Container{
+                padding: 5rem 0;
+                text-align: center;
+                border-bottom: 2.5px solid $azul_gris;
+                border-top: 2.5px solid $azul_gris;
+            }
+            .infoAdicional__paragraph{
+                font-size: 3rem;
+                text-align: justify;
+                word-wrap: break-word;
+                padding: 0 1rem;
+            }
+        }        
+    }
+
+
+
+

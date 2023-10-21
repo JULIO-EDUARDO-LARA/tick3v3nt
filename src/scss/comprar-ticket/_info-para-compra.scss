@@ -1,0 +1,187 @@
+.mainComprarTicket{
+    margin-top: 5rem;
+}
+
+
+.mainComprarTicket__container{
+    @include mqDesktop {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr 2fr);
+    }
+}
+
+
+.fichaResumen{
+    background-color: $azul_gris;
+
+    @include mqDesktop{
+        display: grid;
+        grid-column: 1 / 2;
+        // max-height: 75.6rem;
+        max-height: 70rem;
+
+    }
+    min-width: 30rem;
+    .fichaResumen__imgContainer{
+        display: none;
+        @include mqTablet{
+        display: block;
+
+        }
+    }
+}
+
+
+
+.tabla__resumenCompra{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+
+
+    .tbody{
+        // CELDAS ENCABEZADO Y CUERPO
+        th,td{
+            background-color: rgba($azul_gris, 0.5);
+            text-align: left;
+            // border: 1px solid red;
+        }
+
+    }
+}
+.fichaResumen--formCompra{
+    margin-top: 2rem;
+    @include mqTablet{
+        margin-top: 0;
+        display: grid;
+        grid-column: 2 / 5;
+    overflow-y: scroll;
+
+    }
+
+    // border: 1px solid red;
+    .formCompra{
+        // display: flex;
+       width: 100%;
+       .formCompra__fieldsetBorde{
+        legend{
+            padding:3rem 0 0 2rem;
+        }
+            background-color: $blanco;
+            padding: 2rem 0;
+            border: 3rem;
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            
+            input{
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                border-color: rgba($azul_gris, 0.5);
+            }
+            label{
+                padding: 1rem 0 0.5rem 0;
+
+                margin: 0.5rem;
+            }
+            label,input{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+.fichaResumen__h2Container{
+    h2{
+        margin-bottom: 1rem;
+    }
+    .fichaResumen__h2{
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.numTickets__selectContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+
+    @include mqTablet{
+        flex-direction: column-reverse;
+    }
+}
+.numTickets__selectContainer,
+.fichaResumen--formCompra{
+    background-color: $azul_gris;
+    padding: 2rem 0;
+
+    .numTickets__selectSeccion,
+    .formCompra{
+        width: 90%;
+        padding: 2rem;
+        margin: 0 auto;
+        border-radius: 1rem;
+        @include mqTablet{
+        width: 60%;
+
+        }
+        @include mqDesktop{
+        width: 90%;
+        }
+    }
+
+
+    .numTickets__borde{
+        border: rgba($azul_gris, 0.5) 0.2rem solid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: $blanco;
+        width: 100%;
+        border-radius: 1rem;
+        .numTickets__textContainer{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .numTicketsBox__Container{
+        display: flex;
+        // border: 1px solid red;
+        .numTickets__container{
+            width: 4rem;
+            height: 100%;
+            display: flex;
+            .numTickets{
+                margin: auto;
+            }
+        }
+    }
+    //BOTON RESERVAR
+    .numTickets__btn{
+        display: grid;
+        grid-column: 1 / 3;
+    }
+}
+
+.fichaResumen__h2{
+    background-color: $azul_oscuro;
+    padding: 1rem 0;
+    color: $blanco;
+}
+
+.formCompra__btnContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto 0 auto;
+    
+}
+

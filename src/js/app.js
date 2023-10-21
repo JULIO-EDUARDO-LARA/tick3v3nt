@@ -3,8 +3,10 @@
 1. SLIDER
 2. EFECTO PARA TEXTO CIRCULAR EN BOTONES
 3. EFECTOS PARA MENU DE LA NAVEGACION INTERFAZ DE USUARIO
+4. EFECTOS PARA BOTONES DE INCREMENTO Y DECREMENTO.
+//5. EFECTOS PARA BOTONES DE FORMULARIO (CREAR EVENTO)
 */
-window.onload = function () {
+window.onload = function  () {
 
     //0. LOGIN -----------------------------------------------------
     const loginShow = document.querySelector('.btnHeader');
@@ -79,7 +81,7 @@ window.onload = function () {
         //colocar cada letra en una etiqueta <span>
 
     circle = document.querySelector(".texto-btn-icon");
-    console.log(circle)
+    // console.log(circle)
 
     if(circle){
         
@@ -128,7 +130,7 @@ window.onload = function () {
 
                         let altura2 = 0;
                         let showLista1_regular = btn_1_clickeado.nextElementSibling;
-                        console.log(showLista1_regular);
+                        // console.log(showLista1_regular);
 
                         let catchHeightShowLista1_regular  = showLista1_regular.clientHeight;
                         let catchMinHeightShowLista1_regular  = showLista1_regular.scrollHeight;
@@ -202,7 +204,7 @@ window.onload = function () {
 
                     } 
                     if(nombre === claseBtn2regular){
-                        console.log('esto es un ' + nombre);
+                        // console.log('esto es un ' + nombre);
 
                         // BLOQUE USUARIO REGULAR PARA BOTON DE MENU2
                         let showLista1_regular = document.querySelector('.lista__mostrar--1regular');
@@ -222,17 +224,95 @@ window.onload = function () {
                         showLista2_regular.style.height = `${altura2}px`;
                     } 
                 }
-                
-
-
-
-
             })
-     
+        })
+    }
+    //4. EFECTOS PARA BOTONES DE INCREMENTO Y DECREMENTO PAGINA GESTIONAR EVENTOS--------------------------------------------
+
+    const btnMas = document.querySelector(".btn__up");
+    const btnMenos = document.querySelector(".btn__down");
+    const num = document.querySelector(".numTickets");
+
+    let numero = 1;
+
+    if(btnMas!=null && btnMenos!=null && num!=null){
+        btnMas.addEventListener("click", () => {
+            numero++;
+            numero = (numero < 20)? numero : numero;
+            num.innerText = numero;
+        })
+        btnMenos.addEventListener("click", () => {
+            if(numero > 1){
+                numero--;
+                numero = (numero < 20)? numero : numero;
+                num.innerText = numero;
+            }
+        })        
+    }
+
+    //5. EFECTOS PARA BOTONES DE FORMULARIO (CREAR EVENTO)------------------------------------------
+    const btns_slide = document.querySelectorAll('.formBtn__eventCreate--deslizar');
+    const fieldsets_slide = document.querySelectorAll('.form-grupo');
+
+    btns_slide.forEach((btn_slide, index1) => {
+        btn_slide.addEventListener('click', (e) => {
+            let btn_slide_clicked = e.target;
+            let selected_fields = btn_slide_clicked.nextElementSibling;
+    
+            fieldsets_slide.forEach((fieldset_slide, index2) => {
+                if(index2 != index1){
+                    if(fieldsets_slide[index2].classList.contains("form-grupo--desplegar")){
+                        console.log(fieldsets_slide[index2].classList.contains("form-grupo--desplegar"));
+                        fieldsets_slide[index2].classList.remove("form-grupo--desplegar");
+                        fieldsets_slide[index2].style.height = `0px`;
+                    }
+                }
+            })
+            selected_fields.classList.toggle("form-grupo--desplegar");
+            let altura = 0;
+
+            let catchHeight_fielset = selected_fields.clientHeight;
+            let catchMinHeight_fielset = selected_fields.scrollHeight;
+
+            if(catchHeight_fielset == "0"){
+                altura = catchMinHeight_fielset;
+            }else{
+                selected_fields.style.height = `0px`;
+            }
+            selected_fields.style.height = `${altura}px`;
+            return;
 
         })
+    })
+    //5.1 SCRIPT PREVIZUALIZAR FOTO, FORMULARIO (CREAR EVENTO)------------------------------------------
+    const fileImg = document.querySelector(".set__data--upLoadImg");
+    const imgEventDefault = '../build/img/default/imagen-service-product.png';
+    const imagenCrearEvento = document.getElementById('01campo__img');
+    const campo01__label = document.getElementById('01campo__label');
+    fileImg.addEventListener('change', e =>{
+        let seCargoFoto = e.target.files[0];
+        if(seCargoFoto){
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                imagenCrearEvento.src = e.target.result;
+            }
+            campo01__label.style.display = "inline-block";
+            reader.readAsDataURL(seCargoFoto);
+            
+        }else{
+            imagenCrearEvento.src = imgEventDefault;
+            campo01__label.style.display = "none";
 
-    }
+        }
+    })
+
+
+
+
+
+
+
 
 
 
