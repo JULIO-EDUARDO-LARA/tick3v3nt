@@ -1,0 +1,166 @@
+// DEFINIENDO COLORES CONJUNTOS
+//BACKGROUND COLORS
+.opcionesContacto__opcion,
+.opcionesContacto--formContainer,
+.bannerEvento_mapaContainer{
+    background-color: lighten($color: $azul_gris, $amount: 25%);
+
+}
+.sectionContacto,
+.seccionContactoUbicados{
+    background-color: lighten($color: $primario, $amount: 25%);
+    background-color: $primario;
+
+}
+.bannerEvento_mapaContainer{
+    background-color: $primario;
+}
+.sectionContacto{
+
+    .sectionContacto__container{
+        background-color: $primario;
+
+        margin-top: 5rem;
+        padding: 5rem 0;
+        display: flex;
+        flex-direction: column-reverse;
+
+        align-items: center;
+        gap: 2rem;
+        @include mqTablet{
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        }
+        @include mqDesktop{
+        flex-direction: row;
+        justify-content: center;
+
+        }
+        .opcionesContacto{
+            width: 90%;
+            @include mqTablet{
+                width: 50%;
+            }
+        }
+        .opcionesContacto:nth-child(1){
+            display: flex;
+            flex-direction: column;
+
+            gap: 3rem;
+        }
+    }
+}
+
+.opcionesContacto__opcion{
+    // height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 4rem;
+    @include mqTablet{
+        flex-direction: row;
+        justify-content: center;
+    }
+    // @include mqDesktop{
+    //     flex-direction: row;
+    // }
+
+    .opcionesContacto__imgContainer{
+        display: grid;
+        align-items: center;
+        width: 4rem;
+
+       
+        // .opcionesContacto__img{
+
+        // }
+    }
+    .opcionesContacto__txtContainer{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include mqDesktop{
+            width: 50%;
+        }
+        .opcionesContacto__txt {
+            text-wrap: wrap;
+            text-align: center;
+
+        }
+        .opcionesContacto__h3{
+            margin: 0;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+        // .opcionesContacto__numero{
+        // }
+    }
+}
+
+.opcionesContacto--formContainer{
+    border-radius: 4rem;
+    .opcionesContacto__h1Container{
+        display: flex;
+        .opcionesContacto__h1{
+            margin: 5rem auto 0 auto;
+            font-size: 4rem;
+
+        }
+    }
+}
+.optionsForm{
+    padding: 4rem;
+    .optionsForm__inputTxtContainer{
+        display: grid;
+        gap: 2rem;
+
+        @include mqTablet{
+            
+        }
+        @include mqDesktop{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .optionsForm__input{
+            height: 4rem;
+            border-radius: 2rem;
+
+        }
+    }
+    .optionsForm__textareaContainer{
+        margin-top: 2rem;
+        .optionsForm__textarea{
+            width: 100%;
+            border-radius: 2rem;
+
+        }
+    }
+    .optionsForm__btnContainer{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+.seccionContactoUbicados{
+    padding: 5rem 0;
+    
+    .bannerEvento_mapaContainer{
+        .bannerEvento_mapa{
+            margin: 0 auto;
+            width: 100%;
+            height: 30rem;     
+            @include mqTablet{
+                width: 50%;
+            }
+            @include mqDesktop{
+                width: 100%;
+            }
+        }
+
+
+    }
+}

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="build/css/app.css">
     <title>tickevent</title>
 </head>
-<body>
+<body onload="myFunction()">
     <!-- SECCION 1. SLIDER -->
     <section class="headerPrincipal">
         <!-- SECCION 1.1 HEADER -->
@@ -84,191 +84,94 @@
                 <input class="campo-busqueda" type="search" name="Buscar Evento" placeholder="  Buscar Evento..">
                 <input class="campo-busqueda" type="search" name="Buscar Ciudad" placeholder="  Buscar Ciudad..">
             </form>
-                <a class="btn-icon btn-icon-proveedores" href="">
-                    <p id="circle" class="texto-btn-icon">proveedor productos&servicios</p>
-                    <picture class="icon-proveedores" > <img src="build/img/buttons/btn-suppliers.png" alt=""> </picture>
+                <a id="btn_0101" class="btn-icon btn-icon-proveedores">
+                    <p id="circle0101" class="texto-btn-icon"></p>
+                    <picture class="icon-proveedores" > 
+                        <img src="" alt="">
+                    </picture>
                 </a>
         </div> 
     </section>
 
-    
-    <!-- SECCION 3. LISTADO EVENTOS -->
+
     <section class="listado-eventos">
         <section class="contenedor contenido-listado-eventos">
 
             <!--SECCION 3.1 CARD #1 -->
             <div class="tarjeta-evento">
+
                 <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_1.jpg" alt="">
+                    <img class="pic-img" src="build/img/eventos/poster_1.jpg" alt="">
                 </figure>
                 <div class="info-evento">
 
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
+                    <table class="infoEvento__tabla">
+                        <tr> 
+                            <th colspan="2" class="tblInfoCard__col tblInfoCard__col--head">
+                                <p class="InfoCardTh__dato">SWEDISH HOUSE MAFIA</p>
+                            </th> 
+                        </tr>
+                        <tr>
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <div class="tablaInfoCard__iconContainer">
+                                    <img class="tablaInfoCard__icon" src="build/img/icon/fecha_blanco.png" alt="">
+                                </div>
+                            </td>
+
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <p class="InfoCardTd__dato">Mayo 13 2022</p>  
+                            </td> 
+                        </tr>
+                        <tr> 
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <div class="tablaInfoCard__iconContainer">
+                                    <img class="tablaInfoCard__icon" src="build/img/icon/cronometro_blanco.png" alt="">
+                                </div>
+                            </td>
+
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <p class="InfoCardTd__dato">faltan 3 dias</p>
+                            </td> 
+                        </tr>
+                        <tr> 
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <div class="tablaInfoCard__iconContainer">
+                                    <img class="tablaInfoCard__icon" src="build/img/icon/lugar_blanco.png" alt="">
+                                </div>
+                            </td>
+
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <p class="InfoCardTd__dato">Gran salon plaza mayor, Bogota</p>
+                            </td> 
+                        </tr>
+                        <tr> 
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <div class="tablaInfoCard__iconContainer">
+                                    <img class="tablaInfoCard__icon" src="build/img/icon/tiquete_blanco.png" alt="">
+                                </div>
+                            </td>
+
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <p class="InfoCardTd__dato">Desde: $ 30.000 COP</p>
+                            </td> 
+                        </tr>
+                        <tr> 
+                            <td class="tblInfoCard__col tblInfoCard__col--body">
+                                <div class="tablaInfoCard__iconContainer">
+                                    <img class="tablaInfoCard__icon" src="" alt="">
+                                </div>
+                            </td>
+                        </tr>
                     </table>
                 </div>
-                <a class="btn btn-amarillo-block" href="">
-                    <p>detalle del evento</p>
-                </a> 
-            </div>
-
-            <!--SECCION 3.2 CARD #2 -->
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_2.jpg" alt="">
-                </figure>
-                <div class="info-evento">
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
+                <div class="cardEvent__btnContainer">
+                    <a class="cardEvent__btn btn_amarillo--BlockEstaticBorder0_24" href="">
+                        ir a evento
+                    </a> 
                 </div>
-                    <a class="btn btn-amarillo-block" href="">
-                        <p>detalle del evento</p>
-                    </a>                        
-                
+
             </div>
 
-            <!--SECCION 3.3 CARD #3 -->
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_3.jpg" alt="">
-                </figure>
-                <div class="info-evento">
-
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSO33333333333333333333333RI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
-                </div>
-                
-                    <a class="btn btn-amarillo-block" href="">
-                        <p>detalle del evento</p>
-                    </a>                        
-                
-            </div>
-            
-            <!--SECCION 3.4 CARD #4 --> 
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_4.jpg" alt="">
-                </figure>
-                <div class="info-evento">
-
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
-                </div>  
-                <div class="container-btn-detalle-evento">
-                    <a class="btn btn-amarillo" href="">
-                        <p>detalle del evento</p>
-                    </a>                        
-                </div>           
-            </div>           
-
-
-            <!--SECCION 3.5 CARD #5 -->
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_5.jpg" alt="">
-                </figure>
-                <div class="info-evento">
-
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
-                </div> 
-        
-                <a class="btn btn-amarillo-block" href="">
-                    <p>detalle del evento</p>
-                </a>
-             
-            </div>
-
-            <!--SECCION 3.6 CARD #6 -->
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_6.jpg" alt="">
-                </figure>
-                <div class="info-evento">
-
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
-                </div>   
-                <a class="btn btn-amarillo-block" href="">
-                    <p>detalle del evento</p>
-                </a>       
-            </div>
-            
-            <!--SECCION 3.7 CARD #7 -->
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_7.jpg" alt="">
-                </figure>
-                <div class="info-evento">
-
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
-                </div>
-                <a class="btn btn-amarillo-block" href="">
-                    <p>detalle del evento</p>
-                </a>     
-            </div>          
-
-
-            <!--SECCION 3.8 CARD #8 -->
-            <div class="tarjeta-evento">
-                <figure class="img-evento">
-                    <img class="pic-img" src="images/poster_8.jpeg" alt="">
-                </figure>
-                <div class="info-evento">
-                    <table>
-                        <tr> <th colspan="2" class="">PROM MONTESSORI 2004</th> </tr>
-                        <tr> <td>Fecha: </td><td>Mayo 13 2022</td> </tr>
-                        <tr> <td>Hora: </td><td>8:00 pm</td> </tr>
-                        <tr> <td>Lugar: </td><td>Gran salon plaza mayor</td> </tr>
-                        <tr> <td>Ciudad: </td><td>Bogotá</td> </tr>
-                    </table>
-
-                </div>
-                <a class="btn btn-amarillo-block" href="">
-                    <p>detalle del evento</p>
-                </a>            
-            </div>
         </section>
 
     </section>
@@ -380,8 +283,6 @@
     </section> 
 
     <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
-    <script src="script/main.js"></script>
-    <script src="script/animacion/pet-corp.js"></script>
     <script src="build/js/bundle.min.js"></script>
 
 </body>

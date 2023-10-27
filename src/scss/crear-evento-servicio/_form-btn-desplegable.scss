@@ -1,0 +1,69 @@
+.form-crear-evento{
+    .formulario__btnContainer,
+    .formulario__iconContainer{
+        pointer-events: none;
+        img{
+            pointer-events: none;
+        }
+    }
+    // BOTON PAGINA CREACION EVENTO
+    .formulario__btn{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        background-color: rgba($rojo,0.2);
+
+
+        .formulario__btnContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    // BOTON PAGINA CREACION SERVICIO (MODIFICADOR)
+    .formulario__btn--servicio{
+        background-color: rgba($amarillo,0.3);
+
+    }
+    .formulario__h2Container{
+        h2{margin: 0;}
+        .formulario__h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+            width: 23rem;
+            text-align: center;
+            @include mqTablet{
+                font-size: 2rem; 
+                width: 33.8rem;
+
+            }
+        }
+    }
+    
+    .formulario__iconContainer{
+        display: block;
+        width: 6rem;
+        padding: 1rem;
+    }
+
+
+    .formulario__iconContainer--arrow{
+        // transform: rotate(0);
+        width: 3rem;
+        padding: 0.5rem;
+        transition: transform 0.6s
+    }
+    .formulario__iconContainer--arrowRotate{
+        transform: rotate(90deg);
+        transition: transform 0.6s
+
+    }
+
+    
+    
+    
+    
+    
+      
+}//  CIERRE PRINCIPAL 

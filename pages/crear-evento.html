@@ -97,9 +97,7 @@
         </div>
     </header>
 
-
-
-    <!-- SECCION 1.2 FORMULARIO CREAR EVENTO  -->
+    <!--  CREAR EVENTO  -->
     <main class="form-crear-evento">
         <div class="contenedor contenido-formulario">
             <form class="formulario">
@@ -108,7 +106,7 @@
                 <a class="formulario__btn formBtn__eventCreate--deslizar">
                     <div class="formulario__btnContainer">
                         <figure class="formulario__iconContainer">
-                            <img src="../build/img/buttons/informacion-basica.png" alt="">
+                            <img src="../build/img/buttons/evento.png" alt="">
                         </figure>
                         <div class="formulario__h2Container">
                             <h2 class="formulario__h2">INFORMACION BASICA</h2>
@@ -139,13 +137,13 @@
                                 <option value="" selected>Seleccione una categoría</option>
                             </select>
                         </div>
-                        <div class="campo">
+                        <div class="campo campo--infoBasica">
                             <label class="Descripción" for="descripcion">Descripción:</label>
                             <textarea class="set__data" id="descripcion" name="descripcion"></textarea>                     
                         </div>            
                     </div>
                 </fieldset>
-                <!--BOTON SECCION DESPLEGABLE # 2 UBICACION-->
+                <!--BOTON SECCION DESPLEGABLE  # 2 UBICACION-->
                 <a class="formulario__btn formBtn__eventCreate--deslizar">
                     <div class="formulario__btnContainer">
                         <figure class="formulario__iconContainer">
@@ -256,10 +254,10 @@
                         </figure>
                     </div>
                 </a>
-                <!-- GRUPO CAMPOS DESPLEGABLES # 5 -->
-                <fieldset class="form-grupo">
-                    <div class="form-grupoContainer">
-                        <div class="campo">
+                <!-- GRUPO CAMPOS DESPLEGABLES # 5 ANFITRIONES-->
+                <fieldset class="form-grupo form-grupo--anfitriones">
+                    <div class="form-grupoContainer form-grupoContainer--anfitriones">
+                        <div class="campo campo--anfitriones">
                             <label for="anfitriones">Anfitriones:</label>
                             <textarea class="set__data" id="descripcion" name="anfitriones"></textarea>   
                         </div>                       
@@ -279,7 +277,7 @@
                         </figure>
                     </div>
                 </a>
-                <!-- GRUPO CAMPOS DESPLEGABLES # 6 -->
+                <!-- GRUPO CAMPOS DESPLEGABLES # 6 COSTOS-->
                 <fieldset class="form-grupo">
                     <div class="form-grupoContainer form-grupoContainer--costos">
                         <div class="campo">
@@ -310,33 +308,26 @@
                         </figure>
                     </div>
                 </a>
-                <!-- GRUPO CAMPOS DESPLEGABLES # 7 -->
+                <!-- GRUPO CAMPOS DESPLEGABLES # 7 IMAGEN-->
                 <fieldset class="form-grupo form-grupo--lastFieldset">
-
-
                     <div class="campo">
                         <div class="campo__auxContainer">
-                            <input class="set__data set__data--upLoadImg" class="" type="file" id="image-input" name="image-input" accept="image/*">   
-                            <label id="01campo__label" class="btn__gris--inlineBlockEstatic" for="image-input">Cambiar Imágen:</label>
+                            <label id="campo__label0101" class="" for="inputUploadImg0101">cargar imágen</label>
+
+                            <input id="inputUploadImg0101" class="set__data set__data--upLoadImg" class="" type="file"  name="inputUploadImg0101" accept="image/*">   
                         </div>
 
                         <div class="campo__imgContainer">
-                            <img class="campo__img" src="../build/img/default/imagen-service-product.png" alt="" id="01campo__img">
+                            <img id="campo__img0101" class="campo__img" src="../build/img/default/imagen-service-product.png" alt="">
                         </div>
-
-                    </div>
-
-                    <div class="campo campo--buttonContainer">
-                        <button class="btn_azulOscuro--inlineBlockEstatic" type="submit">ENVIAR</button>
-                    </div>
-                  
-               
+                    </div>       
                 </fieldset>
+                <div class="campo campo--buttonContainer">
+                    <button class="btn_rojo--inlineBlockEstatic24" type="submit">CREAR EVENTO</button>
+                </div>
             </form>
-        
         </div>
     </main>
-
 
     <!-- SECCION . SCRIPT PARA MAPGOOGLE -->
     <script>

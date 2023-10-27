@@ -13,6 +13,7 @@
 @import 'index/nav-principal.scss';
 @import 'index/search-bar.scss';
 @import 'index/lista-eventos.scss';
+@import 'index/lista-servicios.scss';
 @import 'index/formulario.scss';
 @import 'index/login.scss';
 @import 'index/footer.scss';
@@ -30,14 +31,31 @@
 @import 'account-business/ficha-account-A-B.scss';
 @import 'account-business/header-A-B.scss';
 @import 'account-business/nav-A-B.scss';
+@import 'account-business/portafolio.scss';
+@import 'account-business/business-tabla-metadatos.scss';
 
-//ARCHIVOS DE SASS - GESTIONAR CONTENIDOS DE PROMOTOR
-@import 'gestionar/gestionar.scss';
+//ARCHIVOS DE SASS - DASHBOARD DE PROMOTOR
+@import 'gestionar-event-service/gestionar-evento.scss';
+@import 'gestionar-event-service/modificadores-servicio.scss';
 
-//ARCHIVOS DE SASS - ACCOUNT
+//ARCHIVOS DE SASS - ACCOUNT REGULAR
 @import 'account/header.scss';
 @import 'account/ficha-account.scss';
 @import 'account/nav-account.scss';
+
+//ARCHIVOS DE SASS - ACCOUNT (INDEX-EVENTOS) & (INDEX-SERVICIOS)
+@import 'account-index-even-serv/box-auxImgInfoEvento.scss';
+@import 'account-index-even-serv/box-auxInteracciones.scss';
+
+@import 'account-index-even-serv/box-auxImgInfoServicio.scss';
+@import 'account-index-even-serv/box-auxInteraccionesServicio.scss';
+
+//ARCHIVOS DE SASS - EDITAR PERFILES
+@import 'editar-perfiles/encabezados.scss';
+@import 'editar-perfiles/seccion-perfiles.scss';
+@import 'editar-perfiles/input-container.scss';
+@import 'editar-perfiles/edit-perfiles-btn-enviar.scss';
+
 
 //ARCHIVOS DE SASS - FORMULARIO DE REGISTRO
 @import 'form-registro/registro.scss';
@@ -52,10 +70,18 @@
 //ARCHIVOS DE SASS - IMPRESION DE QR
 @import 'accounts-qr/qrMain.scss';
 
-//ARCHIVOS DE SASS - PAGINA CREAR-EVENTO
-@import 'form-crear-evento/form-crear-evento.scss';
-@import 'form-crear-evento/form-btn-desplegable.scss';
-@import 'form-crear-evento/form-btn-enviar.scss';
+//ARCHIVOS DE SASS - PAGINA CREAR-EVENTO y CREAR SERVICIO
+@import 'crear-evento-servicio/form-crear-ev-serv.scss';
+@import 'crear-evento-servicio/form-btn-desplegable.scss';
+@import 'crear-evento-servicio/form-btn-enviar.scss';
+
+//ARCHIVOS DE SASS - PAGINA CONTACTO
+@import 'contacto/contacto.scss';
+
+//ARCHIVOS DE SASS - PAGINA ACERCA DE
+@import 'acerca-de/acerca-de.scss';
+
+
 
 //ARCHIVOS DE SASS - UTILIDADES
 @import 'base/utilidades.scss';

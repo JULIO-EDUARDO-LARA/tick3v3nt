@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--icono de flecha para pasar slider https://boxicons.com/-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--LINKING FAVICON-->
+    <link rel="icon" type="image/ico" href="../favicon/favicon_2.ico">
+    <!--LINKING STYLESHEETS-->
+    <link rel="stylesheet" href="../build/css/app.css">
+        <!-- PARA MAPAS DE GOOGLE--INICIO -->
+
+        <!-- PARA MAPAS DE GOOGLE--CIERRE -->
+    <title>tickevent</title>
+</head>
+<body onload="myFunction()">
+    <!-- SECCION 1. SLIDER -->
+    <section class="headerPrincipal">
+        <!-- SECCION 1.1 HEADER -->
+        <header class="headerPrincipal__header">
+            <div class="headerPrincipal__container contenedor">
+                <div class="headerPrincipal__logo">
+                    <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
+                </div>
+                <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
+                <nav class="navegacion-principal">
+                    <ul class="menu-horizontal">
+                        <li class="item-hori">
+                            <div class="container-burger-menu">
+                                <img class="icon-burger-menu" class src="build/img/icon/burger-menu.png" alt="">
+                                <!-- <p>Desplegar</p> -->
+                            </div>
+                            <ul class="menu-vertical menu-vertical--hover">
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="nosotros">Nosotros</a>
+                                </li>
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="servicios">Servicios</a>
+                                </li>
+                                <li class="item-vert">
+                                    <a class="enlace-menu-princip" href="comunidad">Comunidad</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="headerPrincipal__btn btnHeader" href="#">
+                    ingresar 
+                </a>
+            </div>
+         
+        </header>
+        <div class="container-slider">
+            <div class="btn-left"><i class='bx bxs-chevrons-left'></i></div>
+            <div class="btn-right"><i class='bx bxs-chevrons-right'></i></div>
+            <div class="transparencia">
+    
+            </div>
+        
+            <figure class="slider" id="slider">
+                <section class="slider-section">
+                    <img class="img" src="../build/img/contacto/banner_pageContacto.jpg" alt="">
+                </section>
+                <!-- <section class="slider-section">
+                    <img class="img" src="build/img/slides/poster_2.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img class="img" src="build/img/slides/poster_3.jpg" alt="">
+                </section>
+                <section class="slider-section">
+                    <img class="img" src="build/img/slides/poster_4.jpg" alt="">
+                </section> -->
+            </figure>
+        </div>  
+
+    </section>
+
+
+
+    <!-- SECCION 1. SECCION ABOUT -->
+    <main class="sectionAbout">
+        <div class="contenedor sectionAbout__container">
+            <!-- NUESTRA HISTORIA -->
+            <div class="nuestraHistoria">
+                <h1 class="nuestraHistoria__h1">NUESTRA HISTORIA</h1>
+                <p class="nuestraHistoria__txt">
+                    En TickEvent, estamos comprometidos con la pasión por la creación y celebración de
+                    eventos excepcionales. Nuestra historia se basa en la idea de simplificar la forma en
+                    que se organizan y disfrutan los eventos. Fundada por un equipo apasionado por el
+                    entretenimiento y la comunidad, TickEvent es una plataforma que conecta a
+                    organizadores de eventos, proveedores de servicios y entusiastas de eventos en un
+                    solo lugar.
+                </p>
+                <div class="nuestraHistoria__imgContainer">
+                    <img class="nuestraHistoria__img" src="../build/img/about/about_2.jpg" alt="">
+                </div>
+            </div>
+            <!-- MISION -->
+            <section class="seccionMision">
+                <div class="seccionMision__box">
+                    <div class="seccionMision__imgContainer">
+                        <img class="seccionMision__img" src="../build/img/about/about_3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seccionMision__box">
+                    <h1 class="seccionMision__h1">MISION</h1>
+                    <p class="seccionMision__txt">
+                        Nuestra visión en TickEvent es liderar la industria de los eventos,
+                        proporcionando herramientas avanzadas y tecnología para que los
+                        organizadores y los asistentes creen experiencias únicas.
+                        Queremos inspirar a la comunidad a celebrar, conectarse y
+                        compartir momentos especiales a través de eventos memorables
+                        en todo el mundo.
+                             
+                    </p>
+                </div>
+            </section>
+            <!-- VISION -->
+            <section class="seccionMision seccionMision--vision">
+                <div class="seccionMision__box">
+                    <div class="seccionMision__imgContainer">
+                        <img class="seccionMision__img" src="../build/img/about/about_4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seccionMision__box">
+                    <h1 class="seccionMision__h1">VISION</h1>
+                    <p class="seccionMision__txt">
+                        Nuestra misión en TickEvent es simplificar la planificación, gestión
+                        y promoción de eventos para todos. Al reunir a usuarios
+                        habituales, organizadores de eventos y proveedores de productos
+                        y servicios en un entorno confiable y fácil de usar, fomentamos un
+                        sentido de comunidad y hacemos que los eventos sean accesibles
+                        para todos. 
+                    </p>
+                </div>
+            </section>
+            <!-- BANNER -->
+            <section class="seccionBanner">
+                <div class="seccionBanner__Container">
+                    <div class="seccionBanner__imgContainer">
+                        <img class="seccionBanner__img" src="../build/img/about/about_5.jpg" alt="">
+                    </div>
+                    <div class="seccionBanner__transparencia">
+                        <p class="seccionBanner__transparenciaH2">
+                            Únase a la comunidad TickEvent hoy y comience a
+                            planificar su próximo evento con facilidad
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- SECCION 4. FOOTER -->
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <section class="footer-info">
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">tickevent</h2>
+                        <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Funcionamiento</a></li>
+                            <li><a href="">Porque elegirnos</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">mis tickets</h2>
+                        <ul>
+                            <li><a href="">Reenviar tickets</a></li>
+                            <li><a href="">cancelar tickets</a></li>
+                            <li><a href="">soporte tecnico</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">ciudades</h2>
+                        <ul>
+                            <li><a href="">Que hacer en bogota</a></li>
+                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">Que hacer en Medellin</a></li>
+                            <li><a href="">Conciertos en Santa Marta</a></li>
+                            <li><a href="">Conciertos en Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">siguenos</h2>
+                        <ul>
+                            <li>
+                                <figure class="icono-redes icono-redes-fb"><img src="build/img/icon/facebook.png" alt=""></figure>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <figure class="icono-redes icono-redes-i"><img src="build/img/icon/instagram.png" alt=""></figure>
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="derechos-autor">
+                <p>2023 © Tickevent. Todos los Derechos Reservados.</p>
+                <p>Política de privacidad    |    términos y condiciones</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SECCION 5. LOGIN -->
+    <section class="login">
+        <div class="login__contenido">
+            <a class="login__cierre" href="">cerrar [X]</a>
+
+            <h2 class="login__heading">Iniciar Sesión 
+                <span>¡ Bienvenido !</span> 
+            </h2>
+            <form id="form_login--id" class="login__formulario" method="POST">
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> Porfavor ingresa tus credenciales</legend>
+                    <label for="correo">E-mail</label>
+                    <input type="email" name="correo">
+                    <label for="correo">Contraseña</label>
+                    <input type="password" name="correo">
+                     <button id="login___btnIngresar--id" class="login___btnIngresar" type="submit">Iniciar sesion</button>
+                </fieldset>
+                <fieldset class="login__fieldset">
+                    <legend class="login__legend"> o Inicia sesión con:</legend>
+                    <a class="login__btnGoogle" href="">
+                        <div class="login__img--GoogleContainer">
+                            <img src="build/img/icon/google-search.png" alt="">
+                        </div>
+                        <p>Google</p>
+                    </a>
+                </fieldset>
+                <p class="login__paragraph">No tienes una cuenta? <a href="">Registrate</a> </p>  
+            </form>
+            
+        </div>
+        <div class="login__contenido">
+
+            <div class="login__petContainer">
+                <img src="build/img/pet-corp/tapar_ojos/1.png" alt="">
+            </div>
+        </div>
+
+    </section> 
+
+    <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
+    <script src="build/js/bundle.min.js"></script>
+
+</body>
+
+</html>

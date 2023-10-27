@@ -1,0 +1,39 @@
+.ctasForm_inputContainer{
+    display: flex;
+    height: 4rem;
+
+    .ctasForm_iconInputContainer{
+        height: 100%;
+        display: block;
+        width: 4rem;
+        padding: 0.5rem;
+        
+        border-bottom: solid 2px;
+        border-top: solid 2px;
+        border-left: solid 2px;
+        border-radius: 0.5rem 0 0 0.5rem;
+        border-color:rgba($azul_gris, 0.5);
+
+
+        .ctasForm_iconInput{
+            width: 100%;
+            pointer-events: none;
+        }
+    }
+    input,textarea, select{
+        border-color: rgba($azul_gris, 0.5);
+        border-radius: 0 0.5rem 0.5rem 0;
+        width: 100%;
+    }
+    textarea,input[type="date"]{
+        width: 100%;
+    }
+
+}
+.ctasForm_inputContainer--ctaPromotorDescripcion{
+    height: 25rem;
+    .ctasForm_iconInputContainer{
+        height: 4rem;
+    }
+
+}

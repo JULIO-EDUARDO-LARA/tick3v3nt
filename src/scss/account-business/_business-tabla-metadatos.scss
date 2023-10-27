@@ -1,0 +1,30 @@
+
+// SE ENCUENTRA DENTRO DE LAS TARJETAS
+
+.metadatos-evento{
+    background-color: lighten($color: $primario, $amount: 65%);
+    margin: 1rem auto 0 auto;
+    padding: 0 auto;
+
+    .th-metadata-eventos{
+        // ENCABEZADO METADATOS
+        .InfoCardTh__dato{
+            font-family: $fuente_secundaria;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: $azul_oscuro;
+
+        }
+    }
+    .td-metadata-eventos{
+        font-family: $fuente_secundaria;
+
+
+
+    }
+
+}
+.metadatos-servicio{
+    background-color: lighten($color: $rojo, $amount: 55%);
+
+}

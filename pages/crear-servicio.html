@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--LINKING FAVICON-->
+    <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
+
+    <link rel="stylesheet" href="../build/css/app.css">
+
+    <!-- PARA MAPAS DE GOOGLE--INICIO -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel='stylesheet' href='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css'>
+
+     <!-- Script Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+    <script src='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js'></script>
+    <!-- PARA MAPAS DE GOOGLE--CIERRE -->
+    
+    <title>crear servicio</title>
+</head>
+<body>
+
+<!-- SECCION 1. HEADER -->
+    <header class="header header-user-account">
+        <div class="contenido-header contenido-header-user-account">
+            <!-- SECCION 1.1 LOGO -->
+            <div class="logo">
+                <img src="../logo/logo_1.png" alt="">
+            </div>
+            <!-- SECCION 1.2 BARRA DE NAVEGACION -->
+            <nav class="navegacion-principal">
+                <ul class="menu-horizontal navegacion-principal">
+                    <li class="li-menu-hori">
+                        <a class="enlace-menu-hori enlace-menu-hori--hover" onmouseover="" onmouseout="" href="#">Administrar</a>
+                        <ul class="menu-vertical menu-vertical--hover" >
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">eventos</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">clientes</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">servicios</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-menu-hori">
+                        <a class="enlace-menu-hori enlace-menu-hori--hover" href="#">Estadisticas</a>
+                        <ul class="menu-vertical menu-vertical--hover">
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">por categoria</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">por zonas</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-menu-hori"> 
+                        <a class="enlace-menu-hori enlace-menu-hori--hover" href="#">Publicar</a>
+                        <ul class="menu-vertical menu-vertical--hover">
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">eventos</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">servicios</a></li>
+                        </ul>  
+                    </li>
+                
+                    
+                    
+                </ul>
+
+            </nav>
+
+            <!-- SECCION 1.3 FICHA PERFIL USUARIO -->
+            <div class="ficha-perfil">
+                <div class="contenido-ficha-perfil">
+                    <figure class="foto-perfil">
+                        <img src="../images/perfil-business-pic/foto_bg_blanco_1.png" alt="">
+                        <figcaption>
+                            <h3 class="heading-nombre-negocio" >PROMOTORES S.A.S</h3>
+                        </figcaption>
+                    </figure>
+                    <div class="modal modal-gestionar-cuenta">
+                        <div class="contenido-modal-gestionar-cuenta">
+                            <a class="btn btn-administrar-cuenta" href=""><p>Administrar Cuenta Tickevent</p></a>
+                            <table>
+                                <tr>    <td>Negocio: </td><td>promotores s.a.s</td> </tr>
+                                <tr>    <td>Nombre: </td><td>Alberto Berrios</td>   </tr>
+                                <tr>    <td>Correo: </td><td>albertoberrios@gmail.com</td>  </tr>
+                                <tr>    <td></td><td>salir</td></tr> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- SECCION 1.2 CIERRE  -->
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- SECCION 1.2 FORMULARIO CREAR SERVICIO EVENTO -->
+    <main class="form-crear-evento">
+        <div class="contenedor contenido-formulario">
+            <form class="formulario">
+
+                <!--BOTON SECCION DESPLEGABLE  # 1 INFO BASICA-->
+                <a class="formulario__btn formulario__btn--servicio formBtn__eventCreate--deslizar">
+                    <div class="formulario__btnContainer">
+                        <figure class="formulario__iconContainer">
+                            <img src="../build/img/buttons/servicio.png" alt="">
+                        </figure>
+                        <div class="formulario__h2Container">
+                            <h2 class="formulario__h2">INFORMACION BASICA</h2>
+                        </div>
+                        <figure class="formulario__iconContainer formulario__iconContainer--arrow">
+                            <img class="formulario__iconArrow" src="../build/img/buttons/flecha1.png" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <!-- GRUPO CAMPOS DESPLEGABLES # 1 -->
+                <fieldset class="form-grupo">
+                    <div class="form-grupoContainer">
+
+
+                        <div class="campo">
+                            <label for="servicio">Servicio ofrecido:</label>
+                            <select class="set__data" id="servicio" name="servicio" required>
+                              <option value="">Seleccione un servicio</option>
+                              <option value="Alquiler de juegos inflables">Alquiler de juegos inflables</option>
+                              <option value="Alquiler de piscinas portatiles para parques">Alquiler de piscinas portátiles para parques</option>
+                              <option value="Alquiler de espacios">Alquiler de espacios</option>
+                              <option value="otro">Otros servicio</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label class="descripcionServicio" for="descripcion">Descripción:</label>
+                            <textarea class="set__data" id="descripcionServicio" name="descripcionServicio"></textarea>                     
+                        </div>            
+                    </div>
+                </fieldset>
+
+                <!--BOTON SECCION DESPLEGABLE  # 6 COSTOS-->
+                <!-- <a class="formulario__btn formulario__btn--servicio formBtn__eventCreate--deslizar">
+                    <div class="formulario__btnContainer">
+                        <figure class="formulario__iconContainer">
+                            <img src="../build/img/buttons/costos.png" alt="">
+                        </figure>
+                        <div class="formulario__h2Container">
+                            <h2 class="formulario__h2">COSTOS</h2>
+                        </div>
+                        <figure class="formulario__iconContainer formulario__iconContainer--arrow">
+                            <img class="formulario__iconArrow" src="../build/img/buttons/flecha1.png" alt="">
+                        </figure>
+                    </div>
+                </a> -->
+                <!-- GRUPO CAMPOS DESPLEGABLES # 6 COSTOS-->
+                <!-- <fieldset class="form-grupo">
+                    <div class="form-grupoContainer form-grupoContainer--costos">
+                        <div class="campo">
+                            <label for="aforo">Aforo:</label>
+                            <input class="set__data" type="number" id="aforo" name="aforo">
+                        </div>
+                        <div class="campo">
+                            <label for="aforo">numero de boletas a vender:</label>
+                            <input class="set__data" type="number" id="aforo" name="aforo">
+                        </div>
+                        <div class="campo">
+                            <label for="costo_boleta">Costo boleta:</label>
+                            <input class="set__data" type="number" id="costo_boleta" name="costo_boleta">
+                        </div>                     
+                    </div>
+                </fieldset> -->
+                <!--BOTON SECCION DESPLEGABLE  # 7 IMAGEN-->
+                <a class="formulario__btn formulario__btn--servicio formBtn__eventCreate--deslizar">
+                    <div class="formulario__btnContainer">
+                        <figure class="formulario__iconContainer">
+                            <img src="../build/img/buttons/imagen.png" alt="">
+                        </figure>
+                        <div class="formulario__h2Container">
+                            <h2 class="formulario__h2">IMAGEN DE PROMOCION</h2>
+                        </div>
+                        <figure class="formulario__iconContainer formulario__iconContainer--arrow">
+                            <img class="formulario__iconArrow" src="../build/img/buttons/flecha1.png" alt="">
+                        </figure>
+                    </div>
+                </a>
+                <!-- GRUPO CAMPOS DESPLEGABLES # 7 IMAGEN-->
+                <fieldset class="form-grupo form-grupo--lastFieldset">
+
+                    <div class="campo">
+                        <div class="campo__auxContainer">
+                            <label id="campo__label0102" class="" for="inputUploadImg0102">cargar imágen:</label>
+
+                            <input id="inputUploadImg0102" class="set__data " class="" type="file"  name="inputUploadImg0102" accept="image/*">   
+                        </div>
+
+                        <div class="campo__imgContainer">
+                            <img id="campo__img0102" class="campo__img" src="../build/img/default/imagen-service-product.png" alt="" >
+                        </div>
+
+                    </div>
+               
+                </fieldset>
+                <div class="campo campo--buttonContainer">
+                    <button class="btn_amarillo--inlineBlockEstatic24" type="submit">CREAR SERVICIO</button>
+                </div>
+            </form>
+        
+        </div>
+    </main>
+
+
+    <!-- SECCION . SCRIPT PARA MAPGOOGLE -->
+    <script>
+
+        // Nominatim does not map some actual addresses
+        'use strict';
+
+        // Map
+        const map = L.map('map', {
+        center: [4.716713772370445, -74.06662448808277],
+        zoom: 10,               
+        });
+
+        // Open Street Map 
+        const osm = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&#169; <a href="//www.openstreetmap.org/">OpenStreetMap</a>'
+        }).addTo(map);
+
+        // container for address search results
+        const addressSearchResults = new L.LayerGroup().addTo(map);
+
+        /*** Geocoder ***/
+        // OSM Geocoder
+        const osmGeocoder = new L.Control.geocoder({
+            collapsed: false,
+            position: 'topright',
+            text: 'Address Search',
+            placeholder: 'Enter street address',
+        defaultMarkGeocode: false
+        }).addTo(map);    
+
+        // handle geocoding result event
+        osmGeocoder.on('markgeocode', e => {
+        // to review result object
+        console.log(e);
+        // coordinates for result
+        const coords = [e.geocode.center.lat, e.geocode.center.lng];
+        // center map on result
+        map.setView(coords, 16);
+        // popup for location
+        // todo: use custom icon
+        const resultMarker = L.marker(coords).addTo(map);
+        // add popup to marker with result text
+        resultMarker.bindPopup(e.geocode.name).openPopup();
+        });
+
+        const marker = L.marker([4.650476116279529, -74.08714900414853]).addTo(map)
+            .bindPopup('<b>Posicionemos Tu Evento</b><br />Establece la ubicacion de tu evento.').openPopup();
+/*
+        const popup = L.popup()
+            .setLatLng([4.716713772370445, -74.06662448808277])
+            .setContent('Tickevent siempre contigo')
+            .openOn(map);
+*/
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                .openOn(map);
+        }
+
+
+        map.on('click', function (e) {
+        marker.setLatLng(e.latlng);
+        updateLatLng(marker.getLatLng().lat, marker.getLatLng().lng);
+        });
+        function updateLatLng(lat,lng,reverse) {
+        if(reverse) {
+        marker.setLatLng([lat,lng]);
+        map.panTo([lat,lng]);
+        } else {
+        document.getElementById('latitude').value = marker.getLatLng().lat;
+        document.getElementById('longitude').value = marker.getLatLng().lng;
+        map.panTo([lat,lng]);
+        }
+        }
+    </script>
+
+
+    <!-- SECCION 4. FOOTER -->
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <section class="footer-info">
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">tickevent</h2>
+                        <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Funcionamiento</a></li>
+                            <li><a href="">Porque elegirnos</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">mis tickets</h2>
+                        <ul>
+                            <li><a href="">Reenviar tickets</a></li>
+                            <li><a href="">cancelar tickets</a></li>
+                            <li><a href="">soporte tecnico</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">ciudades</h2>
+                        <ul>
+                            <li><a href="">Que hacer en bogota</a></li>
+                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">Que hacer en Medellin</a></li>
+                            <li><a href="">Conciertos en Santa Marta</a></li>
+                            <li><a href="">Conciertos en Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">siguenos</h2>
+                        <ul>
+                            <li>
+                                <figure class="icono-redes icono-redes-fb"><img src="../images/icon/icon_facebook.png" alt=""></figure>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <figure class="icono-redes icono-redes-i"><img src="../images/icon/icon_instagram.png" alt=""></figure>
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="derechos-autor">
+                <p>2023 © Tickevent. Todos los Derechos Reservados.</p>
+                <p>Política de privacidad    |    términos y condiciones</p>
+            </div>
+
+        </div>
+    </footer>
+
+    
+        
+
+            <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
+            <script src="../build/js/bundle.min.js"></script>
+
+
+    
+    
+</body>
+</html>

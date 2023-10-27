@@ -176,8 +176,6 @@
 
 
         .resultadoValidacion{
-            background-color: rgba($rojo, 0.6);
-
             .resultadoValidacion__ImgContainer{
                 display: block;
                 padding: 1rem;
@@ -187,7 +185,13 @@
                     width: 70%;
                     // height: 30rem;
                 }
-            }
+            }   
+        }
+        .resultadoValidacion--rojo{
+            background-color: rgba($rojo, 0.6);
+        }
+        .resultadoValidacion--verde{
+            background-color: rgba($verde, 0.6);
         }
     }
 }

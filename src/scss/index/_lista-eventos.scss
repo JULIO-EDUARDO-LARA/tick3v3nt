@@ -7,6 +7,7 @@
 }
 
 .contenido-listado-eventos{
+    margin: 0 auto;
     @include grid-col(1, 5rem);
 
     @include mqTablet {
@@ -20,48 +21,85 @@
     }
 }
 .tarjeta-evento {
-    
-    border: $bordes solid 0.2rem;
-    border-radius: 2rem;
-    background-color: $secundario;
+    display: flex;
+    flex-direction: column;
+    background-color: lighten($color: $secundario, $amount: 15%);
     overflow: hidden;
-   
+
+
+
+
     .img-evento{
+        padding: 2.5%;
         height: 17.3rem;
         overflow: hidden;
         position: relative;
+        background-color: lighten($color: $secundario, $amount: 55%);
+
     }
     .pic-img {
-        width: 100%;
+        width: 95%;
         object-fit: cover;
         position: absolute;
         height: 100%;
     }
+    .cardEvent__btnContainer{
+        width: 100%;
+        margin:  auto auto 0 auto;
+    }
 }
 
 .info-evento{
-    padding: 0 2rem 2rem 2rem;   
-    table{
-        th{
-            text-align: left;
+    border-top: 1rem solid lighten($color: $secundario, $amount: 55%);
+    padding: 0 1rem 2rem 1rem;   
+    .infoEvento__tabla{
+        margin: 0 auto;
+        // width: 100%;
+        @include mqTelefono{
+            // width: 100%;
+            
+        }
+        // column-gap: 1rem;
+        // border-collapse: collapse;
+        // border-spacing: 3rem;
+        .tblInfoCard__col--head{
+            padding-top: 0.5rem;
+
+            .InfoCardTh__dato{
+                font-family: $fuente_secundaria;
+                color: $amarillo;
+                font-weight: 400;
+                text-align: center;
+                font-size: 2rem;
+
+            }
+        }
+        td{
+            padding-top: 0.5rem;
+            .InfoCardTd__dato{
+                font-family: $fuente_secundaria;
+                color: $amarillo;
+                padding: 0 2rem;
+                font-size: 1.5rem; 
+                margin-bottom: 0;   
+            }
+            &:nth-child(2){
+                min-width: 10rem;
+            }
+            .tablaInfoCard__iconContainer{
+                width: 2rem;
+                margin-bottom: auto;
+
+            }
         }
         th, td {
-            color: $amarillo;
+            // border: 1px solid yellow;
+            vertical-align:top;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
+            // overflow: hidden; 
         }
     }
 }
 
-.container-btn-detalle-evento{
-    margin: 1rem 0 1rem 0;
-    
-}
-// .btn-detalle-evento{
-    
-//     @include mix.botones(100%, 3rem, 1.5rem);
-    
-    
-//     @include mix.mqDesktop {
-//         @include mix.botones(100%, 3rem, 1.5rem);
-//         color: rgba(var.$colorBackgroundBotones,0.2);
-//     }
-// }
+

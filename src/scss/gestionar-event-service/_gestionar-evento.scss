@@ -1,0 +1,166 @@
+.mainManagement{
+    margin-top: 5rem;
+    figure{display: block;}
+
+
+.mainControIngr__container{
+    display: flex;
+    flex-direction: column;
+
+    @include mqTablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        // align-items: center;
+        gap: 2rem;
+    }
+    // BLOQUE PRINCIPAL 1 ESTADO EVENTO-----------------------------
+    .estadoEvento{
+        min-width: 40%;
+        width: 100%;
+        padding: 1rem;
+        @include mqTablet{width: 30%;}    
+
+        .estadoEvento__imgContainer{
+            display: block;
+
+            padding: 0% 5% 2% 5%;
+            background-color: rgba($azul_gris, 0.5);
+            .estadoEvento__imgContainerAux{
+                width: 100%;
+                height: 20rem;
+                position: relative;
+                padding: 5%;
+                background-color: rgba($azul_gris, 0.5);
+                overflow: hidden;
+
+                .estadoEvento__img{
+
+                    width: 90%;
+                    height: 80%;
+                    position: absolute;
+                    object-fit: cover;
+                }               
+            }
+        }
+        //ESTADO H2 CONTAINER
+        .estadoEvento__h2Container{
+            &>*{
+                pointer-events: none;
+            }
+            padding: 2% 5%;
+            h2{margin: 2rem 0;}
+            background-color: rgba($rojo, 0.3);
+
+            .estadoEvento__h2Border{
+                background-color: rgba($azul_gris, 0.7);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 1rem;   
+                .estadoEvento__h2{
+                    font-size: 1.75rem;
+                    text-align: center;
+                    
+                }
+                .iconContainer{
+                    width: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon{
+                        margin: auto;
+                    }
+
+                }   
+                .iconContainer--arrow{
+                    width: 3rem;
+
+                }                      
+            }
+        }
+        .estadoEvento__h1Container{
+            @extend .estadoEvento__h2Container;
+            h1{margin: 2rem 0;}
+            padding: 2% 5% 0% 5%;
+            background-color: rgba($azul_gris, 0.5);
+            .estadoEvento__h1Border{
+                @extend .estadoEvento__h2Border;
+                background-color: rgba($azul_gris, 0.5);
+                padding: 0 1rem
+            }
+            .estadoEvento__h1{
+                @extend .estadoEvento__h2;
+                color: rgba($azul_oscuro, 0.7);
+            }                        
+            
+        }        
+        //ESTADO H2 CONTAINER
+       
+        .tablaEstadoContainer{
+            transition: height 0.6s;
+            overflow: hidden;
+            padding: 0 5%;
+            background-color: rgba($rojo, 0.2);
+            height: 0;
+        }
+        .tablaEstadoContainer--desplegar{
+            overflow:none;
+            transition: height 0.6s;
+        }
+        .tablaEstado{
+            width: 100%;
+            margin: 0 auto;
+            background-color: rgba($azul_gris, 0.7);
+            border-collapse: separate;
+            border-spacing: 0px 0px;
+            td{
+                vertical-align:text-top;
+                padding: 1rem;
+                border-color: solid 1px red;
+                border-bottom: 1px solid rgba($blanco, 0.2);
+                a{
+                    color: rgba($azul_oscuro, 0.7);
+                    display: block;
+                    margin: 0 0 auto 0;
+                }
+            }
+        }
+    }
+    .estadoEvento--controles{
+        @include mqTablet{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100%;
+        }
+
+        
+    }
+    .estadoEvento--datos{
+        @include mqTablet{
+            width: 82%;
+        }
+        .iconContainer--arrow{
+ 
+            transition: transform 0.6s
+
+        }
+        .iconContainer--arrowRotate{
+            transform: rotate(90deg);
+            transition: transform 0.6s
+    
+        }
+    }
+
+//BORRAR DE AQUI PAERA ABAJO
+
+
+}
+
+.estadoEvento__h2Container--a{
+    display: block;
+}
+
+}//CIERRE <main class="mainControIngr">

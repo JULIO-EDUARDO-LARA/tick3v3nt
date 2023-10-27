@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--LINKING FAVICON-->
+    <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
+
+    <link rel="stylesheet" href="../build/css/app.css">
+
+    <!-- PARA MAPAS DE GOOGLE--INICIO -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel='stylesheet' href='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css'>
+
+     <!-- Script Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'></script>
+    <script src='https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js'></script>
+    <!-- PARA MAPAS DE GOOGLE--CIERRE -->
+    
+    <title>editar perfil</title>
+</head>
+<body>
+
+<!-- SECCION 1. HEADER -->
+    <header class="header header-user-account">
+        <div class="contenido-header contenido-header-user-account">
+            <!-- SECCION 1.1 LOGO -->
+            <div class="logo">
+                <img src="../logo/logo_1.png" alt="">
+            </div>
+            <!-- SECCION 1.2 BARRA DE NAVEGACION -->
+            <nav class="navegacion-principal">
+                <ul class="menu-horizontal navegacion-principal">
+                    <li class="li-menu-hori">
+                        <a class="enlace-menu-hori enlace-menu-hori--hover" onmouseover="" onmouseout="" href="#">Administrar</a>
+                        <ul class="menu-vertical menu-vertical--hover" >
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">eventos</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">clientes</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">servicios</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-menu-hori">
+                        <a class="enlace-menu-hori enlace-menu-hori--hover" href="#">Estadisticas</a>
+                        <ul class="menu-vertical menu-vertical--hover">
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">por categoria</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">por zonas</a></li>
+                        </ul>
+                    </li>
+                    <li class="li-menu-hori"> 
+                        <a class="enlace-menu-hori enlace-menu-hori--hover" href="#">Publicar</a>
+                        <ul class="menu-vertical menu-vertical--hover">
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">eventos</a></li>
+                            <li class="li-menu-vert"><a class="enlace-menu-vert" href="">servicios</a></li>
+                        </ul>  
+                    </li>
+                
+                    
+                    
+                </ul>
+
+            </nav>
+
+            <!-- SECCION 1.3 FICHA PERFIL USUARIO -->
+            <div class="ficha-perfil">
+                <div class="contenido-ficha-perfil">
+                    <figure class="foto-perfil">
+                        <img src="../images/perfil-business-pic/foto_bg_blanco_1.png" alt="">
+                        <figcaption>
+                            <h3 class="heading-nombre-negocio" >PROMOTORES S.A.S</h3>
+                        </figcaption>
+                    </figure>
+                    <div class="modal modal-gestionar-cuenta">
+                        <div class="contenido-modal-gestionar-cuenta">
+                            <a class="btn btn-administrar-cuenta" href=""><p>Administrar Cuenta Tickevent</p></a>
+                            <table>
+                                <tr>    <td>Negocio: </td><td>promotores s.a.s</td> </tr>
+                                <tr>    <td>Nombre: </td><td>Alberto Berrios</td>   </tr>
+                                <tr>    <td>Correo: </td><td>albertoberrios@gmail.com</td>  </tr>
+                                <tr>    <td></td><td>salir</td></tr> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- SECCION 1.2 CIERRE  -->
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- SECCION EDICION DE CUENTAS -->
+    <main class="adminCtas">
+        <div class="contenedor adminCtas__container">
+            <form class="ctasForm">
+                <!-- CONTENEDOR GRUPO DE CAMPOS DE CUENTA PERSONAL -->
+                <div class="fieldsGrup fieldsGrup--ctaPersonal">
+                    <!--SECCION ENCABEZADO  # 1 -->
+                    <a class="ctasForm__encabezado">
+                        <div class="ctasForm__encabezadoContainer">
+                            <div class="ctasForm__h2Encabezado">
+                                <h2 class="ctasForm__h2">PERFIL PERSONAL</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- GRUPO CAMPOS CUENTA PERSONAL # 1 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--fotoPerfil ctasForm__fieldset--fotoPerfilPersonal">
+                        <legend>FOTO DE PERFIL</legend>
+
+                        <div class="ctas__campo">
+                            <div class="ctasCampo__auxContainer">
+                                <div class="ctasCampo__auxContainerFile">
+                                    <label id="campo__label0201" class="ctasCampo__btn" for="inputUploadImg0201">cargar imágen</label>
+                                    <input id="inputUploadImg0201" class="inputSet__data" class="" type="file"  name="inputUploadImg0201" accept="image/*">   
+                                </div>
+
+                            </div>
+
+                            <div class="ctasCampo__imgContainer">
+                                <img id="campo__img0201" class="ctasCampo__img" src="../build/img/default/usuario.png" alt="" >
+                            </div>
+
+                        </div>
+                    </fieldset>               
+                    <!-- GRUPO CAMPOS CUENTA PERSONAL # 2 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--ctaPersonal">
+                        <legend>DATOS PERSONALES</legend>
+                        <div class="ctasForm__fieldsetContainer ctasForm__fieldsetContainer--ctaPersonal">
+
+                            <div class="ctas__campo">
+                                <label for="nombres">Nombres:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/nombres.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="nombres" name="nombres">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ctas__campo">
+                                <label for="apellidos">Apellidos:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/apellidos.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="apellidos" name="apellidos">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>
+                            <div class="ctas__campo">
+                                <label for="identificacion">No Identificacion:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/identificacion.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="number" id="identificacion" name="identificacion">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>
+                            <div class="ctas__campo">
+                                <label for="nacimiento">Fecha de nacimiento:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/cumpleanios.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="date" id="nacimiento" name="nacimiento">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>
+
+                            <div class="ctas__campo">
+                                <label for="apodo">Nickname:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/apodo.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="apodo" name="apodo">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>
+
+                            <div class="ctas__campo">
+                                <label for="user">Tipo Usuario:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/tipo_usuario.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="user" name="user">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="ctas__campo">
+                                <label for="email">Correo:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/correo.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="email" id="email" name="email">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                    
+                            </div>                   
+                            
+                
+                            <div class="ctas__campo">
+                                <label for="celular">Celular:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/celular.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="tel" id="celular" name="celular">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>                   
+                                
+                        </div>
+                    </fieldset>                   
+                </div>
+
+
+                <!-- CONTENEDOR GRUPO DE CAMPOS DE CUENTA PROMOTOR -->
+                <div class="fieldsGrup fieldsGrup--ctaPromotor">
+                    <!--SECCION ENCABEZADO CUENTA PROMOTOR # 1 -->
+                    <a class="ctasForm__encabezado">
+                        <div class="ctasForm__encabezadoContainer">
+                            <div class="ctasForm__h2Encabezado">
+                                <h2 class="ctasForm__h2">PERFIL PROMOTOR</h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- GRUPO CAMPOS CUENTA PROMOTOR # 1 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--fotoPerfil">
+                        <legend>FOTO DE PERFIL</legend>
+
+                        <div class="ctas__campo">
+                            <div class="ctasCampo__auxContainer">
+                                <div class="ctasCampo__auxContainerFile">
+                                    <label id="campo__label0202" class="ctasCampo__btn" for="inputUploadImg0202">cargar imágen</label>
+                                    <input id="inputUploadImg0202" class="inputSet__data" class="" type="file" name="inputUploadImg0202" accept="image/*">                          
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="ctasCampo__imgContainer">
+                                <img id="campo__img0202" class="ctasCampo__img" src="../build/img/default/foto_bg_empresa.png" alt="" >
+                            </div>
+
+                        </div>
+                    </fieldset>               
+
+                    <!-- GRUPO CAMPOS CUENTA PROMOTOR # 2 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--ctaPromotor">
+                        <legend>DATOS DE LA EMPRESA</legend>
+        
+                        <div class="ctasForm__fieldsetContainer ctasForm__fieldsetContainerPromotor">
+
+                            <div class="ctas__campo">
+                                <label for="nombres">NIT:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/nit.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="nombres" name="nombres">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ctas__campo">
+                                <label for="apellidos">Razon Social:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/apellidos.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="apellidos" name="apellidos">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>
+                            <div class="ctas__campo">
+                                <label for="identificacion">No Identificacion:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/identificacion.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="number" id="identificacion" name="identificacion">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>                                       
+                                
+                        </div>
+                    </fieldset>                   
+                    <!-- GRUPO CAMPOS CUENTA PROMOTOR # 3 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--ctaPromotor">
+                        <legend>OBJETO SOCIAL</legend>
+        
+                        <div class="ctasForm__fieldsetContainer ctasForm__fieldsetContainerPromotor ctasForm__fieldsetContainerPromotorObjetoSocial">
+
+                            <!-- <div class="ctas__campo">
+                                <label for="categoria">Categoria:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/nombres.png" alt="">
+                                    </figure>
+                                    <select class="inputSet__data" id="categoria" name="categoria">
+                                        <option value="Musical">Musical</option>
+                                        <option value="Teatro">Teatro</option>
+                                        <option value="Deporte">Deporte</option>
+                                        <option value="" selected>Seleccione una categoría</option>
+                                    </select>
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="ctas__campo ctas__campo--ctaPromotorDescripcion">
+                                <label for="descripcion">Descripcion:</label>
+                                <div class="ctasForm_inputContainer  ctasForm_inputContainer--ctaPromotorDescripcion">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/textarea/objeto_social.png" alt="">
+                                    </figure>
+                                    <textarea name="descripcion" id="descripcion" cols="16" rows="30"  class="inputSet__data"></textarea>
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>                                      
+                                
+                        </div>
+                    </fieldset>                   
+                    <!-- GRUPO CAMPOS CUENTA PROMOTOR # 4 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--ctaPromotor">
+                        <legend>DOMICILIO</legend>
+        
+                        <div class="ctasForm__fieldsetContainer ctasForm__fieldsetContainerPromotor">
+
+                            <div class="ctas__campo ctas__campo--ctaPromotorDireccion">
+                                <label for="direccion">Direccion:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/direccion_empresa.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="text" id="direccion" name="direccion">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>                         
+                        </div>
+                    </fieldset>                   
+                    <!-- GRUPO CAMPOS CUENTA PROMOTOR # 5 -->
+                    <fieldset class="ctasForm__fieldset ctasForm__fieldset--ctaPromotor">
+                        <legend>CONTACTO</legend>
+        
+                        <div class="ctasForm__fieldsetContainer ctasForm__fieldsetContainerPromotor">
+
+                            <div class="ctas__campo">
+                                <label for="corpEmail">correo:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/correo.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="email" id="corpEmail" name="corpEmail">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div> 
+
+                            <div class="ctas__campo">
+                                <label for="corpEmail">Telefono:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/telefono.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="email" id="corpEmail" name="corpEmail">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>                         
+
+                            <div class="ctas__campo">
+                                <label for="corpCelular">Celular:</label>
+                                <div class="ctasForm_inputContainer">
+                                    <figure class="ctasForm_iconInputContainer">
+                                        <img class="ctasForm_iconInput" src="../build/img/icon/input/celular.png" alt="">
+                                    </figure>
+                                    <input class="inputSet__data" type="tel" id="corpCelular" name="corpCelular">
+                                    <div class="ctasForm__btnContainer">
+                                        <a class="ctasForm__btn btn_edicionFieldsForm--inlineEstatic">editar</a>
+                                    </div>
+                                </div>                   
+                            </div>                         
+                        </div>
+                    </fieldset>                   
+                </div>
+                <div class="ctasForm__btnContainer">
+                    <input class="ctasForm__btn btn_gris--inlineBlockEstatic24" href="" value="GUARDAR CAMBIOS">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+
+    <!-- SECCION . SCRIPT PARA MAPGOOGLE -->
+    <script>
+
+        // Nominatim does not map some actual addresses
+        'use strict';
+
+        // Map
+        const map = L.map('map', {
+        center: [4.716713772370445, -74.06662448808277],
+        zoom: 10,               
+        });
+
+        // Open Street Map 
+        const osm = L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&#169; <a href="//www.openstreetmap.org/">OpenStreetMap</a>'
+        }).addTo(map);
+
+        // container for address search results
+        const addressSearchResults = new L.LayerGroup().addTo(map);
+
+        /*** Geocoder ***/
+        // OSM Geocoder
+        const osmGeocoder = new L.Control.geocoder({
+            collapsed: false,
+            position: 'topright',
+            text: 'Address Search',
+            placeholder: 'Enter street address',
+        defaultMarkGeocode: false
+        }).addTo(map);    
+
+        // handle geocoding result event
+        osmGeocoder.on('markgeocode', e => {
+        // to review result object
+        console.log(e);
+        // coordinates for result
+        const coords = [e.geocode.center.lat, e.geocode.center.lng];
+        // center map on result
+        map.setView(coords, 16);
+        // popup for location
+        // todo: use custom icon
+        const resultMarker = L.marker(coords).addTo(map);
+        // add popup to marker with result text
+        resultMarker.bindPopup(e.geocode.name).openPopup();
+        });
+
+        const marker = L.marker([4.650476116279529, -74.08714900414853]).addTo(map)
+            .bindPopup('<b>Posicionemos Tu Evento</b><br />Establece la ubicacion de tu evento.').openPopup();
+/*
+        const popup = L.popup()
+            .setLatLng([4.716713772370445, -74.06662448808277])
+            .setContent('Tickevent siempre contigo')
+            .openOn(map);
+*/
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(`You clicked the map at ${e.latlng.toString()}`)
+                .openOn(map);
+        }
+
+
+        map.on('click', function (e) {
+        marker.setLatLng(e.latlng);
+        updateLatLng(marker.getLatLng().lat, marker.getLatLng().lng);
+        });
+        function updateLatLng(lat,lng,reverse) {
+        if(reverse) {
+        marker.setLatLng([lat,lng]);
+        map.panTo([lat,lng]);
+        } else {
+        document.getElementById('latitude').value = marker.getLatLng().lat;
+        document.getElementById('longitude').value = marker.getLatLng().lng;
+        map.panTo([lat,lng]);
+        }
+        }
+    </script>
+
+
+    <!-- SECCION 4. FOOTER -->
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <section class="footer-info">
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">tickevent</h2>
+                        <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Funcionamiento</a></li>
+                            <li><a href="">Porque elegirnos</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">mis tickets</h2>
+                        <ul>
+                            <li><a href="">Reenviar tickets</a></li>
+                            <li><a href="">cancelar tickets</a></li>
+                            <li><a href="">soporte tecnico</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">ciudades</h2>
+                        <ul>
+                            <li><a href="">Que hacer en bogota</a></li>
+                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">Que hacer en Medellin</a></li>
+                            <li><a href="">Conciertos en Santa Marta</a></li>
+                            <li><a href="">Conciertos en Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">siguenos</h2>
+                        <ul>
+                            <li>
+                                <figure class="icono-redes icono-redes-fb"><img src="../images/icon/icon_facebook.png" alt=""></figure>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <figure class="icono-redes icono-redes-i"><img src="../images/icon/icon_instagram.png" alt=""></figure>
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="derechos-autor">
+                <p>2023 © Tickevent. Todos los Derechos Reservados.</p>
+                <p>Política de privacidad    |    términos y condiciones</p>
+            </div>
+
+        </div>
+    </footer>
+
+    
+        
+
+            <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
+            <script src="../build/js/bundle.min.js"></script>
+
+
+    
+    
+</body>
+</html>

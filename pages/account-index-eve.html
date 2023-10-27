@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--LINKING FAVICON-->
+    <link rel="icon" type="image/ico" href="/favicon/favicon_2.ico">
+
+    <!--LINKING STYLESHEETS-->
+    <link rel="stylesheet" href="../build/css/app.css">
+
+    <title>account-indexEv</title>
+</head>
+<body onload="myFunction()">
+    <!-- SECCION 1. HEADER PRINCIPAL -->
+    <section class="headerPrincipal">
+        <!-- SECCION 1.1 HEADER -->
+        <header class="headerPrincipal__header headerPrincipal__header--userAccount utl-position-relative">
+            <div class="headerPrincipal__logo--users">
+                <a href=""><img src="../build/img/logotipo/logo_1.png" alt=""></a>
+            </div>
+            <div class="header__usersAccount contenedor">
+
+                <!-- SECCION 1.1.1 HEADER NAVEGACION PROMOTOR----------------------------------------------------------------------- -->
+                <section class="seccion__navUser seccion__navUser--promotor">
+                   
+                    <nav class="nav__user nav__user--promotor">
+                        <ul class="lista">
+                            <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
+                                <div class="lista__btn lista__btn--1 lista__btn--1click">
+                                    <!-- SECCION 1.1.2.1 CONTENEDOR DE IMAGEN DE PERFIL PROMOTOR -->
+                                    <figure class="lista__imgUsers">
+                                        <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                                    </figure>
+                                    <a class="lista__link lista__link--1 lista__btnTextValue">Opciones</a>
+                                    <div class="icon__container icon__container--1">
+                                        <img class="icon_arrow icon_arrow--1" src="../build/img/buttons/flecha1.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- LISTA CONTENEDORA PRINCIPAL DE LOS ITEMS -->
+                                <ul class="lista__mostrar lista__mostrar--1 lista__mostrar--1promotor">
+
+                                    <li class="lista__item lista__item--click lista__item--2">
+                                        <div class="lista__btn lista__btn--2">
+                                            <a class="lista__link lista__link--2" href="">Panel Administrador</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="lista__item lista__item--click lista__item--click2 lista__item--2">
+                                        <div class="lista__btn lista__btn--2 lista__btn--2promotor lista__btn--2click">
+                                            <a class="lista__link lista__link--click lista__link--2" href="">Crear</a>
+                                            <div class="icon__container icon__container--2">
+                                                <img class="icon__arrow icon__arrow--2" src="../build/img/buttons/flecha2.png" alt="">
+                                            </div>                                
+                                        </div>
+                                        <ul class="lista__mostrar lista__mostrar--2 lista__mostrar--2promotor">
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Evento</a>
+                                                </div>
+
+                                            </li>
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Servicio</a>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav> 
+                </section>
+                <!-- SECCION 1.1.2.1 FICHA DE PERFIL PROMOTOR ----------------------------------------->
+                <div class="fichaPerfil__container fichaPerfil__container--promotor">
+                    <figure class="fichaPerfil__imgContainer">
+                        <img src="../build/img/default/foto_bg_empresa.png" alt="">
+                    </figure>
+                    <div class="fichaPerfil__nombreCtaRegular">
+                        <h3>Andamios y tarimas S.A.S sos lo mejor de este </h3>
+                    </div>
+                </div> 
+
+
+                <!-- SECCION 1.1.1 HEADER NAVEGACION REGULAR----------------------------------------------------------------------- -->
+                <section class="seccion__navUser seccion__navUser--regular">
+                    <!-- SECCION 1.1.1 NAVEGACION PRINCIPAL -->
+                    <nav class="nav__user nav__user--regular">
+                        <ul class="lista">
+                            <li class="lista__item lista__item--click lista__item--click1 lista__item--1">
+                                <div class="lista__btn lista__btn--1 lista__btn--1regular lista__btn--1click">
+                                    <!-- SECCION 1.1.2.1 CONTENEDOR DE IMAGEN DE PERFIL REGULAR -->
+                                    <figure class="lista__imgUsers">
+                                        <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                                    </figure>
+                                    <a class="lista__link lista__link--1 lista__btnTextValue">Opciones</a>
+                                    <div class="icon__container icon__container--1">
+                                        <img class="icon__arrow icon__arrow--1" src="../build/img/buttons/flecha1.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- LISTA CONTENEDORA PRINCIPAL DE LOS ITEMS -->
+                                <ul class="lista__mostrar lista__mostrar--1 lista__mostrar--1regular">
+                                    <li class="lista__item lista__item--click lista__item--2">
+                                        <div class="lista__btn lista__btn--2">
+                                            <a class="lista__link lista__link--2" href="">Mis eventos</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="lista__item">
+                                        <div class="lista__btn lista__btn--2 lista__btn--2regular lista__btn--2click">
+                                            <a class="lista__link lista__link--click lista__link--2" href="">Administrar</a>
+                                            <div class="icon__container icon__container--2">
+                                                <img class="icon__arrow icon__arrow--2" src="../build/img/buttons/flecha2.png" alt="">
+                                            </div>                                
+                                        </div>
+                                        <ul class="lista__mostrar lista__mostrar--2 lista__mostrar--2regular">
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Cristian </a>
+                                                </div>
+                                            </li>
+                                            <li class="lista__item lista__item--3">
+                                                <div class="lista__btn lista__btn--3">
+                                                    <a class="lista__link lista__link--3" href="">Andamiosssssssssss y tarimas S.A.S</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                
+                <!-- SECCION 1.1.2.1 FICHA DE PERFIL REGULAR ----------------------------------------->
+                <div class="fichaPerfil__container">
+                    <figure class="fichaPerfil__imgContainer">
+                        <img src="../build/img/default/foto_bg_blanco_1.png" alt="">
+                    </figure>
+                    <div class="fichaPerfil__nombreCtaRegular">
+                        <h3>Cristian Benitez</h3>
+                    </div>
+                </div>
+               
+            </div>
+
+        </header> 
+    </section>
+
+    <!-- SECCION 2. SEARCH BAR -->
+    <section class="barra-busqueda">
+        <div class="contenedor contenido-barra-busqueda">
+            <form class="form-busqueda">
+                <input class="campo-busqueda" type="search" name="Buscar Evento" placeholder="  Buscar Evento..">
+                <input class="campo-busqueda" type="search" name="Buscar Ciudad" placeholder="  Buscar Ciudad..">
+            </form>
+            <a class="btn-icon btn-icon-proveedores" href="">
+                <p id="circle" class="texto-btn-icon texto-btn-icon-2">proveedor productos&servicios</p>
+                <picture class="icon-proveedores" > <img src="../build/img/buttons/btn-suppliers.png" alt=""> </picture>
+            </a>
+        </div> 
+    </section>
+
+<!-- SECCION . MI LISTA DE EVENTOS PARA COMENTAR -->
+<main class="listEventServices">
+
+    <div class="contenedor listEventServices__container">
+
+        <!--SECCION 3.1 TARGETA  #1 -->
+        <h1 class="listEventServices__h1">SWEDISH HOUSE MAFIA</h1>
+        <div class="cardHorizontal">
+            <!--SECCION 3.1.1 SUPERIOR: PARA FOTO E INFORMACION -->
+            <div class="cardHorizontal__aux 
+                        cardHorizontal__auxImgInfoEvento">
+                <!--SECCION 3.1.1.1 CONTENEDOR DE FOTO -->
+                <div class="cardHorizontal__container 
+                            cardHorizontal__container--img">
+                    <figure class="img-evento">
+                        <img class="pic-img" src="../build/img/eventos/poster_1.jpg" alt="">
+                    </figure>
+                </div>
+                <!--SECCION 3.1.1.2 CONTENEDOR DE INFORMACION -->
+                <div class="cardHorizontal__container 
+                            cardHorizontal__containerInfoEvento">
+                    <div class="info-evento">
+                        <!-- TABLA 1 DATOS BASICOS DE EVENTO (INICIO) -->
+                        <table class="infoEvento__tabla">
+                            <!-- <tr> 
+                                <th colspan="2" class="tblInfoCard__col tblInfoCard__col--head">
+                                    <p class="InfoCardTh__dato">SWEDISH HOUSE MAFIA</p>
+                                </th> 
+                            </tr> -->
+                            <tbody>
+                                <tr>
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/logoPpromotores/logo_promotor_1.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">Promotor, Andamiajes LTDA</p>  
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/cronometro_blanco.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">faltan 3 dias, 13 Mayo 2023</p>
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/tiquete_blanco.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">89 entradas disponibles</p>
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/lugar_blanco.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">Gran salon plaza mayor, Botota</p>
+                                    </td> 
+                                </tr>
+
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+    
+                    </div>                
+                </div>
+            </div>
+            <!--SECCION 3.1.2 INFERIOR: INTERACCIONES GENERALES -->
+            <div class="cardHorizontal__aux 
+                        cardHorizontal__auxInteracciones">
+
+                <div class="cardInteraccion">
+                    <!--SECCION 3.1.2.1: LIKES Y COMPRAR -->
+                    <div class="cardInteraccion__ctrlContainer">
+                        <div class="pulgarContainer">
+                            <a class="pulgarContainer__btnImg 
+                                           pulgarContainer__btnImg--up">
+                                <img class="pulgar__img" src="../build/img/buttons/pulgar-arriba.png" alt=""
+                                >
+                                <p class="pulgar__num 
+                                                   pulgar__numDislikes">
+                                    9.834
+                                </p> 
+                            </a>
+                            <div class="pulgarContainer__btnLineaDivision"></div>
+                            <a class="pulgarContainer__btnImg 
+                                           pulgarContainer__btnImg--down">
+                                <img class="pulgar__img 
+                                            pulgar__imgDown" src="../build/img/buttons/pulgar-abajo.png" alt=""
+                                >
+                                <figpcaption class="pulgar__num 
+                                                   pulgar__numDislikes">
+                                    1.004
+                                </figpcaption> 
+                            </a>
+                        </div>
+                        <a class="carritoBtn">
+                            <figure class="carritoBtn__container">
+                                <img clas="carritoBtn__img" src="../build/img/buttons/carrito_compras_blanco.png" alt="">
+                                <figcaption class="carritoBtn__txtContainer"><p class="carritoBtn__txt">comprar</p></figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!--SECCION 3.1.2.2: ACCION DE COMENTAR -->
+                    <form class="cardInteraccion__ctrlContainer 
+                                cardInteraccion__ctrlContainer--comentar">
+                        <div class="comentar">
+                            <label class="comentar__label" for="comentar0101">comentar</label>
+                          
+                                <input class="comentar__input"  type="text" name="comentar0101" id="comentar0101">
+                                <input class="comentar__inputSubmit" type="image" src="../build/img/buttons/enviar.png" alt="Enviar" name="enviar">                                
+                    
+
+                        </div>
+                    </form>
+                    <!--SECCION 3.1.2.3: LISTA DE COMENTARIOS -->
+                    <div class="cardInteraccion__ctrlContainer 
+                                seccionComentarios">
+                        <div class="seccionComentarios__container">
+                            <div class="seccionComentario__containerComentario">
+                                <figure class="seccionComentario__imgContainer">
+                                    <img class="seccionComentario__img" src="../build/img/usuarios/img_usuario_1.jpg" alt="">
+                                </figure>
+                                <div class="estructuraComent">
+                                    <p class="estructuraComent__nameUsser">juan</p>
+                                    <p class="estructuraComent__txt">Lorem ipsum dolor sit amet consectetur similique officia magni sint ipsam quia.</p>
+                                    <div class="estructuraComent__metadatos">
+                                        <p class="estructuraComent__fecha">2023-07-01 .</p>
+                                        <p class="estructuraComent__hora">19:25 horas</p>
+                                        <a class="estructuraComent__pulgarUpImgContainer">
+                                            <img class="estructuraComent__pulgarImg" src="../build/img/buttons/pulgar-arriba.png" alt="">
+                                            <figcaption class="estructuraComent__numPulgarUp">3</figcaption>
+                                        </a>
+                                        <a class="estructuraComent__pulgarDownImgContainer">
+                                            <img class="estructuraComent__pulgarImg" src="../build/img/buttons/pulgar-abajo.png" alt="">
+                                            <figcaption class="estructuraComent__numPulgarDown">3</figcaption>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--SECCION 3.1 TARGETA  #2 -->
+        <h1 class="listEventServices__h1">SWEDISH HOUSE MAFIA</h1>
+        <div class="cardHorizontal">
+            <!--SECCION 3.1.1 SUPERIOR: PARA FOTO E INFORMACION -->
+            <div class="cardHorizontal__aux 
+                        cardHorizontal__auxImgInfoEvento">
+                <!--SECCION 3.1.1.1 CONTENEDOR DE FOTO -->
+                <div class="cardHorizontal__container 
+                            cardHorizontal__container--img">
+                    <figure class="img-evento">
+                        <img class="pic-img" src="../build/img/eventos/poster_2.jpg" alt="">
+                    </figure>
+                </div>
+                <!--SECCION 3.1.1.2 CONTENEDOR DE INFORMACION -->
+                <div class="cardHorizontal__container 
+                            cardHorizontal__containerInfoEvento">
+                    <div class="info-evento">
+                        <!-- TABLA 1 DATOS BASICOS DE EVENTO (INICIO) -->
+                        <table class="infoEvento__tabla">
+                            <!-- <tr> 
+                                <th colspan="2" class="tblInfoCard__col tblInfoCard__col--head">
+                                    <p class="InfoCardTh__dato">SWEDISH HOUSE MAFIA</p>
+                                </th> 
+                            </tr> -->
+                            <tbody>
+                                <tr>
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/logoPpromotores/logo_promotor_1.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">Promotor, Andamiajes LTDA</p>  
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/cronometro_blanco.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">faltan 3 dias, 13 Mayo 2023</p>
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/tiquete_blanco.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">89 entradas disponibles</p>
+                                    </td> 
+                                </tr>
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="../build/img/icon/lugar_blanco.png" alt="">
+                                        </div>
+                                    </td>
+        
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <p class="InfoCardTd__dato">Gran salon plaza mayor, Botota</p>
+                                    </td> 
+                                </tr>
+
+                                <tr> 
+                                    <td class="tblInfoCard__col tblInfoCard__col--body">
+                                        <div class="tablaInfoCard__iconContainer">
+                                            <img class="tablaInfoCard__icon" src="" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+    
+                    </div>                
+                </div>
+            </div>
+            <!--SECCION 3.1.2 INFERIOR: INTERACCIONES GENERALES -->
+            <div class="cardHorizontal__aux 
+                        cardHorizontal__auxInteracciones">
+
+                <div class="cardInteraccion">
+                    <!--SECCION 3.1.2.1: LIKES Y COMPRAR -->
+                    <div class="cardInteraccion__ctrlContainer">
+                        <div class="pulgarContainer">
+                            <a class="pulgarContainer__btnImg 
+                                           pulgarContainer__btnImg--up">
+                                <img class="pulgar__img" src="../build/img/buttons/pulgar-arriba.png" alt=""
+                                >
+                                <p class="pulgar__num 
+                                                   pulgar__numDislikes">
+                                    9.834
+                                </p> 
+                            </a>
+                            <div class="pulgarContainer__btnLineaDivision"></div>
+                            <a class="pulgarContainer__btnImg 
+                                           pulgarContainer__btnImg--down">
+                                <img class="pulgar__img 
+                                            pulgar__imgDown" src="../build/img/buttons/pulgar-abajo.png" alt=""
+                                >
+                                <figpcaption class="pulgar__num 
+                                                   pulgar__numDislikes">
+                                    1.004
+                                </figpcaption> 
+                            </a>
+                        </div>
+                        <a class="carritoBtn">
+                            <figure class="carritoBtn__container">
+                                <img clas="carritoBtn__img" src="../build/img/buttons/carrito_compras_blanco.png" alt="">
+                                <figcaption class="carritoBtn__txtContainer"><p class="carritoBtn__txt">comprar</p></figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <!--SECCION 3.1.2.2: ACCION DE COMENTAR -->
+                    <form class="cardInteraccion__ctrlContainer 
+                                cardInteraccion__ctrlContainer--comentar">
+                        <div class="comentar">
+                            <label class="comentar__label" for="comentar0101">comentar</label>
+                          
+                                <input class="comentar__input"  type="text" name="comentar0101" id="comentar0101">
+                                <input class="comentar__inputSubmit" type="image" src="../build/img/buttons/enviar.png" alt="Enviar" name="enviar">                                
+                    
+
+                        </div>
+                    </form>
+                    <!--SECCION 3.1.2.3: LISTA DE COMENTARIOS -->
+                    <div class="cardInteraccion__ctrlContainer 
+                                seccionComentarios">
+                        <div class="seccionComentarios__container">
+                            <div class="seccionComentario__containerComentario">
+                                <figure class="seccionComentario__imgContainer">
+                                    <img class="seccionComentario__img" src="../build/img/usuarios/img_usuario_1.jpg" alt="">
+                                </figure>
+                                <div class="estructuraComent">
+                                    <p class="estructuraComent__nameUsser">juan</p>
+                                    <p class="estructuraComent__txt">Lorem ipsum dolor sit amet consectetur similique officia magni sint ipsam quia.</p>
+                                    <div class="estructuraComent__metadatos">
+                                        <p class="estructuraComent__fecha">2023-07-01 .</p>
+                                        <p class="estructuraComent__hora">19:25 horas</p>
+                                        <a class="estructuraComent__pulgarUpImgContainer">
+                                            <img class="estructuraComent__pulgarImg" src="../build/img/buttons/pulgar-arriba.png" alt="">
+                                            <figcaption class="estructuraComent__numPulgarUp">3</figcaption>
+                                        </a>
+                                        <a class="estructuraComent__pulgarDownImgContainer">
+                                            <img class="estructuraComent__pulgarImg" src="../build/img/buttons/pulgar-abajo.png" alt="">
+                                            <figcaption class="estructuraComent__numPulgarDown">3</figcaption>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+ 
+    </div>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION 4. FOOTER -->
+    <footer class="footer">
+        <div class="contenedor contenido-footer">
+            <section class="footer-info">
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">tickevent</h2>
+                        <ul>
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Funcionamiento</a></li>
+                            <li><a href="">Porque elegirnos</a></li>
+                            <li><a href="">Tarifas</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">mis tickets</h2>
+                        <ul>
+                            <li><a href="">Reenviar tickets</a></li>
+                            <li><a href="">cancelar tickets</a></li>
+                            <li><a href="">soporte tecnico</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">ciudades</h2>
+                        <ul>
+                            <li><a href="">Que hacer en bogota</a></li>
+                            <li><a href="">Que hacer en Cali</a></li>
+                            <li><a href="">Que hacer en Medellin</a></li>
+                            <li><a href="">Conciertos en Santa Marta</a></li>
+                            <li><a href="">Conciertos en Cartagena</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="capsula-tarjeta-footer">
+                        <h2 class="titulo-targeta-footer">siguenos</h2>
+                        <ul>
+                            <li>
+                                <figure class="icono-redes icono-redes-fb"><img src="../build/img/icon/facebook.png" alt=""></figure>
+                                <a href="">Facebook</a>
+                            </li>
+                            <li>
+                                <figure class="icono-redes icono-redes-i"><img src="../build/img/icon/instagram.png" alt=""></figure>
+                                <a href="">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="derechos-autor">
+                <p>2023 © Tickevent. Todos los Derechos Reservados.</p>
+                <p>Política de privacidad    |    términos y condiciones</p>
+            </div>
+
+        </div>
+    </footer>
+ 
+            <!-- ARCHIVOS JAVASCRIPT VINCULADOS -->
+            <script src="../build/js/bundle.min.js"></script>
+
+
+
+</body>
+</html>

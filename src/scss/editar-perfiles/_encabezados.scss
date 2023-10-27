@@ -1,0 +1,44 @@
+// .ctasForm{
+
+    .ctasForm__encabezado{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        background-color: rgba($azul_oscuro,0.1);
+
+
+        .ctasForm__encabezadoContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    .ctasForm__h2Encabezado{
+        h2{margin: 0;}
+        .ctasForm__h2{
+            font-weight: bold;
+            font-size: 1.5rem;
+            width: 23rem;
+            text-align: center;
+            @include mqTablet{
+                font-size: 2rem; 
+                width: 33.8rem;
+            }
+        }
+    }
+    
+.fieldsGrup--ctaPromotor{
+    .ctasForm__encabezado{
+        background-color: rgba($azul_oscuro,0.5);
+
+    }
+
+}
+    
+    
+    
+    
+    
+      
+// }//  CIERRE PRINCIPAL 

@@ -1,0 +1,11 @@
+.tarjeta-servicio{
+    background-color: darken($color: $rojo, $amount: 30%);
+
+    tr{
+        .tblInfoCard__col--body{
+            .InfoCardTd__dato{
+                text-align: justify;
+            }
+        }
+    }
+}

@@ -1,0 +1,185 @@
+.cardHorizontal__auxInteracciones{
+    border-top: 15px solid  lighten($color: $secundario, $amount: 15%);
+    
+}
+.cardInteraccion{
+    .cardInteraccion__ctrlContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+        padding: 0 2rem;
+        background-color: lighten($color: $azul_gris, $amount: 15%);
+        border-bottom: 1px solid darken($color: $azul_gris, $amount: 10%);
+        @include mqTelefono{
+            
+        }
+
+        .pulgarContainer{
+            display: flex; 
+            align-items: center;
+
+            .pulgarContainer__btnImg{
+                cursor: pointer;
+                display: block;
+                background-color: darken($color: $azul_gris, $amount: 10%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 1rem;
+                width: 8rem;
+                height: 4rem;
+            }
+            .pulgarContainer__btnImg--up{border-radius: 4rem 0 0 4rem;}   
+            .pulgarContainer__btnImg--down{border-radius: 0 4rem 4rem 0;}   
+            .pulgarContainer__btnLineaDivision{
+                border: 1px solid rgba($color: #000000, $alpha: 0);
+                height: 80%;
+                margin: 10% 0;
+            }
+        }
+        .carritoBtn{
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            display: block;
+            width: 4rem;
+            height: 4rem;
+            background-color: darken($color: $azul_gris, $amount: 10%);
+            border-radius: 1rem;
+            .carritoBtn__container{
+                display: block;
+                width: 100%;
+                .carritoBtn__img{
+                    width: 100%;
+                }
+            }
+        }
+     
+    }
+    .cardInteraccion__ctrlContainer--comentar{
+        display: flex;
+        align-items: center;
+        .comentar{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            .comentar__label{
+                padding-bottom: 1rem;
+            }
+
+            .comentar__input{
+                width: 100%;
+                height: 4rem;
+                border-color: $azul_gris;
+                border-radius: 1rem;
+            }
+            .comentar__inputSubmit{
+                display: block;
+                width: 2rem;
+                height: 2rem;
+            }                
+           
+
+
+        }
+    }
+    .seccionComentarios{
+        display: block;
+        // .seccionComentarios__container{
+        //     .seccionComentario__containerComentario{
+
+        //     }
+        // }
+    }
+}
+
+
+
+
+
+
+
+
+.pulgarContainer__btnImg{
+    .pulgar__img{
+        display: block;
+        width: 2rem;
+    }
+    .pulgar__num{
+        font-size: 0.9rem;
+    }
+}
+.carritoBtn{
+    .carritoBtn__txtContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .carritoBtn__txt{
+            text-align: center;  
+            font-size: 0.9rem;
+            color: $blanco;
+
+        }
+    }
+}
+.seccionComentario__containerComentario{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .seccionComentario__imgContainer{
+        display: block;
+        min-width: 5rem;
+        max-width: 5rem;
+        // height: 5rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        // display: flex;
+        .seccionComentario__img{
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}
+
+.estructuraComent{
+
+    .estructuraComent__nameUsser{
+        font-size: 1.5rem;
+    }
+    .estructuraComent__txt{
+        font-size: 1.2rem;
+        text-align: justify;
+
+    }
+}
+.estructuraComent__metadatos{
+    display: flex;
+    align-items: flex-start;
+    .estructuraComent__fecha,
+    .estructuraComent__hora{
+        font-size: 1.2rem;
+
+    }
+    .estructuraComent__pulgarUpImgContainer,
+    .estructuraComent__pulgarDownImgContainer{
+        cursor: pointer;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        // background-color: orange;
+        .estructuraComent__pulgarImg{
+            width: 1.2rem;
+            .estructuraComent__numPulgarUp,
+            .estructuraComent__numPulgarDown{
+                font-size: 0.5rem;
+            }
+        }
+    }
+    
+}
