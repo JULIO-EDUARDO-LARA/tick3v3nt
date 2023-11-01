@@ -2,243 +2,62 @@
 .nav__user{
     margin: 0 auto;
     width: 27rem;
-    @include mqTablet{
-    width: 22rem;
-
-    }
-}
-
-.lista__item--2{
-    //ASOCIADO CON CLASE .lista__mostrar
-    width: 100%;
-    overflow: hidden;
-}
-.lista__item--1{
-    //ASOCIADO CON CLASE .lista__mostrar
-    width: 100%;
-    overflow: hidden;
-}
-.lista__item{
-    //ASOCIADO CON CLASE .lista__mostrar
-
-    width: 100%;
-    overflow: hidden;
-    
-}
-
-.lista__item--click{
-    cursor: pointer;
-}
-
-
-
-
-// ESTILOS PARA LOS ENLACES
-
-.lista__link--3{
-    color: rgba($blanco, 1);
-
 
 }
-.lista__link--2{
-    color: rgba($negro, 0.7);
-}
-
-.lista__link {
-    padding: .5rem;
-    font-family: $fuente_especial;
-    width: 100%;
-    font-weight: bold;
-
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; 
-}
-
-
-//ESTILOS PARA BOTONES
-
-
-
-.lista__btn--3 {
-    height: 2.5rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    background-color: rgba($azul_claro, $alpha: 0.2);
-
-}
-.lista__btn--2 {
-    height: 3rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgba($blanco, $alpha: 0.5);
-
-}
-
-
-.lista__btn--1 {
-    height: 5.5rem;
-   
-    @include mqTablet{
-        height: 4rem;
-    }
-
-    position: relative;
-    margin: auto;
-    @include grid-col(3, 0rem);
-    justify-content: center;
-    width: 70%;
-
-
-    .lista__imgUsers{
-        margin: auto;
-        grid-column: 2/3;
-        width: 5rem;
-        height: 5rem;
-    }
-    .lista__btnTextValue{
-        margin: auto;
-        grid-column: 1/3;  
-    }
-    //DISABLE CLICK EVENT FOR FICHA PERFILES
-    & > * {
-        pointer-events: none;
-      }
-}
-
-// ESTILOS PARA FLECHAS
-.icon__arrow,
-.icon__container{
-    pointer-events: none;
-
-}
-.icon__container {
-    width: 1.2rem;
-    height: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s;
-
-    .icon__arrow--2{
-        margin: auto;
-        width: .7rem;
-        height: .7rem;
-    }
-}
-
-.icon__container--1{
-    margin: auto auto auto 0;
-    grid-column: 3/4;
-
-
-    .icon__arrow--1{
-        height: 1.2rem;
-    }
-
-}
-
-
-.lista__mostrar--2promotor{
-    // margin: 0 auto;
-    transition: height 0.4s;
-    height: 0;
-
-}
-//ESTILOS PARA CONTENEDOR DE LISTAS 
-.lista__mostrar--1promotor{
-    //ASOCIADO CON CLASE .lista__item
-    transition: height 0.4s;
-    height: 0;
-}
-.lista__mostrar--2regular{
-    //ASOCIADO CON CLASE .lista__item
-    transition: height 0.4s;
-    height: 0;
-
-}
-.lista__mostrar--1regular{
-    //ASOCIADO CON CLASE .lista__item
-    transition: height 0.4s;
-    height: 0;
-}
-
-.lista__mostrar--1 {
-    width: 70%;
-    margin: 0 auto;
-}
-
-
-.lista__link--click{
-    pointer-events: none;
-}
-
-//ESTILOS HOVER -------------------------------------------
-
-//ESTILOS HOVER BACKGROUND
+// BOTON PRINCIPAL
 .lista__btn--1{
-    &:hover{
-        background-color: rgba($blanco, $alpha: 0.5);
-        transition: bacbackground-color, 0.5s;
-    }
-    @include mqTablet{
-        transition: none;
-        background-color: rgba($blanco, $alpha: 0.7);
-        border-radius: 1.2rem;
-        &:hover{
-            background-color: rgba($blanco, $alpha: 0.5);
-            transition: bacbackground-color, 0.5s;
-        }
-    }
-}
-// ESTILOS DINAMICO CON JAVASCRIPT
-.icon__container--rotate{
-    border-radius: 0rem;
+    background-color: $azul_gris;
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2.5rem;
+    padding: 0 0.5rem;
 
-    .icon__container{
-        transform: rotate(90deg);
-    }
 }
 
-.lista__btn--2{
-    &:hover{
-        background-color: rgba($crimson, $alpha: 0.2);
-    }
-}
-
-.lista__btn--3{
-    &:hover{
-        background-color: rgba($azul_oscuro, $alpha: 1);
-    }
-}
-//ESTILOS HOVER FUENTE
-.lista__link--3{
-    &:hover{
-        color: rgba($blanco, $alpha: 1);
-    }
-}
-
-//OCULTANDO ELEMENTOS SEGUN EL MEDIAQUERY -------------------------------------------
-
-.lista__imgUsers{
+.lista__imgUsersContainer{
     display: block;
-    padding: 1rem;
-    @include mqTablet{
-        display: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    .lista__imgUsers{
+        width: 100%;
+        height: 100%;
     }
+}
+.icon__container{
+    width: 3rem;
+    height: 3rem;
+    .icon_arrow--1{
+        width: 100%;
+        height: 100%;
+    }
+}
+.lista__btnTextValue{
+    display: block;
+    padding: 0 3%;
+    text-align: center;
 }
 
-.lista__btnTextValue{
-    display: none;
-    @include mqTablet{
-        display: block;
-    }
+.lista__mostrar{
+    width: 100%;
+    overflow: hidden;
+    height: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

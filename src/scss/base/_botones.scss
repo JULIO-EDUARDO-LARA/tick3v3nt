@@ -1,3 +1,4 @@
+
 .registro__text {
     transition: all 0.2s;
 }
@@ -56,11 +57,11 @@
     .headerPrincipal__btn{
         @include boton ($amarillo, $rojo, inline-block, 0.5rem, 1rem);
 
-        @include mqTablet {
-            @include boton ($amarillo, $rojo, inline-block, 1rem, 4rem);}
+        // @include mqTablet {
+        //     @include boton ($amarillo, $rojo, inline-block, 1rem, 4rem);}
 
-        @include mqDesktop {
-            @include boton ($amarillo, $rojo, inline-block);}
+        // @include mqDesktop {
+        //     @include boton ($amarillo, $rojo, inline-block);}
         
             box-shadow: inset 10px 0px 15px 5px rgba(107, 111, 47, 0.6);
             box-shadow: inset 10px 0px 15px 5px rgba(107, 111, 47, 0.6);
@@ -213,6 +214,17 @@
 
 
 //BOTON-ICONO PROVEEDORES - PROMOTOR---------------------------------------------------------------
+$letra: "";
+$textoBtnCircular: "PROVEEDOR PRODUCTOS&SERVICIOS";
+
+@for $i from 1 to length($textoBtnCircular){
+    $letra: substr($texto, $i, 1);
+
+}
+
+// Declara la etiqueta SPAN
+
+
 
 .btn-icon-proveedores{
     position: relative;

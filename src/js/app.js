@@ -117,7 +117,7 @@ window.onload = function  () {
 
                         let altura2 = 0;
                         let showLista1_regular = btn_1_clickeado.nextElementSibling;
-                        // console.log(showLista1_regular);
+                
 
                         let catchHeightShowLista1_regular  = showLista1_regular.clientHeight;
                         let catchMinHeightShowLista1_regular  = showLista1_regular.scrollHeight;
